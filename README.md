@@ -55,6 +55,12 @@ The namespace contains the following:
 
 <!-- <toc pattern="*"> -->
 
+<div class="namespace-toc">
+
+-   <span class="signature">[`base`][@stdlib/blas/ext/base]</span><span class="delimiter">: </span><span class="description">standard library extensions to base basic linear algebra subprograms (BLAS).</span>
+
+</div>
+
 <!-- </toc> -->
 
 </section>
@@ -134,6 +140,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext/main/LICENSE
+
+<!-- <toc-links> -->
+
+[@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base
+
+<!-- </toc-links> -->
 
 </section>
 
