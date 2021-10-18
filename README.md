@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
 
-> Standard library extended basic linear algebra subprograms (BLAS).
+> Extended basic linear algebra subprograms (BLAS).
 
 <section class="installation">
 
@@ -44,7 +44,7 @@ var extblas = require( '@stdlib/blas-ext' );
 
 #### extblas
 
-Standard library extended basic linear algebra subprograms (BLAS).
+Namespace for extended basic linear algebra subprograms (BLAS).
 
 ```javascript
 var o = extblas;
@@ -85,6 +85,16 @@ console.log( objectKeys( ns ) );
 </section>
 
 <!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
 <section class="main-repo" >
