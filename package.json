@@ -46,6 +46,7 @@
     "@stdlib/array-float32": "^0.0.x",
     "@stdlib/array-float64": "^0.0.x",
     "@stdlib/assert-is-browser": "^0.0.x",
+    "@stdlib/assert-is-error": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
     "@stdlib/blas-base-dcopy": "^0.0.x",
     "@stdlib/blas-base-scopy": "^0.0.x",
