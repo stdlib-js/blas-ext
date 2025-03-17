@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-02)
+## Unreleased (2025-03-17)
 
 <section class="packages">
 
@@ -20,6 +20,11 @@
 
 ##### Features
 
+-   [`9789396`](https://github.com/stdlib-js/stdlib/commit/9789396bd5111e963f4662c57c6b4159d4166946) - update namespace TypeScript declarations [(#5364)](https://github.com/stdlib-js/stdlib/pull/5364)
+-   [`40f5bae`](https://github.com/stdlib-js/stdlib/commit/40f5bae95d708401dbea4c37b2c220381638c4a0) - add `wasm` to namespace
+-   [`76cf95f`](https://github.com/stdlib-js/stdlib/commit/76cf95f336fc29cb4e83184fe6f215c23a723e95) - update namespace TypeScript declarations [(#5243)](https://github.com/stdlib-js/stdlib/pull/5243)
+-   [`5dde14b`](https://github.com/stdlib-js/stdlib/commit/5dde14b31ea6a661b88b7ba637e0e7a2fce272a4) - update namespace TypeScript declarations [(#5182)](https://github.com/stdlib-js/stdlib/pull/5182)
+-   [`d66db3f`](https://github.com/stdlib-js/stdlib/commit/d66db3fd4b220adcc318a5993a97fe79e5b7445a) - update namespace TypeScript declarations [(#5130)](https://github.com/stdlib-js/stdlib/pull/5130)
 -   [`14f3f1a`](https://github.com/stdlib-js/stdlib/commit/14f3f1af0988577680efc92522bb9a45a2cbd46b) - update namespace TypeScript declarations
 -   [`8409bd1`](https://github.com/stdlib-js/stdlib/commit/8409bd17639c21c94be23d8498789fca5352892b) - update namespace TypeScript declarations [(#4856)](https://github.com/stdlib-js/stdlib/pull/4856)
 -   [`0eac1eb`](https://github.com/stdlib-js/stdlib/commit/0eac1ebde891ba75b8c4939119a6c4b7c88ceed8) - update namespace TypeScript declarations [(#4809)](https://github.com/stdlib-js/stdlib/pull/4809)
@@ -38,6 +43,14 @@
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
+
+-   [`76cf95f`](https://github.com/stdlib-js/stdlib/commit/76cf95f336fc29cb4e83184fe6f215c23a723e95): remove `add5`
+
+    -   To migrate, users should access the `add5` symbol via the `number/float64/base` namespace.
+
+-   [`d66db3f`](https://github.com/stdlib-js/stdlib/commit/d66db3fd4b220adcc318a5993a97fe79e5b7445a): remove `add`, `add3`, and `add4`
+
+    -   To migrate, users should access those symbols in the `number/float64/base` namespace.
 
 -   [`14f3f1a`](https://github.com/stdlib-js/stdlib/commit/14f3f1af0988577680efc92522bb9a45a2cbd46b): remove `dcuminabs`
 
@@ -163,12 +176,25 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`654827d`](https://github.com/stdlib-js/stdlib/commit/654827df5358f2c70fde0259fbbcbfb607076119) - add `blas/ext/base/wasm/dapxsum` [(#5634)](https://github.com/stdlib-js/stdlib/pull/5634)
 -   [`a13603b`](https://github.com/stdlib-js/stdlib/commit/a13603b556defa762f7fe1d25fbfa3b621404f69) - add C `ndarray` API and refactor `blas/ext/base/dcusum` [(#2954)](https://github.com/stdlib-js/stdlib/pull/2954)
 -   [`dc08755`](https://github.com/stdlib-js/stdlib/commit/dc08755be693a93f1cef11bc0fe13d30829c9392) - add C `ndarray` API and refactor `blas/ext/base/dapxsum` [(#2946)](https://github.com/stdlib-js/stdlib/pull/2946)
 
 </section>
 
 <!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5505](https://github.com/stdlib-js/stdlib/issues/5505)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -228,6 +254,93 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`0864071`](https://github.com/stdlib-js/stdlib/commit/086407175aec71e2874727a7d3bad97d26289323): remove `@stdlib/blas-ext/base/dapxsumkbn-wasm`
+
+    -   To migrate, users should update their import paths to use
+        `@stdlib/blas-ext/base/wasm/dapxsumkbn`.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: na
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: na
+          - task: lint_javascript_src
+            status: na
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: na
+          - task: lint_javascript_tests
+            status: na
+          - task: lint_javascript_benchmarks
+            status: na
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: na
+          - task: lint_typescript_tests
+            status: na
+          - task: lint_license_headers
+            status: passed
+        ---
+        ---
+        type: pre_push_report
+        description: Results of running various checks prior to pushing changes.
+        report:
+          - task: run_javascript_examples
+            status: passed
+          - task: run_c_examples
+            status: na
+          - task: run_cpp_examples
+            status: na
+          - task: run_javascript_readme_examples
+            status: passed
+          - task: run_c_benchmarks
+            status: na
+          - task: run_cpp_benchmarks
+            status: na
+          - task: run_fortran_benchmarks
+            status: na
+          - task: run_javascript_benchmarks
+            status: passed
+          - task: run_julia_benchmarks
+            status: na
+          - task: run_python_benchmarks
+            status: na
+          - task: run_r_benchmarks
+            status: na
+          - task: run_javascript_tests
+            status: passed
+        ---
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -267,12 +380,25 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b2a770a`](https://github.com/stdlib-js/stdlib/commit/b2a770ac79d4b276e73184802ee0cf31956bf52c) - add `blas/ext/base/wasm/dapxsumors` [(#5644)](https://github.com/stdlib-js/stdlib/pull/5644)
 -   [`a13603b`](https://github.com/stdlib-js/stdlib/commit/a13603b556defa762f7fe1d25fbfa3b621404f69) - add C `ndarray` API and refactor `blas/ext/base/dcusum` [(#2954)](https://github.com/stdlib-js/stdlib/pull/2954)
 -   [`bc97fa9`](https://github.com/stdlib-js/stdlib/commit/bc97fa994dbd0e671613e9633a551cdae30fa621) - add C `ndarray` API and refactor `blas/ext/base/dapxsumors` [(#2934)](https://github.com/stdlib-js/stdlib/pull/2934)
 
 </section>
 
 <!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5507](https://github.com/stdlib-js/stdlib/issues/5507)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -290,12 +416,25 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b0d1c0e`](https://github.com/stdlib-js/stdlib/commit/b0d1c0ee0ff6fa05c8d5019939990d3fbdf08537) - add `blas/ext/base/wasm/dapxsumpw` [(#5642)](https://github.com/stdlib-js/stdlib/pull/5642)
 -   [`a13603b`](https://github.com/stdlib-js/stdlib/commit/a13603b556defa762f7fe1d25fbfa3b621404f69) - add C `ndarray` API and refactor `blas/ext/base/dcusum` [(#2954)](https://github.com/stdlib-js/stdlib/pull/2954)
 -   [`829713b`](https://github.com/stdlib-js/stdlib/commit/829713b1fd6081cafa25133ac90931d8ba911b5e) - add C `ndarray` API and refactor `blas/ext/base/dapxsumpw` [(#2937)](https://github.com/stdlib-js/stdlib/pull/2937)
 
 </section>
 
 <!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5508](https://github.com/stdlib-js/stdlib/issues/5508)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -313,12 +452,25 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`d2aa857`](https://github.com/stdlib-js/stdlib/commit/d2aa857a823eed13a409c724c4d19fa876ad2742) - add `blas/ext/base/wasm/dasumpw` [(#5549)](https://github.com/stdlib-js/stdlib/pull/5549)
 -   [`a13603b`](https://github.com/stdlib-js/stdlib/commit/a13603b556defa762f7fe1d25fbfa3b621404f69) - add C `ndarray` API and refactor `blas/ext/base/dcusum` [(#2954)](https://github.com/stdlib-js/stdlib/pull/2954)
 -   [`6fd2e23`](https://github.com/stdlib-js/stdlib/commit/6fd2e23eb246789e43b311eabe9f2fac532175b7) - add C `ndarray` API and refactor `blas/ext/base/dasumpw` [(#2949)](https://github.com/stdlib-js/stdlib/pull/2949)
 
 </section>
 
 <!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5509](https://github.com/stdlib-js/stdlib/issues/5509)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -906,6 +1058,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`e0e2ab2`](https://github.com/stdlib-js/stdlib/commit/e0e2ab2955fd340371c0989c5a7a2f96991ba232) - add `blas/ext/base/wasm/dnansumpw` [(#5968)](https://github.com/stdlib-js/stdlib/pull/5968)
 -   [`14021a5`](https://github.com/stdlib-js/stdlib/commit/14021a537b3f627a4ff0b3228b78d0433a6eb562) - add C `ndarray` API and refactor `blas/ext/base/dnansumpw` [(#3202)](https://github.com/stdlib-js/stdlib/pull/3202)
 
 </section>
@@ -1149,6 +1302,98 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="blas-ext-base-dsort2sh-unreleased">
+
+#### [@stdlib/blas/ext/base/dsort2sh](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/dsort2sh)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5501](https://github.com/stdlib-js/stdlib/issues/5501)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-dsorthp-unreleased">
+
+#### [@stdlib/blas/ext/base/dsorthp](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/dsorthp)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a6ba17c`](https://github.com/stdlib-js/stdlib/commit/a6ba17cee3a41741a04312d78ddde029470bf338) - add C ndarray API and refactor `blas/ext/base/dsorthp` [(#5018)](https://github.com/stdlib-js/stdlib/pull/5018)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5072](https://github.com/stdlib-js/stdlib/issues/5072)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-dsortins-unreleased">
+
+#### [@stdlib/blas/ext/base/dsortins](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/dsortins)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d924c8d`](https://github.com/stdlib-js/stdlib/commit/d924c8d2c48611f1c90312877e39bf3e8df063c2) - add C ndarray API and refactor `blas/ext/base/dsortins` [(#5028)](https://github.com/stdlib-js/stdlib/pull/5028)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5073](https://github.com/stdlib-js/stdlib/issues/5073)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="blas-ext-base-dssum-unreleased">
 
 #### [@stdlib/blas/ext/base/dssum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/dssum)
@@ -1361,6 +1606,50 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="blas-ext-base-gapx-unreleased">
+
+#### [@stdlib/blas/ext/base/gapx](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapx)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6af5789`](https://github.com/stdlib-js/stdlib/commit/6af5789d1be31cb3c5be066d742f3bd924ca705d) - add accessor arrays support to `blas/ext/base/gapx` [(#4926)](https://github.com/stdlib-js/stdlib/pull/4926)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gapxsum-unreleased">
+
+#### [@stdlib/blas/ext/base/gapxsum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapxsum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c879523`](https://github.com/stdlib-js/stdlib/commit/c87952362d00ce9a096b9d9c6dc0a3e92411856a) - add accessor arrays support to `blas/ext/base/gapxsum` [(#4927)](https://github.com/stdlib-js/stdlib/pull/4927)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="blas-ext-base-gapxsumkbn-unreleased">
 
 #### [@stdlib/blas/ext/base/gapxsumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapxsumkbn)
@@ -1372,6 +1661,72 @@ This release closes the following issue:
 ##### Features
 
 -   [`906a39e`](https://github.com/stdlib-js/stdlib/commit/906a39eec07e9c9550f6ab43197e1f75922fd920) - add accessor arrays support to `blas/ext/base/gapxsumkbn` [(#4888)](https://github.com/stdlib-js/stdlib/pull/4888)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gapxsumkbn2-unreleased">
+
+#### [@stdlib/blas/ext/base/gapxsumkbn2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapxsumkbn2)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a660827`](https://github.com/stdlib-js/stdlib/commit/a660827c0f4b24c28029a8231783c9c7a679f714) - add accessor arrays support to `blas/ext/base/gapxsumkbn2` [(#4928)](https://github.com/stdlib-js/stdlib/pull/4928)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gapxsumors-unreleased">
+
+#### [@stdlib/blas/ext/base/gapxsumors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapxsumors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`419a872`](https://github.com/stdlib-js/stdlib/commit/419a872327435d5d3549cf6de16d1e9766a98e80) - add accessor arrays support to `blas/ext/base/gapxsumors` [(#4930)](https://github.com/stdlib-js/stdlib/pull/4930)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gapxsumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/gapxsumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gapxsumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5052523`](https://github.com/stdlib-js/stdlib/commit/5052523f838ba96e29282588584cfa02ed83ff8d) - add accessor arrays support `blas/ext/base/gapxsumpw` [(#4932)](https://github.com/stdlib-js/stdlib/pull/4932)
 
 </section>
 
@@ -1405,6 +1760,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="blas-ext-base-gcusum-unreleased">
+
+#### [@stdlib/blas/ext/base/gcusum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gcusum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e5a8c65`](https://github.com/stdlib-js/stdlib/commit/e5a8c6593a68bdf3d385fbb4c1d75ba4309bad5d) - add accessor arrays support to `blas/ext/base/gcusum` [(#5065)](https://github.com/stdlib-js/stdlib/pull/5065)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="blas-ext-base-gcusumkbn-unreleased">
 
 #### [@stdlib/blas/ext/base/gcusumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gcusumkbn)
@@ -1416,6 +1793,82 @@ This release closes the following issue:
 ##### Features
 
 -   [`4bbd4bd`](https://github.com/stdlib-js/stdlib/commit/4bbd4bdc49ac6d5df7904c3e47810a455b1912bd) - add accessor arrays support to `blas/ext/base/gcusumkbn` [(#4959)](https://github.com/stdlib-js/stdlib/pull/4959)
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`068bbeb`](https://github.com/stdlib-js/stdlib/commit/068bbeb48863fd10ac825a7855192c00121b90ab) - update return value and tests for `blas/ext/base/gcusumkbn` [(#5064)](https://github.com/stdlib-js/stdlib/pull/5064)
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gcusumkbn2-unreleased">
+
+#### [@stdlib/blas/ext/base/gcusumkbn2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gcusumkbn2)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1dd8adf`](https://github.com/stdlib-js/stdlib/commit/1dd8adfd104b90f0b87cd76ce0addbbd6f723aba) - add accessor arrays support to `blas/ext/base/gcusumkbn2` [(#5009)](https://github.com/stdlib-js/stdlib/pull/5009)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gcusumors-unreleased">
+
+#### [@stdlib/blas/ext/base/gcusumors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gcusumors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8310c1f`](https://github.com/stdlib-js/stdlib/commit/8310c1f4054d2ff0ee8b05f1c77b1d3c846a1012) - add accessor arrays support to `blas/ext/base/gcusumors` [(#5010)](https://github.com/stdlib-js/stdlib/pull/5010)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gcusumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/gcusumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gcusumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6c90e8f`](https://github.com/stdlib-js/stdlib/commit/6c90e8fa6ad8f6bf254e6479d1a3ece17b5e92da) - add accessor arrays support to `blas/ext/base/gcusumpw` [(#5012)](https://github.com/stdlib-js/stdlib/pull/5012)
 
 </section>
 
@@ -1471,6 +1924,292 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="blas-ext-base-gnannsumkbn-unreleased">
+
+#### [@stdlib/blas/ext/base/gnannsumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnannsumkbn)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9da9e46`](https://github.com/stdlib-js/stdlib/commit/9da9e464d924bae935b701593e8c7a8cc4377f5c) - add accessor arrays support to `blas/ext/base/gnannsumkbn` [(#5023)](https://github.com/stdlib-js/stdlib/pull/5023)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gnansum-unreleased">
+
+#### [@stdlib/blas/ext/base/gnansum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnansum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e242eb1`](https://github.com/stdlib-js/stdlib/commit/e242eb1e35da321f0e124a65f1c5e74e9be51dfe) - add accessor arrays support to `blas/ext/base/gnansum` [(#5066)](https://github.com/stdlib-js/stdlib/pull/5066)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gnansumkbn-unreleased">
+
+#### [@stdlib/blas/ext/base/gnansumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnansumkbn)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2e66bec`](https://github.com/stdlib-js/stdlib/commit/2e66becd6ee0876f1ee00c55506a369bec2d7f7a) - add accessor arrays support to `blas/ext/base/gnansumkbn` [(#5032)](https://github.com/stdlib-js/stdlib/pull/5032)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gnansumkbn2-unreleased">
+
+#### [@stdlib/blas/ext/base/gnansumkbn2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnansumkbn2)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6f8898d`](https://github.com/stdlib-js/stdlib/commit/6f8898dbad41926bd7d03efc778e3a9a23742220) - add accessor arrays support to `blas/ext/base/gnansumkbn2` [(#5034)](https://github.com/stdlib-js/stdlib/pull/5034)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gnansumors-unreleased">
+
+#### [@stdlib/blas/ext/base/gnansumors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnansumors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9ce3d01`](https://github.com/stdlib-js/stdlib/commit/9ce3d0115c15027d2d971f8ea22950aa5b6774c5) - add accessor arrays support to `blas/ext/base/gnansumors` [(#5036)](https://github.com/stdlib-js/stdlib/pull/5036)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gnansumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/gnansumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gnansumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f78899e`](https://github.com/stdlib-js/stdlib/commit/f78899eb1aa02dd8364a544c99743b1c18c2c484) - add accessor arrays support to `blas/ext/base/gnansumpw` [(#5037)](https://github.com/stdlib-js/stdlib/pull/5037)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsort2hp-unreleased">
+
+#### [@stdlib/blas/ext/base/gsort2hp](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsort2hp)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`20f7173`](https://github.com/stdlib-js/stdlib/commit/20f71735fc68e3e501e5fc13fddbaf19900d0ebf) - add accessor arrays support and refactor `blas/ext/base/gsort2hp` [(#4660)](https://github.com/stdlib-js/stdlib/pull/4660)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsort2ins-unreleased">
+
+#### [@stdlib/blas/ext/base/gsort2ins](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsort2ins)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7d5e0aa`](https://github.com/stdlib-js/stdlib/commit/7d5e0aab1f348b4b4ed7e039c6e3745442f479e1) - add accessor arrays support and refactor `blas/ext/base/gsort2ins` [(#5089)](https://github.com/stdlib-js/stdlib/pull/5089)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsort2sh-unreleased">
+
+#### [@stdlib/blas/ext/base/gsort2sh](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsort2sh)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8ad374c`](https://github.com/stdlib-js/stdlib/commit/8ad374c4cdc7ee450a404f4f766ec772a0aa5af5) - add accessor arrays support and refactor `blas/ext/base/gsort2sh` [(#5113)](https://github.com/stdlib-js/stdlib/pull/5113)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsorthp-unreleased">
+
+#### [@stdlib/blas/ext/base/gsorthp](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsorthp)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`112b7ef`](https://github.com/stdlib-js/stdlib/commit/112b7ef36a44bc8b27ad757cc3099d2595aa8aaa) - add accessor arrays support and refactor `blas/ext/base/gsorthp` [(#5117)](https://github.com/stdlib-js/stdlib/pull/5117)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsortins-unreleased">
+
+#### [@stdlib/blas/ext/base/gsortins](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsortins)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d226d10`](https://github.com/stdlib-js/stdlib/commit/d226d10e5119e4480721039ce892da8ae874e468) - add accessor arrays support and refactor `blas/ext/base/gsortins` [(#5120)](https://github.com/stdlib-js/stdlib/pull/5120)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsortsh-unreleased">
+
+#### [@stdlib/blas/ext/base/gsortsh](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsortsh)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ece4002`](https://github.com/stdlib-js/stdlib/commit/ece40025e9afce7032cd1072c1d1a8b856726564) - add accessor arrays support and refactor `blas/ext/base/gsortsh` [(#5122)](https://github.com/stdlib-js/stdlib/pull/5122)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsum-unreleased">
+
+#### [@stdlib/blas/ext/base/gsum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`152dfd2`](https://github.com/stdlib-js/stdlib/commit/152dfd2a9f6f420dee659694435c9e44f3095601) - add accessor arrays support to `blas/ext/base/gsum` [(#5134)](https://github.com/stdlib-js/stdlib/pull/5134)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="blas-ext-base-gsumkbn-unreleased">
 
 #### [@stdlib/blas/ext/base/gsumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsumkbn)
@@ -1482,6 +2221,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`3f3edff`](https://github.com/stdlib-js/stdlib/commit/3f3edffe817993b5668fd72c81e8c677bc895d14) - add support for accessor arrays in `blas/ext/base/gsumkbn` [(#4923)](https://github.com/stdlib-js/stdlib/pull/4923)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-gsumkbn2-unreleased">
+
+#### [@stdlib/blas/ext/base/gsumkbn2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/gsumkbn2)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`97f01ab`](https://github.com/stdlib-js/stdlib/commit/97f01ab3c49115bb526ccdb88bbe8fd07770f17a) - add accessor arrays support to `blas/ext/base/gsumkbn2` [(#4960)](https://github.com/stdlib-js/stdlib/pull/4960)
 
 </section>
 
@@ -1956,6 +2717,16 @@ This release closes the following issue:
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`feb71c7`](https://github.com/stdlib-js/stdlib/commit/feb71c7f3eb1875c1f654b8c8a791fe1ea9a0bb8) - add C `ndarray` API and refactor `blas/ext/base/sdsapxsum` [(#4885)](https://github.com/stdlib-js/stdlib/pull/4885)
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ##### Bug Fixes
@@ -2119,6 +2890,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-snansum-unreleased">
+
+#### [@stdlib/blas/ext/base/snansum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/snansum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6516030`](https://github.com/stdlib-js/stdlib/commit/65160305dccd83c8fbf6f9e011e9f9a13c2c0cf8) - add C `ndarray` API and refactor `blas/ext/base/snansum` [(#4872)](https://github.com/stdlib-js/stdlib/pull/4872)
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -2312,6 +3105,16 @@ This release closes the following issue:
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`8357863`](https://github.com/stdlib-js/stdlib/commit/8357863b87da1554b4e249fb03e712dec8a58ee0) - add C ndarray API and refactor `blas/ext/base/ssort2ins` [(#5114)](https://github.com/stdlib-js/stdlib/pull/5114)
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ##### Bug Fixes
@@ -2321,6 +3124,18 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5237](https://github.com/stdlib-js/stdlib/issues/5237)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -2532,6 +3347,213 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="blas-ext-base-wasm-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3da41b7`](https://github.com/stdlib-js/stdlib/commit/3da41b7ccb754f5ffa7f4f9fc61799d570871a19) - update namespace TypeScript declarations [(#6058)](https://github.com/stdlib-js/stdlib/pull/6058)
+-   [`9c0f393`](https://github.com/stdlib-js/stdlib/commit/9c0f393248f4a8276991ea447dea41402f58cefc) - add `dapxsumors` to namespace
+-   [`87abb74`](https://github.com/stdlib-js/stdlib/commit/87abb743fe577742c81ce1be6b5b8477da33b5f2) - update namespace TypeScript declarations [(#6008)](https://github.com/stdlib-js/stdlib/pull/6008)
+-   [`5738d4d`](https://github.com/stdlib-js/stdlib/commit/5738d4d9acc9b1d68f33968e76c4ede936f2216f) - add `dapxsum`, `dapxsumpw`, and `dnansumpw` to namespace
+-   [`9789396`](https://github.com/stdlib-js/stdlib/commit/9789396bd5111e963f4662c57c6b4159d4166946) - update namespace TypeScript declarations [(#5364)](https://github.com/stdlib-js/stdlib/pull/5364)
+-   [`a8b94d7`](https://github.com/stdlib-js/stdlib/commit/a8b94d7ea281eb5ac4477eaca40fdb38195ab2b3) - add `blas/ext/base/wasm` namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dapxsum-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dapxsum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dapxsum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`654827d`](https://github.com/stdlib-js/stdlib/commit/654827df5358f2c70fde0259fbbcbfb607076119) - add `blas/ext/base/wasm/dapxsum` [(#5634)](https://github.com/stdlib-js/stdlib/pull/5634)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5505](https://github.com/stdlib-js/stdlib/issues/5505)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dapxsumkbn-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dapxsumkbn](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dapxsumkbn)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`46b98f4`](https://github.com/stdlib-js/stdlib/commit/46b98f4f6cc171d07810b3f756ff7c36e60ac8ed) - add `blas/ext/base/wasm/dapxsumkbn`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dapxsumors-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dapxsumors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dapxsumors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b2a770a`](https://github.com/stdlib-js/stdlib/commit/b2a770ac79d4b276e73184802ee0cf31956bf52c) - add `blas/ext/base/wasm/dapxsumors` [(#5644)](https://github.com/stdlib-js/stdlib/pull/5644)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5507](https://github.com/stdlib-js/stdlib/issues/5507)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dapxsumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dapxsumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dapxsumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b0d1c0e`](https://github.com/stdlib-js/stdlib/commit/b0d1c0ee0ff6fa05c8d5019939990d3fbdf08537) - add `blas/ext/base/wasm/dapxsumpw` [(#5642)](https://github.com/stdlib-js/stdlib/pull/5642)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5508](https://github.com/stdlib-js/stdlib/issues/5508)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dasumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dasumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dasumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d2aa857`](https://github.com/stdlib-js/stdlib/commit/d2aa857a823eed13a409c724c4d19fa876ad2742) - add `blas/ext/base/wasm/dasumpw` [(#5549)](https://github.com/stdlib-js/stdlib/pull/5549)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5509](https://github.com/stdlib-js/stdlib/issues/5509)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="blas-ext-base-wasm-dnansumpw-unreleased">
+
+#### [@stdlib/blas/ext/base/wasm/dnansumpw](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/wasm/dnansumpw)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e0e2ab2`](https://github.com/stdlib-js/stdlib/commit/e0e2ab2955fd340371c0989c5a7a2f96991ba232) - add `blas/ext/base/wasm/dnansumpw` [(#5968)](https://github.com/stdlib-js/stdlib/pull/5968)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="blas-ext-base-zfill-unreleased">
 
 #### [@stdlib/blas/ext/base/zfill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/base/zfill)
@@ -2562,6 +3584,93 @@ This release closes the following issue:
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`0864071`](https://github.com/stdlib-js/stdlib/commit/086407175aec71e2874727a7d3bad97d26289323): remove `@stdlib/blas-ext/base/dapxsumkbn-wasm`
+
+    -   To migrate, users should update their import paths to use
+        `@stdlib/blas-ext/base/wasm/dapxsumkbn`.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: na
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: na
+          - task: lint_javascript_src
+            status: na
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: na
+          - task: lint_javascript_tests
+            status: na
+          - task: lint_javascript_benchmarks
+            status: na
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: na
+          - task: lint_typescript_tests
+            status: na
+          - task: lint_license_headers
+            status: passed
+        ---
+        ---
+        type: pre_push_report
+        description: Results of running various checks prior to pushing changes.
+        report:
+          - task: run_javascript_examples
+            status: passed
+          - task: run_c_examples
+            status: na
+          - task: run_cpp_examples
+            status: na
+          - task: run_javascript_readme_examples
+            status: passed
+          - task: run_c_benchmarks
+            status: na
+          - task: run_cpp_benchmarks
+            status: na
+          - task: run_fortran_benchmarks
+            status: na
+          - task: run_javascript_benchmarks
+            status: passed
+          - task: run_julia_benchmarks
+            status: na
+          - task: run_python_benchmarks
+            status: na
+          - task: run_r_benchmarks
+            status: na
+          - task: run_javascript_tests
+            status: passed
+        ---
+
+-   [`76cf95f`](https://github.com/stdlib-js/stdlib/commit/76cf95f336fc29cb4e83184fe6f215c23a723e95): remove `add5`
+
+    -   To migrate, users should access the `add5` symbol via the `number/float64/base` namespace.
+
+-   [`d66db3f`](https://github.com/stdlib-js/stdlib/commit/d66db3fd4b220adcc318a5993a97fe79e5b7445a): remove `add`, `add3`, and `add4`
+
+    -   To migrate, users should access those symbols in the `number/float64/base` namespace.
 
 -   [`14f3f1a`](https://github.com/stdlib-js/stdlib/commit/14f3f1af0988577680efc92522bb9a45a2cbd46b): remove `dcuminabs`
 
@@ -2596,9 +3705,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 28 issues were closed in this release:
+A total of 36 issues were closed in this release:
 
-[#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253)
+[#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253), [#5072](https://github.com/stdlib-js/stdlib/issues/5072), [#5073](https://github.com/stdlib-js/stdlib/issues/5073), [#5237](https://github.com/stdlib-js/stdlib/issues/5237), [#5501](https://github.com/stdlib-js/stdlib/issues/5501), [#5505](https://github.com/stdlib-js/stdlib/issues/5505), [#5507](https://github.com/stdlib-js/stdlib/issues/5507), [#5508](https://github.com/stdlib-js/stdlib/issues/5508), [#5509](https://github.com/stdlib-js/stdlib/issues/5509)
 
 </section>
 
@@ -2608,7 +3717,7 @@ A total of 28 issues were closed in this release:
 
 ### Contributors
 
-A total of 37 people contributed to this release. Thank you to the following contributors:
+A total of 42 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Ahmed Atwa
@@ -2620,14 +3729,17 @@ A total of 37 people contributed to this release. Thank you to the following con
 -   Gururaj Gurram
 -   HarshaNP
 -   Jaimin Godhani
+-   Justyn Shelby
 -   Krishnendu Das
 -   Lovelin Dhoni J B
+-   Mohammad Bin Aftab
 -   Muhammad Haris
 -   Naveen Kumar
 -   Neeraj Pathak
 -   Philipp Burckhardt
 -   Pranav Goswami
 -   Pranjal Jha
+-   Prashant Kumar Yadav
 -   Pratik Singh
 -   Praveen Kumar
 -   Priyansh Prajapati
@@ -2640,10 +3752,12 @@ A total of 37 people contributed to this release. Thank you to the following con
 -   Sivam Das
 -   Snehil Shah
 -   Soumajit Chatterjee
+-   Suhaib Ilahi
 -   Suraj Kumar
 -   Tirtadwipa Manunggal
 -   Utkarsh Raj
 -   Varad Gupta
+-   Vivek Maurya
 -   Xiaochuan Ye
 -   Yaswanth Kosuru
 -   rainn
@@ -2658,6 +3772,103 @@ A total of 37 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d2aa857`](https://github.com/stdlib-js/stdlib/commit/d2aa857a823eed13a409c724c4d19fa876ad2742) - **feat:** add `blas/ext/base/wasm/dasumpw` [(#5549)](https://github.com/stdlib-js/stdlib/pull/5549) _(by Aayush Khanna, Athan Reines, stdlib-bot)_
+-   [`3da41b7`](https://github.com/stdlib-js/stdlib/commit/3da41b7ccb754f5ffa7f4f9fc61799d570871a19) - **feat:** update namespace TypeScript declarations [(#6058)](https://github.com/stdlib-js/stdlib/pull/6058) _(by stdlib-bot)_
+-   [`9c0f393`](https://github.com/stdlib-js/stdlib/commit/9c0f393248f4a8276991ea447dea41402f58cefc) - **feat:** add `dapxsumors` to namespace _(by Athan Reines)_
+-   [`b2a770a`](https://github.com/stdlib-js/stdlib/commit/b2a770ac79d4b276e73184802ee0cf31956bf52c) - **feat:** add `blas/ext/base/wasm/dapxsumors` [(#5644)](https://github.com/stdlib-js/stdlib/pull/5644) _(by Aayush Khanna, Athan Reines)_
+-   [`87abb74`](https://github.com/stdlib-js/stdlib/commit/87abb743fe577742c81ce1be6b5b8477da33b5f2) - **feat:** update namespace TypeScript declarations [(#6008)](https://github.com/stdlib-js/stdlib/pull/6008) _(by stdlib-bot)_
+-   [`5738d4d`](https://github.com/stdlib-js/stdlib/commit/5738d4d9acc9b1d68f33968e76c4ede936f2216f) - **feat:** add `dapxsum`, `dapxsumpw`, and `dnansumpw` to namespace _(by Athan Reines)_
+-   [`654827d`](https://github.com/stdlib-js/stdlib/commit/654827df5358f2c70fde0259fbbcbfb607076119) - **feat:** add `blas/ext/base/wasm/dapxsum` [(#5634)](https://github.com/stdlib-js/stdlib/pull/5634) _(by Vivek Maurya, Athan Reines, stdlib-bot)_
+-   [`e0e2ab2`](https://github.com/stdlib-js/stdlib/commit/e0e2ab2955fd340371c0989c5a7a2f96991ba232) - **feat:** add `blas/ext/base/wasm/dnansumpw` [(#5968)](https://github.com/stdlib-js/stdlib/pull/5968) _(by Prashant Kumar Yadav, Athan Reines)_
+-   [`acaa750`](https://github.com/stdlib-js/stdlib/commit/acaa75027d9d1136ecdcedb2465e4e8ec77f2b2f) - **docs:** fix package name _(by Athan Reines)_
+-   [`49de088`](https://github.com/stdlib-js/stdlib/commit/49de088f6be300b4b48195ae836120e2c00d5546) - **docs:** fix package name _(by Athan Reines)_
+-   [`13e3172`](https://github.com/stdlib-js/stdlib/commit/13e317293037a43652cbbe6f9e7ebe9b23185a75) - **docs:** fix pkg name _(by Athan Reines)_
+-   [`6f4d5ce`](https://github.com/stdlib-js/stdlib/commit/6f4d5cedceae4e311e176fb3b042f188de18434e) - **docs:** fix pkg name _(by Athan Reines)_
+-   [`8a80a81`](https://github.com/stdlib-js/stdlib/commit/8a80a811f4c4d710106c73b6381fe0d3ed2ab901) - **build:** generalize scripts to auto-update copyright year _(by Athan Reines)_
+-   [`b0d1c0e`](https://github.com/stdlib-js/stdlib/commit/b0d1c0ee0ff6fa05c8d5019939990d3fbdf08537) - **feat:** add `blas/ext/base/wasm/dapxsumpw` [(#5642)](https://github.com/stdlib-js/stdlib/pull/5642) _(by Aayush Khanna, Athan Reines, stdlib-bot)_
+-   [`5003dac`](https://github.com/stdlib-js/stdlib/commit/5003dac28f25072653f9cf6d9fe8761f5898085c) - **docs:** fix line wrapping _(by Athan Reines)_
+-   [`56ca4c4`](https://github.com/stdlib-js/stdlib/commit/56ca4c46231745f5c3aaf24352415306b6c5dd0c) - **docs:** fix line wrapping _(by Athan Reines)_
+-   [`ca7bf2d`](https://github.com/stdlib-js/stdlib/commit/ca7bf2d42bf8785f00754c838a855cc203f095e8) - **docs:** fix line wrapping _(by Athan Reines)_
+-   [`4fdea8f`](https://github.com/stdlib-js/stdlib/commit/4fdea8f772529eba17f6045c4188b1674d97b432) - **chore:** fix EditorConfig lint errors [(#5514)](https://github.com/stdlib-js/stdlib/pull/5514) _(by Justyn Shelby)_
+-   [`3ec92ae`](https://github.com/stdlib-js/stdlib/commit/3ec92aeaefd8a73587ab8a9e153e654da87c553f) - **docs:** update related packages sections [(#5401)](https://github.com/stdlib-js/stdlib/pull/5401) _(by stdlib-bot)_
+-   [`f2f05d9`](https://github.com/stdlib-js/stdlib/commit/f2f05d91b9e5960b7c69a7d157a50ede9b381335) - **docs:** update related packages sections [(#5384)](https://github.com/stdlib-js/stdlib/pull/5384) _(by stdlib-bot)_
+-   [`fc4a92a`](https://github.com/stdlib-js/stdlib/commit/fc4a92a4a2356e4de3026fcfcfbd6433121851a0) - **refactor:** update paths _(by Aayush Khanna)_
+-   [`3772f8f`](https://github.com/stdlib-js/stdlib/commit/3772f8f53a07408b72cf4ec3e8334758f9aded0d) - **docs:** update namespace table of contents [(#5366)](https://github.com/stdlib-js/stdlib/pull/5366) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`9789396`](https://github.com/stdlib-js/stdlib/commit/9789396bd5111e963f4662c57c6b4159d4166946) - **feat:** update namespace TypeScript declarations [(#5364)](https://github.com/stdlib-js/stdlib/pull/5364) _(by stdlib-bot)_
+-   [`40f5bae`](https://github.com/stdlib-js/stdlib/commit/40f5bae95d708401dbea4c37b2c220381638c4a0) - **feat:** add `wasm` to namespace _(by Athan Reines)_
+-   [`a8b94d7`](https://github.com/stdlib-js/stdlib/commit/a8b94d7ea281eb5ac4477eaca40fdb38195ab2b3) - **feat:** add `blas/ext/base/wasm` namespace _(by Athan Reines)_
+-   [`6daebce`](https://github.com/stdlib-js/stdlib/commit/6daebceeb723392b00e87b2c6d7398b76be58b95) - **docs:** update related packages sections [(#5349)](https://github.com/stdlib-js/stdlib/pull/5349) _(by stdlib-bot)_
+-   [`32d2b77`](https://github.com/stdlib-js/stdlib/commit/32d2b77dd2c991cadf726f929f992e109b61d92c) - **docs:** add missing API docs _(by Athan Reines)_
+-   [`0864071`](https://github.com/stdlib-js/stdlib/commit/086407175aec71e2874727a7d3bad97d26289323) - **remove:** remove `blas/ext/base/dapxsumkbn-wasm` _(by Athan Reines)_
+-   [`46b98f4`](https://github.com/stdlib-js/stdlib/commit/46b98f4f6cc171d07810b3f756ff7c36e60ac8ed) - **feat:** add `blas/ext/base/wasm/dapxsumkbn` _(by Athan Reines)_
+-   [`8446185`](https://github.com/stdlib-js/stdlib/commit/8446185b02979b037363bf390bacddf937a83886) - **docs:** update related packages sections [(#5307)](https://github.com/stdlib-js/stdlib/pull/5307) _(by stdlib-bot)_
+-   [`3587230`](https://github.com/stdlib-js/stdlib/commit/3587230f4c2d3a18427b3d7a09b03f56d83d6f6c) - **chore:** address commit comments regarding typo and refactor [(#5263)](https://github.com/stdlib-js/stdlib/pull/5263) _(by Suhaib Ilahi, Philipp Burckhardt)_
+-   [`b090b90`](https://github.com/stdlib-js/stdlib/commit/b090b90935fa0b18e554bf98a4ed0c2f7c51ec33) - **docs:** update related packages sections [(#5253)](https://github.com/stdlib-js/stdlib/pull/5253) _(by stdlib-bot)_
+-   [`76cf95f`](https://github.com/stdlib-js/stdlib/commit/76cf95f336fc29cb4e83184fe6f215c23a723e95) - **feat:** update namespace TypeScript declarations [(#5243)](https://github.com/stdlib-js/stdlib/pull/5243) _(by stdlib-bot)_
+-   [`158bfde`](https://github.com/stdlib-js/stdlib/commit/158bfde6560ed70c956b17f29acd00d81e2bc3b7) - **docs:** update related packages sections [(#5242)](https://github.com/stdlib-js/stdlib/pull/5242) _(by stdlib-bot)_
+-   [`2981d28`](https://github.com/stdlib-js/stdlib/commit/2981d283200482a49ced3e27416ec106eef3fd77) - **docs:** update `blas/ext/base/dfill` to follow current project conventions [(#5171)](https://github.com/stdlib-js/stdlib/pull/5171) _(by Muhammad Haris)_
+-   [`189249b`](https://github.com/stdlib-js/stdlib/commit/189249b59813ed32ab40c4bafb5a827859fb7032) - **docs:** update `blas/ext/base/dcusumkbn` to follow current project conventions [(#5167)](https://github.com/stdlib-js/stdlib/pull/5167) _(by Muhammad Haris)_
+-   [`76db518`](https://github.com/stdlib-js/stdlib/commit/76db5189912e676a421d5f79dc69cb4b5722c0bc) - **docs:** update `blas/ext/base/dcusumors` to follow current project conventions [(#5169)](https://github.com/stdlib-js/stdlib/pull/5169) _(by Muhammad Haris)_
+-   [`8e5b82c`](https://github.com/stdlib-js/stdlib/commit/8e5b82caeae6b84d4a888397c6087b0ea8666acf) - **docs:** update `blas/ext/base/dnannsumors` to follow current project conventions [(#5189)](https://github.com/stdlib-js/stdlib/pull/5189) _(by Muhammad Haris)_
+-   [`6f8225e`](https://github.com/stdlib-js/stdlib/commit/6f8225ed9afb8f2e65c672c4798253b6d8234393) - **docs:** update `blas/ext/base/dnanasumors` to follow current project conventions [(#5185)](https://github.com/stdlib-js/stdlib/pull/5185) _(by Muhammad Haris)_
+-   [`e62caf3`](https://github.com/stdlib-js/stdlib/commit/e62caf3e3c27d418a7f364c5c0dd7590e4a081bd) - **docs:** update `blas/ext/base/dnannsum`  to follow current project conventions [(#5186)](https://github.com/stdlib-js/stdlib/pull/5186) _(by Muhammad Haris)_
+-   [`b5cca80`](https://github.com/stdlib-js/stdlib/commit/b5cca80877dfd53f4a40e3e4c4e0ae09e326f8cd) - **docs:** update `blas/ext/base/dnannsumkbn` to follow current project conventions [(#5187)](https://github.com/stdlib-js/stdlib/pull/5187) _(by Muhammad Haris)_
+-   [`d81ba51`](https://github.com/stdlib-js/stdlib/commit/d81ba51451a7b35e5b9fd259fe57cee796f3e81b) - **docs:** update `blas/ext/base/dnannsumkbn2` to follow current project conventions [(#5188)](https://github.com/stdlib-js/stdlib/pull/5188) _(by Muhammad Haris)_
+-   [`858ab0a`](https://github.com/stdlib-js/stdlib/commit/858ab0aa1a1b377c1feea02dacfc387d2671e1f3) - **docs:** update `blas/ext/base/dnannsumpw` to follow current project conventions [(#5190)](https://github.com/stdlib-js/stdlib/pull/5190) _(by Muhammad Haris)_
+-   [`5dde14b`](https://github.com/stdlib-js/stdlib/commit/5dde14b31ea6a661b88b7ba637e0e7a2fce272a4) - **feat:** update namespace TypeScript declarations [(#5182)](https://github.com/stdlib-js/stdlib/pull/5182) _(by stdlib-bot)_
+-   [`36768b4`](https://github.com/stdlib-js/stdlib/commit/36768b4fb7c5b0c7934fc8c9f1ab7f8ffe67b3e9) - **docs:** update related packages sections [(#5181)](https://github.com/stdlib-js/stdlib/pull/5181) _(by stdlib-bot)_
+-   [`d9c08b0`](https://github.com/stdlib-js/stdlib/commit/d9c08b0a4028175c0a95f5fa93617609ae65108a) - **docs:** update `blas/ext/base/dcusumkbn2` to follow current project conventions [(#5168)](https://github.com/stdlib-js/stdlib/pull/5168) _(by Muhammad Haris)_
+-   [`8357863`](https://github.com/stdlib-js/stdlib/commit/8357863b87da1554b4e249fb03e712dec8a58ee0) - **feat:** add C ndarray API and refactor `blas/ext/base/ssort2ins` [(#5114)](https://github.com/stdlib-js/stdlib/pull/5114) _(by Prashant Kumar Yadav, Muhammad Haris)_
+-   [`7a04093`](https://github.com/stdlib-js/stdlib/commit/7a040939ecb95a686cf2b66d7a912fcc39e5aa3d) - **docs:** update `blas/ext/base/dcusum` to follow current project conventions [(#5166)](https://github.com/stdlib-js/stdlib/pull/5166) _(by Muhammad Haris)_
+-   [`4bc7b8c`](https://github.com/stdlib-js/stdlib/commit/4bc7b8cf8b26105f6a02decbe7030022024070df) - **docs:** update `blas/ext/base/dcusumpw` to follow current project conventions [(#5170)](https://github.com/stdlib-js/stdlib/pull/5170) _(by Muhammad Haris)_
+-   [`0feb415`](https://github.com/stdlib-js/stdlib/commit/0feb415ee92e1d3851665ac6729b6ea819f926ff) - **docs:** update `blas/ext/base/dnanasum` to follow current project conventions [(#5172)](https://github.com/stdlib-js/stdlib/pull/5172) _(by Muhammad Haris)_
+-   [`9d447dc`](https://github.com/stdlib-js/stdlib/commit/9d447dc24e6c56353c1dceae3bbfd88d11ce2066) - **docs:** update related packages sections [(#5151)](https://github.com/stdlib-js/stdlib/pull/5151) _(by stdlib-bot, Athan Reines)_
+-   [`347e559`](https://github.com/stdlib-js/stdlib/commit/347e5590cf124d86a7bbe1b7f734bb620bdeb5ba) - **docs:** fix incorrect structure in READMEs of `blas/ext/base/*` [(#5163)](https://github.com/stdlib-js/stdlib/pull/5163) _(by Aayush Khanna, Athan Reines)_
+-   [`d6e1030`](https://github.com/stdlib-js/stdlib/commit/d6e103056ea873a0cc9fa63fa60b56ff61d9a041) - **docs:** update namespace TypeScript declarations [(#5152)](https://github.com/stdlib-js/stdlib/pull/5152) _(by stdlib-bot)_
+-   [`9a0d2cb`](https://github.com/stdlib-js/stdlib/commit/9a0d2cb8183bc4f1a13eb2ff212d0d0570b60a68) - **docs:** update namespace table of contents [(#5154)](https://github.com/stdlib-js/stdlib/pull/5154) _(by stdlib-bot)_
+-   [`d226d10`](https://github.com/stdlib-js/stdlib/commit/d226d10e5119e4480721039ce892da8ae874e468) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsortins` [(#5120)](https://github.com/stdlib-js/stdlib/pull/5120) _(by Muhammad Haris, Athan Reines)_
+-   [`d66db3f`](https://github.com/stdlib-js/stdlib/commit/d66db3fd4b220adcc318a5993a97fe79e5b7445a) - **feat:** update namespace TypeScript declarations [(#5130)](https://github.com/stdlib-js/stdlib/pull/5130) _(by stdlib-bot)_
+-   [`152dfd2`](https://github.com/stdlib-js/stdlib/commit/152dfd2a9f6f420dee659694435c9e44f3095601) - **feat:** add accessor arrays support to `blas/ext/base/gsum` [(#5134)](https://github.com/stdlib-js/stdlib/pull/5134) _(by Muhammad Haris)_
+-   [`ece4002`](https://github.com/stdlib-js/stdlib/commit/ece40025e9afce7032cd1072c1d1a8b856726564) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsortsh` [(#5122)](https://github.com/stdlib-js/stdlib/pull/5122) _(by Muhammad Haris)_
+-   [`9ae04b5`](https://github.com/stdlib-js/stdlib/commit/9ae04b5c7607e49078a9ad3cdbb27e3addfaebd2) - **docs:** update namespace table of contents [(#5132)](https://github.com/stdlib-js/stdlib/pull/5132) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`22212ac`](https://github.com/stdlib-js/stdlib/commit/22212ac4eed8f336d9798ea7c70daf0ff0f1906a) - **docs:** update related packages sections [(#5129)](https://github.com/stdlib-js/stdlib/pull/5129) _(by stdlib-bot)_
+-   [`112b7ef`](https://github.com/stdlib-js/stdlib/commit/112b7ef36a44bc8b27ad757cc3099d2595aa8aaa) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsorthp` [(#5117)](https://github.com/stdlib-js/stdlib/pull/5117) _(by Muhammad Haris)_
+-   [`8ad374c`](https://github.com/stdlib-js/stdlib/commit/8ad374c4cdc7ee450a404f4f766ec772a0aa5af5) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsort2sh` [(#5113)](https://github.com/stdlib-js/stdlib/pull/5113) _(by Muhammad Haris)_
+-   [`7d5e0aa`](https://github.com/stdlib-js/stdlib/commit/7d5e0aab1f348b4b4ed7e039c6e3745442f479e1) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsort2ins` [(#5089)](https://github.com/stdlib-js/stdlib/pull/5089) _(by Muhammad Haris)_
+-   [`20f7173`](https://github.com/stdlib-js/stdlib/commit/20f71735fc68e3e501e5fc13fddbaf19900d0ebf) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsort2hp` [(#4660)](https://github.com/stdlib-js/stdlib/pull/4660) _(by Muhammad Haris, Athan Reines)_
+-   [`32e4183`](https://github.com/stdlib-js/stdlib/commit/32e4183f26f6923e58795ce3551ddc96799e0ada) - **refactor:** address unnecessary casting and fix docs [(#5079)](https://github.com/stdlib-js/stdlib/pull/5079) _(by Saurabh Singh, Athan Reines)_
+-   [`966f409`](https://github.com/stdlib-js/stdlib/commit/966f409c74eb6fb61c8514d0a87b19eebb9f56cd) - **docs:** update related packages sections [(#5108)](https://github.com/stdlib-js/stdlib/pull/5108) _(by stdlib-bot)_
+-   [`f9561f9`](https://github.com/stdlib-js/stdlib/commit/f9561f99cd606b6fd783ed2253a425c3bdddce4e) - **docs:** update related packages sections [(#5087)](https://github.com/stdlib-js/stdlib/pull/5087) _(by stdlib-bot)_
+-   [`84b7614`](https://github.com/stdlib-js/stdlib/commit/84b76143e3ee6e279536cbfcd8f3ef94e026bd60) - **chore:** address commit comment feedback [(#5078)](https://github.com/stdlib-js/stdlib/pull/5078) _(by Mohammad Bin Aftab, Philipp Burckhardt)_
+-   [`88e4c0a`](https://github.com/stdlib-js/stdlib/commit/88e4c0a78b9a33f5b74417de9a0eabca256803de) - **docs:** update related packages sections [(#5074)](https://github.com/stdlib-js/stdlib/pull/5074) _(by stdlib-bot)_
+-   [`e242eb1`](https://github.com/stdlib-js/stdlib/commit/e242eb1e35da321f0e124a65f1c5e74e9be51dfe) - **feat:** add accessor arrays support to `blas/ext/base/gnansum` [(#5066)](https://github.com/stdlib-js/stdlib/pull/5066) _(by Muhammad Haris)_
+-   [`e5a8c65`](https://github.com/stdlib-js/stdlib/commit/e5a8c6593a68bdf3d385fbb4c1d75ba4309bad5d) - **feat:** add accessor arrays support to `blas/ext/base/gcusum` [(#5065)](https://github.com/stdlib-js/stdlib/pull/5065) _(by Muhammad Haris, stdlib-bot)_
+-   [`068bbeb`](https://github.com/stdlib-js/stdlib/commit/068bbeb48863fd10ac825a7855192c00121b90ab) - **fix:** update return value and tests for `blas/ext/base/gcusumkbn` [(#5064)](https://github.com/stdlib-js/stdlib/pull/5064) _(by Muhammad Haris)_
+-   [`9da9e46`](https://github.com/stdlib-js/stdlib/commit/9da9e464d924bae935b701593e8c7a8cc4377f5c) - **feat:** add accessor arrays support to `blas/ext/base/gnannsumkbn` [(#5023)](https://github.com/stdlib-js/stdlib/pull/5023) _(by Muhammad Haris, Athan Reines)_
+-   [`6c90e8f`](https://github.com/stdlib-js/stdlib/commit/6c90e8fa6ad8f6bf254e6479d1a3ece17b5e92da) - **feat:** add accessor arrays support to `blas/ext/base/gcusumpw` [(#5012)](https://github.com/stdlib-js/stdlib/pull/5012) _(by Muhammad Haris)_
+-   [`1dd8adf`](https://github.com/stdlib-js/stdlib/commit/1dd8adfd104b90f0b87cd76ce0addbbd6f723aba) - **feat:** add accessor arrays support to `blas/ext/base/gcusumkbn2` [(#5009)](https://github.com/stdlib-js/stdlib/pull/5009) _(by Muhammad Haris, Athan Reines)_
+-   [`8310c1f`](https://github.com/stdlib-js/stdlib/commit/8310c1f4054d2ff0ee8b05f1c77b1d3c846a1012) - **feat:** add accessor arrays support to `blas/ext/base/gcusumors` [(#5010)](https://github.com/stdlib-js/stdlib/pull/5010) _(by Muhammad Haris)_
+-   [`b74a0f9`](https://github.com/stdlib-js/stdlib/commit/b74a0f949366a73526a7ec849bc6e7fe7f0968eb) - **docs:** update namespace table of contents [(#5062)](https://github.com/stdlib-js/stdlib/pull/5062) _(by stdlib-bot)_
+-   [`aa13403`](https://github.com/stdlib-js/stdlib/commit/aa1340357b9da9aaec467703bd0e0d68e4a67d3e) - **docs:** update namespace TypeScript declarations [(#5060)](https://github.com/stdlib-js/stdlib/pull/5060) _(by stdlib-bot)_
+-   [`6184c0c`](https://github.com/stdlib-js/stdlib/commit/6184c0cbdfa9216a2b3743a7f52b030cbbbf28b1) - **docs:** update related packages sections [(#5059)](https://github.com/stdlib-js/stdlib/pull/5059) _(by stdlib-bot)_
+-   [`a6ba17c`](https://github.com/stdlib-js/stdlib/commit/a6ba17cee3a41741a04312d78ddde029470bf338) - **feat:** add C ndarray API and refactor `blas/ext/base/dsorthp` [(#5018)](https://github.com/stdlib-js/stdlib/pull/5018) _(by Prashant Kumar Yadav, stdlib-bot)_
+-   [`d924c8d`](https://github.com/stdlib-js/stdlib/commit/d924c8d2c48611f1c90312877e39bf3e8df063c2) - **feat:** add C ndarray API and refactor `blas/ext/base/dsortins` [(#5028)](https://github.com/stdlib-js/stdlib/pull/5028) _(by Prashant Kumar Yadav, stdlib-bot)_
+-   [`ef11834`](https://github.com/stdlib-js/stdlib/commit/ef1183420e6bba80849c12f838aa7eb23c6d7635) - **docs:** update related packages sections [(#5048)](https://github.com/stdlib-js/stdlib/pull/5048) _(by stdlib-bot)_
+-   [`367ec2c`](https://github.com/stdlib-js/stdlib/commit/367ec2c5fe4a11f2e9a450ab4b21ea66db002cc2) - **docs:** update namespace TypeScript declarations [(#5039)](https://github.com/stdlib-js/stdlib/pull/5039) _(by stdlib-bot)_
+-   [`1d6c6cf`](https://github.com/stdlib-js/stdlib/commit/1d6c6cfd0bd793a8cae042416cc8dc10850f992b) - **docs:** update namespace table of contents [(#5041)](https://github.com/stdlib-js/stdlib/pull/5041) _(by stdlib-bot)_
+-   [`6516030`](https://github.com/stdlib-js/stdlib/commit/65160305dccd83c8fbf6f9e011e9f9a13c2c0cf8) - **feat:** add C `ndarray` API and refactor `blas/ext/base/snansum` [(#4872)](https://github.com/stdlib-js/stdlib/pull/4872) _(by Muhammad Haris, Athan Reines)_
+-   [`a660827`](https://github.com/stdlib-js/stdlib/commit/a660827c0f4b24c28029a8231783c9c7a679f714) - **feat:** add accessor arrays support to `blas/ext/base/gapxsumkbn2` [(#4928)](https://github.com/stdlib-js/stdlib/pull/4928) _(by Muhammad Haris, Athan Reines)_
+-   [`5052523`](https://github.com/stdlib-js/stdlib/commit/5052523f838ba96e29282588584cfa02ed83ff8d) - **feat:** add accessor arrays support `blas/ext/base/gapxsumpw` [(#4932)](https://github.com/stdlib-js/stdlib/pull/4932) _(by Muhammad Haris, Athan Reines)_
+-   [`419a872`](https://github.com/stdlib-js/stdlib/commit/419a872327435d5d3549cf6de16d1e9766a98e80) - **feat:** add accessor arrays support to `blas/ext/base/gapxsumors` [(#4930)](https://github.com/stdlib-js/stdlib/pull/4930) _(by Muhammad Haris, Athan Reines)_
+-   [`c879523`](https://github.com/stdlib-js/stdlib/commit/c87952362d00ce9a096b9d9c6dc0a3e92411856a) - **feat:** add accessor arrays support to `blas/ext/base/gapxsum` [(#4927)](https://github.com/stdlib-js/stdlib/pull/4927) _(by Muhammad Haris)_
+-   [`f78899e`](https://github.com/stdlib-js/stdlib/commit/f78899eb1aa02dd8364a544c99743b1c18c2c484) - **feat:** add accessor arrays support to `blas/ext/base/gnansumpw` [(#5037)](https://github.com/stdlib-js/stdlib/pull/5037) _(by Muhammad Haris)_
+-   [`6af5789`](https://github.com/stdlib-js/stdlib/commit/6af5789d1be31cb3c5be066d742f3bd924ca705d) - **feat:** add accessor arrays support to `blas/ext/base/gapx` [(#4926)](https://github.com/stdlib-js/stdlib/pull/4926) _(by Muhammad Haris, Athan Reines)_
+-   [`97f01ab`](https://github.com/stdlib-js/stdlib/commit/97f01ab3c49115bb526ccdb88bbe8fd07770f17a) - **feat:** add accessor arrays support to `blas/ext/base/gsumkbn2` [(#4960)](https://github.com/stdlib-js/stdlib/pull/4960) _(by Aayush Khanna)_
+-   [`1d1e8b7`](https://github.com/stdlib-js/stdlib/commit/1d1e8b724cd26e6d0cd70aec5883844ea3aa8e83) - **refactor:** remove redundant code in accessor functions [(#5014)](https://github.com/stdlib-js/stdlib/pull/5014) _(by Aayush Khanna)_
+-   [`9ce3d01`](https://github.com/stdlib-js/stdlib/commit/9ce3d0115c15027d2d971f8ea22950aa5b6774c5) - **feat:** add accessor arrays support to `blas/ext/base/gnansumors` [(#5036)](https://github.com/stdlib-js/stdlib/pull/5036) _(by Muhammad Haris, Athan Reines)_
+-   [`6f8898d`](https://github.com/stdlib-js/stdlib/commit/6f8898dbad41926bd7d03efc778e3a9a23742220) - **feat:** add accessor arrays support to `blas/ext/base/gnansumkbn2` [(#5034)](https://github.com/stdlib-js/stdlib/pull/5034) _(by Muhammad Haris)_
+-   [`2e66bec`](https://github.com/stdlib-js/stdlib/commit/2e66becd6ee0876f1ee00c55506a369bec2d7f7a) - **feat:** add accessor arrays support to `blas/ext/base/gnansumkbn` [(#5032)](https://github.com/stdlib-js/stdlib/pull/5032) _(by Muhammad Haris)_
+-   [`feb71c7`](https://github.com/stdlib-js/stdlib/commit/feb71c7f3eb1875c1f654b8c8a791fe1ea9a0bb8) - **feat:** add C `ndarray` API and refactor `blas/ext/base/sdsapxsum` [(#4885)](https://github.com/stdlib-js/stdlib/pull/4885) _(by Muhammad Haris)_
 -   [`e85fab1`](https://github.com/stdlib-js/stdlib/commit/e85fab1411db8fc69df853740872de2f1387237c) - **feat:** add C `ndarray` API and refactor `blas/ext/base/sdssum` [(#4873)](https://github.com/stdlib-js/stdlib/pull/4873) _(by Muhammad Haris)_
 -   [`291d653`](https://github.com/stdlib-js/stdlib/commit/291d653c5f5dfb48cb4c65db6a352c19965a38b6) - **feat:** add C `ndarray` API and refactor `blas/ext/base/ssum` [(#4871)](https://github.com/stdlib-js/stdlib/pull/4871) _(by Muhammad Haris)_
 -   [`9c66f54`](https://github.com/stdlib-js/stdlib/commit/9c66f540e94405d3f8a3c97677274012b0478174) - **feat:** add C `ndarray` API and refactor `blas/ext/base/ssumkbn2` [(#4870)](https://github.com/stdlib-js/stdlib/pull/4870) _(by Muhammad Haris)_
@@ -2698,7 +3909,7 @@ A total of 37 people contributed to this release. Thank you to the following con
 -   [`897aa61`](https://github.com/stdlib-js/stdlib/commit/897aa61d3548b7dceec551b64dd353d506bb307b) - **refactor:** update `blas/ext/base/gcusum` to follow current project conventions [(#4435)](https://github.com/stdlib-js/stdlib/pull/4435) _(by Muhammad Haris, Athan Reines)_
 -   [`c0a0110`](https://github.com/stdlib-js/stdlib/commit/c0a0110f91f4b6f2bef48d73c3a539d03f9dec9c) - **refactor:** update `blas/ext/base/gcusumpw` to follow current project conventions [(#4551)](https://github.com/stdlib-js/stdlib/pull/4551) _(by Muhammad Haris, Athan Reines)_
 -   [`3d551c4`](https://github.com/stdlib-js/stdlib/commit/3d551c499345de88a1e897c26977cde8d5f263a9) - **feat:** add C `ndarray` API and refactor `blas/ext/base/sapxsumkbn` [(#4714)](https://github.com/stdlib-js/stdlib/pull/4714) _(by Muhammad Haris, stdlib-bot)_
--   [`ffc3cf0`](https://github.com/stdlib-js/stdlib/commit/ffc3cf0d42d14e1f1d9de30577bb0bb80603be29) - **refactor:** update `blas/ext/base/gsumkbn` to follow current project conventions [(#4677#pullrequestreview-2560395620)](https://github.com/stdlib-js/stdlib/pull/4677#pullrequestreview-2560395620) _(by Muhammad Haris)_
+-   [`ffc3cf0`](https://github.com/stdlib-js/stdlib/commit/ffc3cf0d42d14e1f1d9de30577bb0bb80603be29) - **refactor:** update `blas/ext/base/gsumkbn` to follow current project conventions [(#4677)](https://github.com/stdlib-js/stdlib/pull/4677) _(by Muhammad Haris)_
 -   [`678f294`](https://github.com/stdlib-js/stdlib/commit/678f294c5f9cc5b9e89b38e1e6e1736d3c4b621c) - **refactor:** update `blas/ext/base/gapxsum` to follow current project conventions [(#4348)](https://github.com/stdlib-js/stdlib/pull/4348) _(by Muhammad Haris, Athan Reines)_
 -   [`8e4ef81`](https://github.com/stdlib-js/stdlib/commit/8e4ef81d340f7a9ab87b23569f05496ff070f8cb) - **refactor:** update `blas/ext/base/gapx` to follow current project conventions [(#4347)](https://github.com/stdlib-js/stdlib/pull/4347) _(by Muhammad Haris)_
 -   [`4cc5a5b`](https://github.com/stdlib-js/stdlib/commit/4cc5a5b0170c928b2663858eddf9f24190c703f1) - **refactor:** update `blas/ext/base/gasumpw` to follow current project conventions [(#4384)](https://github.com/stdlib-js/stdlib/pull/4384) _(by Muhammad Haris)_
