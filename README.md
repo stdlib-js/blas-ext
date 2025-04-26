@@ -79,6 +79,7 @@ The namespace contains the following:
 <div class="namespace-toc">
 
 -   <span class="signature">[`base`][@stdlib/blas/ext/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) extensions to basic linear algebra subprograms (BLAS).</span>
+-   <span class="signature">[`sum( x[, options] )`][@stdlib/blas/ext/sum]</span><span class="delimiter">: </span><span class="description">compute the sum along one or more ndarray dimensions.</span>
 
 </div>
 
@@ -190,6 +191,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 <!-- <toc-links> -->
 
 [@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base
+
+[@stdlib/blas/ext/sum]: https://github.com/stdlib-js/blas-ext-sum
 
 <!-- </toc-links> -->
 
