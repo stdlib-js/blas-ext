@@ -4,12 +4,33 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-29)
+## Unreleased (2025-06-30)
 
 <section class="features">
 
 ### Features
 
+-   [`ecac5aa`](https://github.com/stdlib-js/stdlib/commit/ecac5aa8d2cc807cc10884fcf4c5df06e88012b3) - add `blas/ext/base/dindex-of` [(#7465)](https://github.com/stdlib-js/stdlib/pull/7465)
+-   [`48f7e10`](https://github.com/stdlib-js/stdlib/commit/48f7e1053c1096c4dd8b50a176c6008b216a35d2) - add `blas/ext/base/sindex-of` [(#7318)](https://github.com/stdlib-js/stdlib/pull/7318)
+-   [`a11b832`](https://github.com/stdlib-js/stdlib/commit/a11b832b9c10879eedf7b86dc83772d6abef7931) - add `csum` to namespace
+-   [`28b0465`](https://github.com/stdlib-js/stdlib/commit/28b046502e53a887c1eb70f712b223a60d4c7833) - add `blas/ext/base/ndarray/csum`
+-   [`e30c3ba`](https://github.com/stdlib-js/stdlib/commit/e30c3baa0ea634ee95dfb857b56bc3b8eb57e3f3) - add `zsum` to namespace
+-   [`d1c43bf`](https://github.com/stdlib-js/stdlib/commit/d1c43bf928d136b64bce740e38fae1e23d482c23) - add `blas/ext/base/ndarray/zsum`
+-   [`22f1408`](https://github.com/stdlib-js/stdlib/commit/22f140863e59a9e1a2f89a6912a0c520a7fc7956) - add `csum` to namespace
+-   [`10ccb4a`](https://github.com/stdlib-js/stdlib/commit/10ccb4a44321d0caf5602042c78b49232de2b1dc) - add `blas/ext/base/csum`
+-   [`4f9ada3`](https://github.com/stdlib-js/stdlib/commit/4f9ada3914fe2a20811614089c1d2ce8bc6a15f0) - add `csumkbn` to namespace
+-   [`c682e65`](https://github.com/stdlib-js/stdlib/commit/c682e653f19695066709857256c8c50cfbb24ac0) - add `blas/ext/base/csumkbn`
+-   [`ef876c4`](https://github.com/stdlib-js/stdlib/commit/ef876c4aa3c97ce2fb042a0d48c852a448775fad) - add `zsum` to namespace
+-   [`c76305e`](https://github.com/stdlib-js/stdlib/commit/c76305ee9931b510e2aec54ec1da3997845d40f4) - add `blas/ext/base/zsum`
+-   [`e030bba`](https://github.com/stdlib-js/stdlib/commit/e030bba632158023584c3e28c080fdf289d15014) - add `gnannsumpw` to namespace
+-   [`cbd656d`](https://github.com/stdlib-js/stdlib/commit/cbd656db90d14e150baa2a23deb44cb645ef2298) - add `blas/ext/base/gnannsumpw`
+-   [`7324255`](https://github.com/stdlib-js/stdlib/commit/7324255304f2fdb5afddd9166579122fcdc2aa2a) - add `zsumkbn` to namespace
+-   [`6b320d7`](https://github.com/stdlib-js/stdlib/commit/6b320d701480d7467d131f161f87b38d2849f5e8) - add `blas/ext/base/zsumkbn`
+-   [`f750524`](https://github.com/stdlib-js/stdlib/commit/f75052497fb09596b3708ecaafa31948b0c499f0) - add `blas/ext/base/dnancusumkbn` [(#5822)](https://github.com/stdlib-js/stdlib/pull/5822)
+-   [`47043f4`](https://github.com/stdlib-js/stdlib/commit/47043f4dd5b22794abc28364824a19e1712a8dc7) - add `blas/ext/base/wasm/dapx` [(#5643)](https://github.com/stdlib-js/stdlib/pull/5643)
+-   [`09ffc2c`](https://github.com/stdlib-js/stdlib/commit/09ffc2c08be90669defcaaa19a50b53a6d7473f8) - add `stats/strided/wasm/dmeanors` [(#5832)](https://github.com/stdlib-js/stdlib/pull/5832)
+-   [`bd0050a`](https://github.com/stdlib-js/stdlib/commit/bd0050a6aaec1ca4cdc1a4491f45084da84f5bf7) - add `blas/ext/base/wasm/dnanasumors` [(#6110)](https://github.com/stdlib-js/stdlib/pull/6110)
+-   [`5731206`](https://github.com/stdlib-js/stdlib/commit/5731206687fc0584469a369adb69dd44b26277ed) - add `blas/ext/base/wasm/sapxsumkbn` [(#5764)](https://github.com/stdlib-js/stdlib/pull/5764)
 -   [`5bf5fef`](https://github.com/stdlib-js/stdlib/commit/5bf5fef7f910bc7ca08b3689daed5160f674fa8e) - add `cusum` to namespace
 -   [`0024458`](https://github.com/stdlib-js/stdlib/commit/002445886a8f8e74dbbdabeff31ab45cece00096) - add `blas/ext/cusum`
 -   [`fd5533d`](https://github.com/stdlib-js/stdlib/commit/fd5533da37b425b752f061378bff51fbe8695c56) - add `sum` to namespace
@@ -168,6 +189,58 @@
 
 ### Bug Fixes
 
+-   [`e995ce7`](https://github.com/stdlib-js/stdlib/commit/e995ce7c82cbe834b8e330968a08810e5b959282) - ensure accessor array support
+-   [`f6e1c78`](https://github.com/stdlib-js/stdlib/commit/f6e1c7823e871a259642c49f1e6b40bd7bb73f4b) - ensure accessor array support
+-   [`fc03354`](https://github.com/stdlib-js/stdlib/commit/fc0335492cf50370e574ce2bfea6ac310d0f2e5d) - ensure accessor array support
+-   [`3f259f1`](https://github.com/stdlib-js/stdlib/commit/3f259f14f7cab0ea9cc1841df478f49120857040) - use correct data type of `searchElement` in C implementation [(#7463)](https://github.com/stdlib-js/stdlib/pull/7463)
+-   [`b2e273f`](https://github.com/stdlib-js/stdlib/commit/b2e273fd7a2c7d51b21c175f87ada0efbff82381) - add missing `create-double` dependency to `sdssum` manifest
+-   [`912f410`](https://github.com/stdlib-js/stdlib/commit/912f41098b5dbf1dc535e48259d60f9e1adbec90) - add missing `argv-strided-float64array` dependency to `dapxsum` manifest
+-   [`aa52ed9`](https://github.com/stdlib-js/stdlib/commit/aa52ed96730b4835b3ef403b2abbcd7910e3e483) - update implementation to preserve signed zeros
+-   [`b0eea3a`](https://github.com/stdlib-js/stdlib/commit/b0eea3afaee1bdd3f14826bc9a92a92e68b51d17) - update implementation to preserve signed zeros
+-   [`151f3e5`](https://github.com/stdlib-js/stdlib/commit/151f3e5714bf1b13e00b72ee0c98fb65ee095ba8) - update implementation to preserve signed zeros
+-   [`71cafe3`](https://github.com/stdlib-js/stdlib/commit/71cafe3750d452180ec33524aa0d2fb19322b743) - add support for complex64 and complex128
+-   [`3014ce9`](https://github.com/stdlib-js/stdlib/commit/3014ce93b3fd6a8d7d26b7951d762f5100faffdf) - update return type
+-   [`2acc7f0`](https://github.com/stdlib-js/stdlib/commit/2acc7f03aa6e89410deb74d99f466cc1cd400384) - update return type
+-   [`15922b7`](https://github.com/stdlib-js/stdlib/commit/15922b7bcaaaa3eb81bc6fec90898f0bd52e66fc) - address indexing bug
+-   [`549f1c1`](https://github.com/stdlib-js/stdlib/commit/549f1c1889b0d324eab00a142121ef26ed080592) - address indexing bug
+-   [`981c7ba`](https://github.com/stdlib-js/stdlib/commit/981c7baecfe6ab8ab4d973e95cd20453f90c5e28) - add missing checks for `N` and address failing tests stemming from refactoring
+-   [`4c5e486`](https://github.com/stdlib-js/stdlib/commit/4c5e4866ffc225fb1468ef98d156b984748a3cb1) - update implementation to preserve signed zeros
+-   [`95641f7`](https://github.com/stdlib-js/stdlib/commit/95641f75c1764479af76b23eac8a90101ee12f8d) - update implementation to preserve signed zeros
+-   [`e20b7f5`](https://github.com/stdlib-js/stdlib/commit/e20b7f533ddf8cbc27f142011a8ed65d3229e380) - update implementation to preserve signed zeros
+-   [`da339ee`](https://github.com/stdlib-js/stdlib/commit/da339ee8d7e24972cbf4a1592b9174ef617978f8) - update implementation to preserve signed zeros
+-   [`67273e4`](https://github.com/stdlib-js/stdlib/commit/67273e4e5ff3e77af9db4da0cfc45c0aaeceb8d8) - update implementation to preserve signed zeros
+-   [`09daf3d`](https://github.com/stdlib-js/stdlib/commit/09daf3ddceed2358405a5a3a553b295a1de71daa) - update implementation to preserve signed zeros
+-   [`4f0b1ca`](https://github.com/stdlib-js/stdlib/commit/4f0b1cadad99e48ee09dfd047b858e0856fed91a) - update implementation to preserve signed zeros
+-   [`8976032`](https://github.com/stdlib-js/stdlib/commit/897603210f2f6d965857ee4495014cb92b76b7c9) - update implementation to preserve signed zeros
+-   [`35a1a06`](https://github.com/stdlib-js/stdlib/commit/35a1a0662a066d9c6fd5f87e5925b5c0852b7193) - update implementation to preserve signed zeros
+-   [`c7725bd`](https://github.com/stdlib-js/stdlib/commit/c7725bd2c3aeb2ad5844fbe4fa0ac7f0ac88d133) - update implementation to preserve signed zeros
+-   [`08611d0`](https://github.com/stdlib-js/stdlib/commit/08611d0e7ecf48ae7804081f0f5134309974313b) - update implementation to preserve signed zeros
+-   [`950141e`](https://github.com/stdlib-js/stdlib/commit/950141ee601eec31ba21d377133fe8b80c153f55) - update implementation to preserve signed zeros
+-   [`38a7900`](https://github.com/stdlib-js/stdlib/commit/38a7900a08f364a782e3cc6d0f712dba101983d7) - use correct return value
+-   [`bf4258f`](https://github.com/stdlib-js/stdlib/commit/bf4258f3cff7b37d00386b15df156305553631ab) - update implementation to preserve signed zeros
+-   [`149aa3c`](https://github.com/stdlib-js/stdlib/commit/149aa3c8f30ac20953aca48e5497d82747d29008) - use correct return value
+-   [`3612259`](https://github.com/stdlib-js/stdlib/commit/3612259d5a0558d6906748993d061f501bfcdd7a) - update implementation to preserve signed zeros
+-   [`bb16002`](https://github.com/stdlib-js/stdlib/commit/bb16002f4d99f329f2811799997f169a45bef61b) - address pointer increment bug
+-   [`205bebc`](https://github.com/stdlib-js/stdlib/commit/205bebc114efdc0a11ef685d29a220603c436165) - address pointer increment bug
+-   [`7be4df1`](https://github.com/stdlib-js/stdlib/commit/7be4df1ff62f12c957c91f1fd65f45cd800d5802) - address pointer increment bug
+-   [`c72df11`](https://github.com/stdlib-js/stdlib/commit/c72df11dfc1aaa4ddea893f9f0bb41b3fd53554d) - address pointer increment bug
+-   [`28855c3`](https://github.com/stdlib-js/stdlib/commit/28855c372581a6a7f175f5be6ce1c55a865b807a) - address pointer increment bug
+-   [`7552a5f`](https://github.com/stdlib-js/stdlib/commit/7552a5ff3185a212d94145c41f8da66644c4943f) - address pointer increment bug
+-   [`432b26d`](https://github.com/stdlib-js/stdlib/commit/432b26dbda2336b72babe8236c77fab0e066012c) - address pointer increment bug
+-   [`25288d7`](https://github.com/stdlib-js/stdlib/commit/25288d7f869b2d13139e742e88601419463423fd) - update implementation to preserve signed zeros
+-   [`4438919`](https://github.com/stdlib-js/stdlib/commit/443891959e78aeeb0df7bc37351784275eb52c46) - update implementation to preserve signed zeros
+-   [`2306a2d`](https://github.com/stdlib-js/stdlib/commit/2306a2d56aea3e62a783c6b2adcf837d06ac3abc) - update implementation to preserve signed zeros
+-   [`1bbd885`](https://github.com/stdlib-js/stdlib/commit/1bbd885b09162dac5d8989b79541c528e3827757) - update implementation to preserve signed zeros
+-   [`67a91d6`](https://github.com/stdlib-js/stdlib/commit/67a91d69cc62d8c76cf2a654eb8e2f28bd408b9f) - update implementation to preserve signed zeros
+-   [`3d59edd`](https://github.com/stdlib-js/stdlib/commit/3d59edde188e1359a12d967e6b77feeba4ccb6e4) - preserve sign of zero
+-   [`d3451ce`](https://github.com/stdlib-js/stdlib/commit/d3451ceb42a0109140785d3928ab1242450cc61a) - update implementation to preserve signed zeros
+-   [`0c7c973`](https://github.com/stdlib-js/stdlib/commit/0c7c973f23160582ef1c7b5f7295fe9b6e32e8d7) - update implementation to preserve signed zeros
+-   [`00d8714`](https://github.com/stdlib-js/stdlib/commit/00d87144e980744517f6fa456aef512e3940c4fd) - update implementation to preserve signed zeros
+-   [`6ef5cc8`](https://github.com/stdlib-js/stdlib/commit/6ef5cc89460281ddffad651eb0df39166aae9a31) - update implementation to preserve signed zeros
+-   [`b53f15b`](https://github.com/stdlib-js/stdlib/commit/b53f15b1bd89e48e30ca1ccbb4438b1bdb04a465) - update implementation to preserve signed zeros
+-   [`20cb136`](https://github.com/stdlib-js/stdlib/commit/20cb1367a6e088ab29a0018a15f2e06b802e77c5) - restrict set of allowed data types
+-   [`8259ed5`](https://github.com/stdlib-js/stdlib/commit/8259ed5b9d1f003567f1534962163799c6254c88) - restrict set of allowed data types
+-   [`cd6132a`](https://github.com/stdlib-js/stdlib/commit/cd6132a767338fc1726bf333c7a65ace1c37edde) - update package name
 -   [`de5763c`](https://github.com/stdlib-js/stdlib/commit/de5763c0ae79e809d74237f084b066411be59f0d) - replace policy string with policy object
 -   [`a996667`](https://github.com/stdlib-js/stdlib/commit/a9966678dedd564a74999f2c4c5bd47c9a2b0c64) - propagate sign to the accumulated sum
 -   [`ee80204`](https://github.com/stdlib-js/stdlib/commit/ee80204dfe9c9a6409ebd7873354371bbdbac32e) - propagate sign to the accumulated sum
@@ -272,9 +345,9 @@
 
 ### Closed Issues
 
-A total of 36 issues were closed in this release:
+A total of 39 issues were closed in this release:
 
-[#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253), [#5072](https://github.com/stdlib-js/stdlib/issues/5072), [#5073](https://github.com/stdlib-js/stdlib/issues/5073), [#5237](https://github.com/stdlib-js/stdlib/issues/5237), [#5501](https://github.com/stdlib-js/stdlib/issues/5501), [#5505](https://github.com/stdlib-js/stdlib/issues/5505), [#5507](https://github.com/stdlib-js/stdlib/issues/5507), [#5508](https://github.com/stdlib-js/stdlib/issues/5508), [#5509](https://github.com/stdlib-js/stdlib/issues/5509)
+[#318](https://github.com/stdlib-js/stdlib/issues/318), [#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253), [#5072](https://github.com/stdlib-js/stdlib/issues/5072), [#5073](https://github.com/stdlib-js/stdlib/issues/5073), [#5237](https://github.com/stdlib-js/stdlib/issues/5237), [#5501](https://github.com/stdlib-js/stdlib/issues/5501), [#5504](https://github.com/stdlib-js/stdlib/issues/5504), [#5505](https://github.com/stdlib-js/stdlib/issues/5505), [#5507](https://github.com/stdlib-js/stdlib/issues/5507), [#5508](https://github.com/stdlib-js/stdlib/issues/5508), [#5509](https://github.com/stdlib-js/stdlib/issues/5509), [#7241](https://github.com/stdlib-js/stdlib/issues/7241)
 
 </section>
 
@@ -286,6 +359,145 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`46ff8ea`](https://github.com/stdlib-js/stdlib/commit/46ff8ea7761ae438c4718681c5890f146fb0985e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`721033e`](https://github.com/stdlib-js/stdlib/commit/721033eede9b3a4667728f40695d933f49f541c1) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`c221279`](https://github.com/stdlib-js/stdlib/commit/c2212790b0118b7787b5e292244b4364c08ea05a) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`992d491`](https://github.com/stdlib-js/stdlib/commit/992d491518fcbdc4f61570f3289bfafc8835eecd) - **test:** address failing tests due to upstream refactoring _(by Athan Reines)_
+-   [`ecac5aa`](https://github.com/stdlib-js/stdlib/commit/ecac5aa8d2cc807cc10884fcf4c5df06e88012b3) - **feat:** add `blas/ext/base/dindex-of` [(#7465)](https://github.com/stdlib-js/stdlib/pull/7465) _(by Muhammad Haris, Athan Reines)_
+-   [`e762ecf`](https://github.com/stdlib-js/stdlib/commit/e762ecf510ff53385304a1e062d23eb9fda90d01) - **docs:** fix signatures _(by Athan Reines)_
+-   [`e995ce7`](https://github.com/stdlib-js/stdlib/commit/e995ce7c82cbe834b8e330968a08810e5b959282) - **fix:** ensure accessor array support _(by Athan Reines)_
+-   [`f6e1c78`](https://github.com/stdlib-js/stdlib/commit/f6e1c7823e871a259642c49f1e6b40bd7bb73f4b) - **fix:** ensure accessor array support _(by Athan Reines)_
+-   [`fc03354`](https://github.com/stdlib-js/stdlib/commit/fc0335492cf50370e574ce2bfea6ac310d0f2e5d) - **fix:** ensure accessor array support _(by Athan Reines)_
+-   [`fe87ef3`](https://github.com/stdlib-js/stdlib/commit/fe87ef3f1d320867b195765cd1aec7800270e33e) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`3f259f1`](https://github.com/stdlib-js/stdlib/commit/3f259f14f7cab0ea9cc1841df478f49120857040) - **fix:** use correct data type of `searchElement` in C implementation [(#7463)](https://github.com/stdlib-js/stdlib/pull/7463) _(by Muhammad Haris)_
+-   [`48f7e10`](https://github.com/stdlib-js/stdlib/commit/48f7e1053c1096c4dd8b50a176c6008b216a35d2) - **feat:** add `blas/ext/base/sindex-of` [(#7318)](https://github.com/stdlib-js/stdlib/pull/7318) _(by Muhammad Haris, Athan Reines)_
+-   [`5d83a20`](https://github.com/stdlib-js/stdlib/commit/5d83a20bab1fd787ba28f19cb13c20d395398b43) - **style:** remove double empty lines in C files _(by Philipp Burckhardt)_
+-   [`b2e273f`](https://github.com/stdlib-js/stdlib/commit/b2e273fd7a2c7d51b21c175f87ada0efbff82381) - **fix:** add missing `create-double` dependency to `sdssum` manifest _(by Philipp Burckhardt)_
+-   [`912f410`](https://github.com/stdlib-js/stdlib/commit/912f41098b5dbf1dc535e48259d60f9e1adbec90) - **fix:** add missing `argv-strided-float64array` dependency to `dapxsum` manifest _(by Philipp Burckhardt)_
+-   [`dde0849`](https://github.com/stdlib-js/stdlib/commit/dde0849e582545d8e2a213ba1039238cdcff1ec5) - **chore:** fix C lint errors [(#7286)](https://github.com/stdlib-js/stdlib/pull/7286) _(by Pierre Forstmann, Athan Reines)_
+-   [`3565318`](https://github.com/stdlib-js/stdlib/commit/3565318e3639b3e44890ed15ccd73560d3cac14c) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`bcd0411`](https://github.com/stdlib-js/stdlib/commit/bcd04112308e7d7b42de2bc04599d490e429ebc8) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`7457723`](https://github.com/stdlib-js/stdlib/commit/74577238d8a2c72ecd1011dfd54d028034c68531) - **refactor:** rename variable in `blas/ext/base/` [(#7250)](https://github.com/stdlib-js/stdlib/pull/7250) _(by Shabareesh Shetty)_
+-   [`590e884`](https://github.com/stdlib-js/stdlib/commit/590e88459645372c6068872dd38fbd25748c4638) - **refactor:** rename variable in `blas/ext/base/snansumkbn2` [(#7249)](https://github.com/stdlib-js/stdlib/pull/7249) _(by Shabareesh Shetty)_
+-   [`4413523`](https://github.com/stdlib-js/stdlib/commit/4413523ede7210d3a51731f9bb08aa8238330a25) - **refactor:** rename variable in `blas/ext/base/snansumkbn` [(#7248)](https://github.com/stdlib-js/stdlib/pull/7248) _(by Shabareesh Shetty)_
+-   [`5653a9f`](https://github.com/stdlib-js/stdlib/commit/5653a9fe8ef8ec98cdd4968708a82b847b7d3185) - **refactor:** rename variable in `blas/ext/base/snansumpw` [(#7247)](https://github.com/stdlib-js/stdlib/pull/7247) _(by Shabareesh Shetty)_
+-   [`f5c3bbb`](https://github.com/stdlib-js/stdlib/commit/f5c3bbbaf92d52e8abc2a06758f815e37aee8acb) - **refactor:** rename variable in `blas/ext/base/scusumkbn2` [(#7245)](https://github.com/stdlib-js/stdlib/pull/7245) _(by Shabareesh Shetty)_
+-   [`5fe7c52`](https://github.com/stdlib-js/stdlib/commit/5fe7c52586a8df3f3baa94f5588eadf28d209499) - **refactor:** rename variable in `blas/base/sasumpw` [(#7212)](https://github.com/stdlib-js/stdlib/pull/7212) _(by Shabareesh Shetty)_
+-   [`4dd744c`](https://github.com/stdlib-js/stdlib/commit/4dd744c4f9e9b088b6ec33e7d45c4b7280c86d2d) - **refactor:** rename variable in `blas/base/scusumkbn` [(#7213)](https://github.com/stdlib-js/stdlib/pull/7213) _(by Shabareesh Shetty)_
+-   [`744337a`](https://github.com/stdlib-js/stdlib/commit/744337aaebfd4a9631f17765bce57a38c5374173) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`aa52ed9`](https://github.com/stdlib-js/stdlib/commit/aa52ed96730b4835b3ef403b2abbcd7910e3e483) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`3d169cb`](https://github.com/stdlib-js/stdlib/commit/3d169cb917480674de265c6212d1f4e96cd4a654) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`b0eea3a`](https://github.com/stdlib-js/stdlib/commit/b0eea3afaee1bdd3f14826bc9a92a92e68b51d17) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`151f3e5`](https://github.com/stdlib-js/stdlib/commit/151f3e5714bf1b13e00b72ee0c98fb65ee095ba8) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`9bfb869`](https://github.com/stdlib-js/stdlib/commit/9bfb8691fc945a8e38c592d0e387c84aa31d8585) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`f20c234`](https://github.com/stdlib-js/stdlib/commit/f20c234a4112d25281d202e8a0cf9ba223becb4c) - **docs:** update namespace table of contents [(#7092)](https://github.com/stdlib-js/stdlib/pull/7092) _(by stdlib-bot)_
+-   [`71cafe3`](https://github.com/stdlib-js/stdlib/commit/71cafe3750d452180ec33524aa0d2fb19322b743) - **fix:** add support for complex64 and complex128 _(by Athan Reines)_
+-   [`3014ce9`](https://github.com/stdlib-js/stdlib/commit/3014ce93b3fd6a8d7d26b7951d762f5100faffdf) - **fix:** update return type _(by Athan Reines)_
+-   [`2acc7f0`](https://github.com/stdlib-js/stdlib/commit/2acc7f03aa6e89410deb74d99f466cc1cd400384) - **fix:** update return type _(by Athan Reines)_
+-   [`a11b832`](https://github.com/stdlib-js/stdlib/commit/a11b832b9c10879eedf7b86dc83772d6abef7931) - **feat:** add `csum` to namespace _(by Athan Reines)_
+-   [`28b0465`](https://github.com/stdlib-js/stdlib/commit/28b046502e53a887c1eb70f712b223a60d4c7833) - **feat:** add `blas/ext/base/ndarray/csum` _(by Athan Reines)_
+-   [`e30c3ba`](https://github.com/stdlib-js/stdlib/commit/e30c3baa0ea634ee95dfb857b56bc3b8eb57e3f3) - **feat:** add `zsum` to namespace _(by Athan Reines)_
+-   [`d1c43bf`](https://github.com/stdlib-js/stdlib/commit/d1c43bf928d136b64bce740e38fae1e23d482c23) - **feat:** add `blas/ext/base/ndarray/zsum` _(by Athan Reines)_
+-   [`22f1408`](https://github.com/stdlib-js/stdlib/commit/22f140863e59a9e1a2f89a6912a0c520a7fc7956) - **feat:** add `csum` to namespace _(by Athan Reines)_
+-   [`10ccb4a`](https://github.com/stdlib-js/stdlib/commit/10ccb4a44321d0caf5602042c78b49232de2b1dc) - **feat:** add `blas/ext/base/csum` _(by Athan Reines)_
+-   [`84af975`](https://github.com/stdlib-js/stdlib/commit/84af975367b6d0694ffbd0a27b7da0a0c144b4fb) - **chore:** clean-up _(by Athan Reines)_
+-   [`4f9ada3`](https://github.com/stdlib-js/stdlib/commit/4f9ada3914fe2a20811614089c1d2ce8bc6a15f0) - **feat:** add `csumkbn` to namespace _(by Athan Reines)_
+-   [`c682e65`](https://github.com/stdlib-js/stdlib/commit/c682e653f19695066709857256c8c50cfbb24ac0) - **feat:** add `blas/ext/base/csumkbn` _(by Athan Reines)_
+-   [`ef876c4`](https://github.com/stdlib-js/stdlib/commit/ef876c4aa3c97ce2fb042a0d48c852a448775fad) - **feat:** add `zsum` to namespace _(by Athan Reines)_
+-   [`c76305e`](https://github.com/stdlib-js/stdlib/commit/c76305ee9931b510e2aec54ec1da3997845d40f4) - **feat:** add `blas/ext/base/zsum` _(by Athan Reines)_
+-   [`12b992e`](https://github.com/stdlib-js/stdlib/commit/12b992eca7ac911aa20fe41aa4fffc9dec128c9d) - **test:** address failing test cases _(by Athan Reines)_
+-   [`b729264`](https://github.com/stdlib-js/stdlib/commit/b729264841b1af47c4831a8b38ebe51882017381) - **bench:** fix package path _(by Athan Reines)_
+-   [`15922b7`](https://github.com/stdlib-js/stdlib/commit/15922b7bcaaaa3eb81bc6fec90898f0bd52e66fc) - **fix:** address indexing bug _(by Athan Reines)_
+-   [`c917f58`](https://github.com/stdlib-js/stdlib/commit/c917f586cbdc1ba098e933bb731ab3ad536eefe4) - **test:** address failing test case _(by Athan Reines)_
+-   [`549f1c1`](https://github.com/stdlib-js/stdlib/commit/549f1c1889b0d324eab00a142121ef26ed080592) - **fix:** address indexing bug _(by Athan Reines)_
+-   [`981c7ba`](https://github.com/stdlib-js/stdlib/commit/981c7baecfe6ab8ab4d973e95cd20453f90c5e28) - **fix:** add missing checks for `N` and address failing tests stemming from refactoring _(by Athan Reines)_
+-   [`e030bba`](https://github.com/stdlib-js/stdlib/commit/e030bba632158023584c3e28c080fdf289d15014) - **feat:** add `gnannsumpw` to namespace _(by Athan Reines)_
+-   [`4c5e486`](https://github.com/stdlib-js/stdlib/commit/4c5e4866ffc225fb1468ef98d156b984748a3cb1) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`95641f7`](https://github.com/stdlib-js/stdlib/commit/95641f75c1764479af76b23eac8a90101ee12f8d) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`e20b7f5`](https://github.com/stdlib-js/stdlib/commit/e20b7f533ddf8cbc27f142011a8ed65d3229e380) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`da339ee`](https://github.com/stdlib-js/stdlib/commit/da339ee8d7e24972cbf4a1592b9174ef617978f8) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`3e9f3a0`](https://github.com/stdlib-js/stdlib/commit/3e9f3a0bdc4c231521f39148dbff889815bae6d7) - **docs:** fix missing period _(by Athan Reines)_
+-   [`cbd656d`](https://github.com/stdlib-js/stdlib/commit/cbd656db90d14e150baa2a23deb44cb645ef2298) - **feat:** add `blas/ext/base/gnannsumpw` _(by Athan Reines)_
+-   [`67273e4`](https://github.com/stdlib-js/stdlib/commit/67273e4e5ff3e77af9db4da0cfc45c0aaeceb8d8) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`d7715a6`](https://github.com/stdlib-js/stdlib/commit/d7715a6d82eeb4c8baa4e7be5539b63ffc415eb0) - **docs:** update descriptions _(by Athan Reines)_
+-   [`27bf735`](https://github.com/stdlib-js/stdlib/commit/27bf7353ae89319e929836dbbd49881b340a88b0) - **docs:** fix missing period _(by Athan Reines)_
+-   [`09daf3d`](https://github.com/stdlib-js/stdlib/commit/09daf3ddceed2358405a5a3a553b295a1de71daa) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`4f0b1ca`](https://github.com/stdlib-js/stdlib/commit/4f0b1cadad99e48ee09dfd047b858e0856fed91a) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`8976032`](https://github.com/stdlib-js/stdlib/commit/897603210f2f6d965857ee4495014cb92b76b7c9) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`db705bb`](https://github.com/stdlib-js/stdlib/commit/db705bbd83a1c00fa758c18cd461ae6b6bdcbc94) - **bench:** fix array lengths _(by Athan Reines)_
+-   [`35a1a06`](https://github.com/stdlib-js/stdlib/commit/35a1a0662a066d9c6fd5f87e5925b5c0852b7193) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`c7725bd`](https://github.com/stdlib-js/stdlib/commit/c7725bd2c3aeb2ad5844fbe4fa0ac7f0ac88d133) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`08611d0`](https://github.com/stdlib-js/stdlib/commit/08611d0e7ecf48ae7804081f0f5134309974313b) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`52b14da`](https://github.com/stdlib-js/stdlib/commit/52b14da1c02459b2c77949aa11adeb683a217b83) - **refactor:** use alias to reduce visual noise _(by Athan Reines)_
+-   [`950141e`](https://github.com/stdlib-js/stdlib/commit/950141ee601eec31ba21d377133fe8b80c153f55) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`38a7900`](https://github.com/stdlib-js/stdlib/commit/38a7900a08f364a782e3cc6d0f712dba101983d7) - **fix:** use correct return value _(by Athan Reines)_
+-   [`bf4258f`](https://github.com/stdlib-js/stdlib/commit/bf4258f3cff7b37d00386b15df156305553631ab) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`149aa3c`](https://github.com/stdlib-js/stdlib/commit/149aa3c8f30ac20953aca48e5497d82747d29008) - **fix:** use correct return value _(by Athan Reines)_
+-   [`3612259`](https://github.com/stdlib-js/stdlib/commit/3612259d5a0558d6906748993d061f501bfcdd7a) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`bb16002`](https://github.com/stdlib-js/stdlib/commit/bb16002f4d99f329f2811799997f169a45bef61b) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`205bebc`](https://github.com/stdlib-js/stdlib/commit/205bebc114efdc0a11ef685d29a220603c436165) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`7be4df1`](https://github.com/stdlib-js/stdlib/commit/7be4df1ff62f12c957c91f1fd65f45cd800d5802) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`c72df11`](https://github.com/stdlib-js/stdlib/commit/c72df11dfc1aaa4ddea893f9f0bb41b3fd53554d) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`28855c3`](https://github.com/stdlib-js/stdlib/commit/28855c372581a6a7f175f5be6ce1c55a865b807a) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`7552a5f`](https://github.com/stdlib-js/stdlib/commit/7552a5ff3185a212d94145c41f8da66644c4943f) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`432b26d`](https://github.com/stdlib-js/stdlib/commit/432b26dbda2336b72babe8236c77fab0e066012c) - **fix:** address pointer increment bug _(by Athan Reines)_
+-   [`25288d7`](https://github.com/stdlib-js/stdlib/commit/25288d7f869b2d13139e742e88601419463423fd) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`5380990`](https://github.com/stdlib-js/stdlib/commit/5380990520a26ad9ba8068416238b93c4ce524f5) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`4438919`](https://github.com/stdlib-js/stdlib/commit/443891959e78aeeb0df7bc37351784275eb52c46) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`bcd9ff7`](https://github.com/stdlib-js/stdlib/commit/bcd9ff7c608125780e14268a7abe557957e69f08) - **test:** use single-precision utility _(by Athan Reines)_
+-   [`2306a2d`](https://github.com/stdlib-js/stdlib/commit/2306a2d56aea3e62a783c6b2adcf837d06ac3abc) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`1bbd885`](https://github.com/stdlib-js/stdlib/commit/1bbd885b09162dac5d8989b79541c528e3827757) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`67a91d6`](https://github.com/stdlib-js/stdlib/commit/67a91d69cc62d8c76cf2a654eb8e2f28bd408b9f) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`3d59edd`](https://github.com/stdlib-js/stdlib/commit/3d59edde188e1359a12d967e6b77feeba4ccb6e4) - **fix:** preserve sign of zero _(by Athan Reines)_
+-   [`0ad60b9`](https://github.com/stdlib-js/stdlib/commit/0ad60b9fd690c9ca94650a9252cc23c51808d036) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`81c8221`](https://github.com/stdlib-js/stdlib/commit/81c8221abcaf41ef614344d9c4bd3f287ed443d0) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`f47e96c`](https://github.com/stdlib-js/stdlib/commit/f47e96cebf8b44bc5f2fe353d4f85550ceb0c65d) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`20fa8c1`](https://github.com/stdlib-js/stdlib/commit/20fa8c148eb4e0a690b77554b07c23fa8b586a91) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`d3451ce`](https://github.com/stdlib-js/stdlib/commit/d3451ceb42a0109140785d3928ab1242450cc61a) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`0c7c973`](https://github.com/stdlib-js/stdlib/commit/0c7c973f23160582ef1c7b5f7295fe9b6e32e8d7) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`00d8714`](https://github.com/stdlib-js/stdlib/commit/00d87144e980744517f6fa456aef512e3940c4fd) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`6ef5cc8`](https://github.com/stdlib-js/stdlib/commit/6ef5cc89460281ddffad651eb0df39166aae9a31) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`7324255`](https://github.com/stdlib-js/stdlib/commit/7324255304f2fdb5afddd9166579122fcdc2aa2a) - **feat:** add `zsumkbn` to namespace _(by Athan Reines)_
+-   [`6b320d7`](https://github.com/stdlib-js/stdlib/commit/6b320d701480d7467d131f161f87b38d2849f5e8) - **feat:** add `blas/ext/base/zsumkbn` _(by Athan Reines)_
+-   [`6b7978b`](https://github.com/stdlib-js/stdlib/commit/6b7978b078df5869de9f2b27c8df9c34cd7b9fd0) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`5c85e5e`](https://github.com/stdlib-js/stdlib/commit/5c85e5ec1dcc6f2f26d7b2d0ababcdeb7e57c2ac) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`22c39d6`](https://github.com/stdlib-js/stdlib/commit/22c39d621ee3e28db8f1387f205d12f7317f136f) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`b6754fa`](https://github.com/stdlib-js/stdlib/commit/b6754fa04cce6d974386b81683be808322904557) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`f0aaeee`](https://github.com/stdlib-js/stdlib/commit/f0aaeeec537419e4d65f3c80750e5076465a2614) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`65d7e76`](https://github.com/stdlib-js/stdlib/commit/65d7e76a73d9721698d311957f2a9b2bf77ac21f) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`584cf93`](https://github.com/stdlib-js/stdlib/commit/584cf93ae0898fa3d94f25bb6107263467cd9191) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`00842b8`](https://github.com/stdlib-js/stdlib/commit/00842b8c167ceba4518240abdf87fa36a9d50b2c) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`41c82f8`](https://github.com/stdlib-js/stdlib/commit/41c82f8d6cb191003037fa8b382cf8a7f7576471) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`6c80ac5`](https://github.com/stdlib-js/stdlib/commit/6c80ac501ff89676cc4c20ec49a017c5b9cbd12f) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`e7f9e5b`](https://github.com/stdlib-js/stdlib/commit/e7f9e5b8f6d0dcb71bb5f6348e982dbf5155a3d4) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`a6b6ace`](https://github.com/stdlib-js/stdlib/commit/a6b6aceb39764d119d56cc4fee317a5f4022dcf8) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`e6146a8`](https://github.com/stdlib-js/stdlib/commit/e6146a875edac8462f8fbc385fac4eff4a63196f) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`488c45a`](https://github.com/stdlib-js/stdlib/commit/488c45afdb40e79c209ad6c59f1acfc5b731f69c) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`c3a0bf7`](https://github.com/stdlib-js/stdlib/commit/c3a0bf728593d5f8d73c54065083594f867db098) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`23a0064`](https://github.com/stdlib-js/stdlib/commit/23a0064407117899f351404fc9e136c98d8340d2) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`78a7aa3`](https://github.com/stdlib-js/stdlib/commit/78a7aa3deea6a0101776c4bdd902fdab949f5bfa) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`b53f15b`](https://github.com/stdlib-js/stdlib/commit/b53f15b1bd89e48e30ca1ccbb4438b1bdb04a465) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`6e2c12f`](https://github.com/stdlib-js/stdlib/commit/6e2c12fe3e14fe3475b847590f1db9bcdcb94f01) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`d06fac1`](https://github.com/stdlib-js/stdlib/commit/d06fac10a847c53625d891e07e003fb06a0ac27f) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`8aa525e`](https://github.com/stdlib-js/stdlib/commit/8aa525e5406e77700b720b0df723dd4903d54984) - **refactor:** simpilfy implementation _(by Athan Reines)_
+-   [`d867410`](https://github.com/stdlib-js/stdlib/commit/d8674107448b38025095f40d288464a1bea3c349) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`80a204d`](https://github.com/stdlib-js/stdlib/commit/80a204de6b9f5352e5d3f56856c9e631fac3c2f5) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`1ed8400`](https://github.com/stdlib-js/stdlib/commit/1ed8400db79e87f245a7ad7d80d942e420b82e60) - **refactor:** simplify implementation _(by Athan Reines)_
+-   [`f750524`](https://github.com/stdlib-js/stdlib/commit/f75052497fb09596b3708ecaafa31948b0c499f0) - **feat:** add `blas/ext/base/dnancusumkbn` [(#5822)](https://github.com/stdlib-js/stdlib/pull/5822) _(by Vivek Maurya, Athan Reines, stdlib-bot)_
+-   [`47043f4`](https://github.com/stdlib-js/stdlib/commit/47043f4dd5b22794abc28364824a19e1712a8dc7) - **feat:** add `blas/ext/base/wasm/dapx` [(#5643)](https://github.com/stdlib-js/stdlib/pull/5643) _(by Prashant Kumar Yadav, Athan Reines, stdlib-bot)_
+-   [`e0ef8c0`](https://github.com/stdlib-js/stdlib/commit/e0ef8c087391aed873416ff772da92ef34eabee8) - **docs:** update examples _(by Athan Reines)_
+-   [`eece266`](https://github.com/stdlib-js/stdlib/commit/eece266922d61be79ec4a518122770d6e5a45c35) - **docs:** update examples _(by Athan Reines)_
+-   [`6c79b2f`](https://github.com/stdlib-js/stdlib/commit/6c79b2f8296fbc8ac2de470e6ff7ae446102c60f) - **docs:** update note _(by Athan Reines)_
+-   [`74fd8e4`](https://github.com/stdlib-js/stdlib/commit/74fd8e4917e02ca9186c9da4cfd676321ba7998f) - **docs:** update note _(by Athan Reines)_
+-   [`475dc22`](https://github.com/stdlib-js/stdlib/commit/475dc227d741fcb816fc101523cc94975230e2d9) - **docs:** update note _(by Athan Reines)_
+-   [`0105776`](https://github.com/stdlib-js/stdlib/commit/0105776252892d8bb6b2e26e1a7900aa12174393) - **docs:** update note _(by Athan Reines)_
+-   [`20cb136`](https://github.com/stdlib-js/stdlib/commit/20cb1367a6e088ab29a0018a15f2e06b802e77c5) - **fix:** restrict set of allowed data types _(by Athan Reines)_
+-   [`8259ed5`](https://github.com/stdlib-js/stdlib/commit/8259ed5b9d1f003567f1534962163799c6254c88) - **fix:** restrict set of allowed data types _(by Athan Reines)_
+-   [`cd6132a`](https://github.com/stdlib-js/stdlib/commit/cd6132a767338fc1726bf333c7a65ace1c37edde) - **fix:** update package name _(by Athan Reines)_
+-   [`fbb364e`](https://github.com/stdlib-js/stdlib/commit/fbb364ea4aac82c08e986f6dfe78825af7cd6cfa) - **build:** update configuration _(by Athan Reines)_
+-   [`09ffc2c`](https://github.com/stdlib-js/stdlib/commit/09ffc2c08be90669defcaaa19a50b53a6d7473f8) - **feat:** add `stats/strided/wasm/dmeanors` [(#5832)](https://github.com/stdlib-js/stdlib/pull/5832) _(by Prashant Kumar Yadav, Athan Reines, stdlib-bot)_
+-   [`bd0050a`](https://github.com/stdlib-js/stdlib/commit/bd0050a6aaec1ca4cdc1a4491f45084da84f5bf7) - **feat:** add `blas/ext/base/wasm/dnanasumors` [(#6110)](https://github.com/stdlib-js/stdlib/pull/6110) _(by Prashant Kumar Yadav, Athan Reines, stdlib-bot)_
+-   [`5731206`](https://github.com/stdlib-js/stdlib/commit/5731206687fc0584469a369adb69dd44b26277ed) - **feat:** add `blas/ext/base/wasm/sapxsumkbn` [(#5764)](https://github.com/stdlib-js/stdlib/pull/5764) _(by Gururaj Gurram, Athan Reines)_
 -   [`6464a4b`](https://github.com/stdlib-js/stdlib/commit/6464a4ba00ba9579a2da77a0e2282a0f03bfdc01) - **docs:** update namespace table of contents [(#6828)](https://github.com/stdlib-js/stdlib/pull/6828) _(by stdlib-bot)_
 -   [`5bf5fef`](https://github.com/stdlib-js/stdlib/commit/5bf5fef7f910bc7ca08b3689daed5160f674fa8e) - **feat:** add `cusum` to namespace _(by Athan Reines)_
 -   [`0024458`](https://github.com/stdlib-js/stdlib/commit/002445886a8f8e74dbbdabeff31ab45cece00096) - **feat:** add `blas/ext/cusum` _(by Athan Reines)_
@@ -817,7 +1029,7 @@ A total of 36 issues were closed in this release:
 
 ### Contributors
 
-A total of 42 people contributed to this release. Thank you to the following contributors:
+A total of 44 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Ahmed Atwa
@@ -837,6 +1049,7 @@ A total of 42 people contributed to this release. Thank you to the following con
 -   Naveen Kumar
 -   Neeraj Pathak
 -   Philipp Burckhardt
+-   Pierre Forstmann
 -   Pranav Goswami
 -   Pranjal Jha
 -   Prashant Kumar Yadav
@@ -847,6 +1060,7 @@ A total of 42 people contributed to this release. Thank you to the following con
 -   Raunak Kumar Gupta
 -   Rutam Kathale
 -   Saurabh Singh
+-   Shabareesh Shetty
 -   Shivam Ahir
 -   Shubh Mehta
 -   Sivam Das
