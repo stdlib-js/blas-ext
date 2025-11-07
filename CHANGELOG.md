@@ -4,12 +4,24 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-12)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
 ### Features
 
+-   [`570bbcf`](https://github.com/stdlib-js/stdlib/commit/570bbcf40d890923d59e0a25ffb2c2a4052b9a59) - add `blas/ext/to-sortedhp` [(#8182)](https://github.com/stdlib-js/stdlib/pull/8182)
+-   [`bff3c1e`](https://github.com/stdlib-js/stdlib/commit/bff3c1ef43c76a9bf1748c53c79ae2b6d6d9cf48) - add `blas/ext/sorthp` [(#8098)](https://github.com/stdlib-js/stdlib/pull/8098)
+-   [`12636b6`](https://github.com/stdlib-js/stdlib/commit/12636b62433a9a59fefdb4a0b548ff26f94f6d3c) - update `blas/ext/base/ndarray` TypeScript declarations
+-   [`3d39d59`](https://github.com/stdlib-js/stdlib/commit/3d39d59f9920911a00c2c438dfd49dee408edc67) - update `blas/ext/base` TypeScript declarations
+-   [`e593f08`](https://github.com/stdlib-js/stdlib/commit/e593f08c83e3b12477e3460d9150d75299d2123c) - update `blas/ext` TypeScript declarations
+-   [`567d262`](https://github.com/stdlib-js/stdlib/commit/567d262b3cdddaa38241d33d0f3f54616c1aa7be) - update `blas/ext/base/wasm` TypeScript declarations
+-   [`e89922e`](https://github.com/stdlib-js/stdlib/commit/e89922e920edb3748871809093270ed4879c4c49) - add `gindexOfRow` to namespace
+-   [`de5a92e`](https://github.com/stdlib-js/stdlib/commit/de5a92e19185c9ec4e51cc6d54125bd3171ab989) - add `blas/ext/base/gindex-of-row`
+-   [`8811beb`](https://github.com/stdlib-js/stdlib/commit/8811beb4ad993beb4e99401b5ec8a9f0df8e7569) - add `blas/ext/last-index-of` [(#7665)](https://github.com/stdlib-js/stdlib/pull/7665)
+-   [`fbf2b82`](https://github.com/stdlib-js/stdlib/commit/fbf2b825782a1a55ef98bfbddd031b53707bc522) - add missing functions to namespace
+-   [`b998f9f`](https://github.com/stdlib-js/stdlib/commit/b998f9f74bd8ce4b6719c96bb629441751276f75) - add missing functions to namespace
+-   [`b728a80`](https://github.com/stdlib-js/stdlib/commit/b728a80b99d6c7371ab7759c66c6650e22b89196) - fix module tags and add missing namespace exports
 -   [`c9efaa7`](https://github.com/stdlib-js/stdlib/commit/c9efaa7d339165aa5393e6bb441faab7140064ce) - add `findIndex`, `findLastIndex`, and `indexOf` to namespace
 -   [`dac237c`](https://github.com/stdlib-js/stdlib/commit/dac237ca75536454a6d2d3062471b766f6404889) - add `blas/ext/find-last-index` [(#7827)](https://github.com/stdlib-js/stdlib/pull/7827)
 -   [`f928b2f`](https://github.com/stdlib-js/stdlib/commit/f928b2fc629b187e21d707e7e7b68e3b4bcd3f79) - add `blas/ext/base/ndarray/gfind-last-index` [(#7786)](https://github.com/stdlib-js/stdlib/pull/7786)
@@ -211,6 +223,12 @@
 
 ### Bug Fixes
 
+-   [`7533913`](https://github.com/stdlib-js/stdlib/commit/75339137b0ab48062cb7e1cd05da5ded33a6cf9c) - update argument juggling
+-   [`1df6eba`](https://github.com/stdlib-js/stdlib/commit/1df6ebab765027588ea35e8b532cc049fabe3b96) - update argument juggling
+-   [`76883dd`](https://github.com/stdlib-js/stdlib/commit/76883dd26350489a351296785ca002838d9d39d5) - update error message
+-   [`655f6d4`](https://github.com/stdlib-js/stdlib/commit/655f6d4b995f3981f6eec0166721858e36ea98f2) - update `fromIndex` handling in `blas/ext/base/ndarray/glast-index-of` [(#8008)](https://github.com/stdlib-js/stdlib/pull/8008)
+-   [`5c0304c`](https://github.com/stdlib-js/stdlib/commit/5c0304cac2c538d91d09b6b30202f71e9b2b8650) - update `fromIndex` handling in `blas/ext/base/ndarray/slast-index-of` [(#8007)](https://github.com/stdlib-js/stdlib/pull/8007)
+-   [`69832d0`](https://github.com/stdlib-js/stdlib/commit/69832d001442f72da76dbb168d961856ede4a962) - update `fromIndex` handling in `blas/ext/base/ndarray/dlast-index-of` [(#7894)](https://github.com/stdlib-js/stdlib/pull/7894)
 -   [`83e8845`](https://github.com/stdlib-js/stdlib/commit/83e8845c749e7f02ba66ccc6d0132022d15cf15d) - update error messages
 -   [`e995ce7`](https://github.com/stdlib-js/stdlib/commit/e995ce7c82cbe834b8e330968a08810e5b959282) - ensure accessor array support
 -   [`f6e1c78`](https://github.com/stdlib-js/stdlib/commit/f6e1c7823e871a259642c49f1e6b40bd7bb73f4b) - ensure accessor array support
@@ -368,9 +386,9 @@
 
 ### Closed Issues
 
-A total of 41 issues were closed in this release:
+A total of 42 issues were closed in this release:
 
-[#318](https://github.com/stdlib-js/stdlib/issues/318), [#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253), [#5072](https://github.com/stdlib-js/stdlib/issues/5072), [#5073](https://github.com/stdlib-js/stdlib/issues/5073), [#5237](https://github.com/stdlib-js/stdlib/issues/5237), [#5501](https://github.com/stdlib-js/stdlib/issues/5501), [#5504](https://github.com/stdlib-js/stdlib/issues/5504), [#5505](https://github.com/stdlib-js/stdlib/issues/5505), [#5507](https://github.com/stdlib-js/stdlib/issues/5507), [#5508](https://github.com/stdlib-js/stdlib/issues/5508), [#5509](https://github.com/stdlib-js/stdlib/issues/5509), [#5732](https://github.com/stdlib-js/stdlib/issues/5732), [#7241](https://github.com/stdlib-js/stdlib/issues/7241), [#7645](https://github.com/stdlib-js/stdlib/issues/7645)
+[#318](https://github.com/stdlib-js/stdlib/issues/318), [#1434](https://github.com/stdlib-js/stdlib/issues/1434), [#1464](https://github.com/stdlib-js/stdlib/issues/1464), [#1471](https://github.com/stdlib-js/stdlib/issues/1471), [#1475](https://github.com/stdlib-js/stdlib/issues/1475), [#1488](https://github.com/stdlib-js/stdlib/issues/1488), [#1496](https://github.com/stdlib-js/stdlib/issues/1496), [#1504](https://github.com/stdlib-js/stdlib/issues/1504), [#1506](https://github.com/stdlib-js/stdlib/issues/1506), [#1509](https://github.com/stdlib-js/stdlib/issues/1509), [#1510](https://github.com/stdlib-js/stdlib/issues/1510), [#1511](https://github.com/stdlib-js/stdlib/issues/1511), [#1514](https://github.com/stdlib-js/stdlib/issues/1514), [#1516](https://github.com/stdlib-js/stdlib/issues/1516), [#1517](https://github.com/stdlib-js/stdlib/issues/1517), [#1530](https://github.com/stdlib-js/stdlib/issues/1530), [#1533](https://github.com/stdlib-js/stdlib/issues/1533), [#1534](https://github.com/stdlib-js/stdlib/issues/1534), [#1536](https://github.com/stdlib-js/stdlib/issues/1536), [#1541](https://github.com/stdlib-js/stdlib/issues/1541), [#1542](https://github.com/stdlib-js/stdlib/issues/1542), [#1544](https://github.com/stdlib-js/stdlib/issues/1544), [#3046](https://github.com/stdlib-js/stdlib/issues/3046), [#3073](https://github.com/stdlib-js/stdlib/issues/3073), [#3074](https://github.com/stdlib-js/stdlib/issues/3074), [#3075](https://github.com/stdlib-js/stdlib/issues/3075), [#3186](https://github.com/stdlib-js/stdlib/issues/3186), [#3201](https://github.com/stdlib-js/stdlib/issues/3201), [#3253](https://github.com/stdlib-js/stdlib/issues/3253), [#5072](https://github.com/stdlib-js/stdlib/issues/5072), [#5073](https://github.com/stdlib-js/stdlib/issues/5073), [#5237](https://github.com/stdlib-js/stdlib/issues/5237), [#5501](https://github.com/stdlib-js/stdlib/issues/5501), [#5504](https://github.com/stdlib-js/stdlib/issues/5504), [#5505](https://github.com/stdlib-js/stdlib/issues/5505), [#5507](https://github.com/stdlib-js/stdlib/issues/5507), [#5508](https://github.com/stdlib-js/stdlib/issues/5508), [#5509](https://github.com/stdlib-js/stdlib/issues/5509), [#5732](https://github.com/stdlib-js/stdlib/issues/5732), [#7241](https://github.com/stdlib-js/stdlib/issues/7241), [#7645](https://github.com/stdlib-js/stdlib/issues/7645), [#7877](https://github.com/stdlib-js/stdlib/issues/7877)
 
 </section>
 
@@ -382,6 +400,62 @@ A total of 41 issues were closed in this release:
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
+-   [`570bbcf`](https://github.com/stdlib-js/stdlib/commit/570bbcf40d890923d59e0a25ffb2c2a4052b9a59) - **feat:** add `blas/ext/to-sortedhp` [(#8182)](https://github.com/stdlib-js/stdlib/pull/8182) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
+-   [`9402798`](https://github.com/stdlib-js/stdlib/commit/9402798c7ffef6221973cfdfee262f831a0c2f28) - **docs:** remove incorrect comment _(by Athan Reines)_
+-   [`e543b93`](https://github.com/stdlib-js/stdlib/commit/e543b934946086e56d0bedcb0b54df4e87e1a090) - **test:** fix descriptions _(by Athan Reines)_
+-   [`bb33be6`](https://github.com/stdlib-js/stdlib/commit/bb33be6522625aae9440ea4e9988a9b69c4b58ec) - **docs:** fix examples [(#8161)](https://github.com/stdlib-js/stdlib/pull/8161) _(by stdlib-bot)_
+-   [`d94514b`](https://github.com/stdlib-js/stdlib/commit/d94514bc9418f5b42df6233204d5005d53af00ca) - **docs:** clean-up TSDoc declaration comments _(by Philipp Burckhardt)_
+-   [`23cbd7c`](https://github.com/stdlib-js/stdlib/commit/23cbd7c52abe915808ec95031ef1fbf0a5c91cd7) - **chore:** fix typo in `blas/ext/sorthp` description _(by Philipp Burckhardt)_
+-   [`950f099`](https://github.com/stdlib-js/stdlib/commit/950f099d95c6fae1e4fdafd3f729eb0e1aad3a54) - **test:** add tests for full branch coverage _(by Athan Reines)_
+-   [`bff3c1e`](https://github.com/stdlib-js/stdlib/commit/bff3c1ef43c76a9bf1748c53c79ae2b6d6d9cf48) - **feat:** add `blas/ext/sorthp` [(#8098)](https://github.com/stdlib-js/stdlib/pull/8098) _(by Muhammad Haris, Athan Reines)_
+-   [`12636b6`](https://github.com/stdlib-js/stdlib/commit/12636b62433a9a59fefdb4a0b548ff26f94f6d3c) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`3d39d59`](https://github.com/stdlib-js/stdlib/commit/3d39d59f9920911a00c2c438dfd49dee408edc67) - **feat:** update `blas/ext/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`e593f08`](https://github.com/stdlib-js/stdlib/commit/e593f08c83e3b12477e3460d9150d75299d2123c) - **feat:** update `blas/ext` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`567d262`](https://github.com/stdlib-js/stdlib/commit/567d262b3cdddaa38241d33d0f3f54616c1aa7be) - **feat:** update `blas/ext/base/wasm` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`c92ba2d`](https://github.com/stdlib-js/stdlib/commit/c92ba2d92c3ae4ea40f9b86fc5d620d7f9579f55) - **docs:** clean-up code in TSDoc examples and remove self-requires _(by Philipp Burckhardt)_
+-   [`3dc5f1e`](https://github.com/stdlib-js/stdlib/commit/3dc5f1ef335565c05ee4be5878de5b587c7f28d6) - **docs:** fix require paths for complex arrays _(by Philipp Burckhardt)_
+-   [`4d84e34`](https://github.com/stdlib-js/stdlib/commit/4d84e3478381848a944b5538bb51f5893e5686b7) - **docs:** update type _(by Athan Reines)_
+-   [`0a5260e`](https://github.com/stdlib-js/stdlib/commit/0a5260e6aa9182cf1a9e1fc3a9de5490b48049ef) - **docs:** update type _(by Athan Reines)_
+-   [`966aadc`](https://github.com/stdlib-js/stdlib/commit/966aadc45f808116483e177d44fb34df11a347c3) - **docs:** update type _(by Athan Reines)_
+-   [`1f53e33`](https://github.com/stdlib-js/stdlib/commit/1f53e332f6dc2f8a2c710ac23baeda35f4016ed2) - **docs:** update type _(by Athan Reines)_
+-   [`59e4ee6`](https://github.com/stdlib-js/stdlib/commit/59e4ee626666a842d0ceebd94fa035003dcf946f) - **docs:** update type _(by Athan Reines)_
+-   [`ac78d4f`](https://github.com/stdlib-js/stdlib/commit/ac78d4f7a00dd61a91e8583fb1b2076237ec373c) - **docs:** update type _(by Athan Reines)_
+-   [`ddbd40d`](https://github.com/stdlib-js/stdlib/commit/ddbd40d31c6efac28bda0bef87d40b7b086147b5) - **docs:** update type _(by Athan Reines)_
+-   [`200af8b`](https://github.com/stdlib-js/stdlib/commit/200af8bd450ccbd20ba7931ddebea2bbea21d7af) - **test:** use functional APIs for accessing ndarray properties _(by Athan Reines)_
+-   [`905019c`](https://github.com/stdlib-js/stdlib/commit/905019c024611308865950e3d1dd51c642176e82) - **docs:** fix grammar in function descriptions _(by Philipp Burckhardt)_
+-   [`e1d0d22`](https://github.com/stdlib-js/stdlib/commit/e1d0d2249cb00b7b62171a498e4a4cf4f0813695) - **docs:** fix formatting [(#8079)](https://github.com/stdlib-js/stdlib/pull/8079) _(by stdlib-bot)_
+-   [`e89922e`](https://github.com/stdlib-js/stdlib/commit/e89922e920edb3748871809093270ed4879c4c49) - **feat:** add `gindexOfRow` to namespace _(by Athan Reines)_
+-   [`de5a92e`](https://github.com/stdlib-js/stdlib/commit/de5a92e19185c9ec4e51cc6d54125bd3171ab989) - **feat:** add `blas/ext/base/gindex-of-row` _(by Athan Reines)_
+-   [`82be305`](https://github.com/stdlib-js/stdlib/commit/82be305dfecc75ac71e18dbed841aa6f8022e7be) - **docs:** clean-up TSDoc examples _(by Philipp Burckhardt)_
+-   [`7533913`](https://github.com/stdlib-js/stdlib/commit/75339137b0ab48062cb7e1cd05da5ded33a6cf9c) - **fix:** update argument juggling _(by Athan Reines)_
+-   [`1df6eba`](https://github.com/stdlib-js/stdlib/commit/1df6ebab765027588ea35e8b532cc049fabe3b96) - **fix:** update argument juggling _(by Athan Reines)_
+-   [`15144b7`](https://github.com/stdlib-js/stdlib/commit/15144b70b6941fd5bc92ab6380b1a91e6bb82620) - **test:** add tests for full code coverage _(by Athan Reines)_
+-   [`b5c1ed2`](https://github.com/stdlib-js/stdlib/commit/b5c1ed2e30623cf0cf5b801930d3ad3dfd2cc454) - **test:** add tests for full code coverage _(by Athan Reines)_
+-   [`8811beb`](https://github.com/stdlib-js/stdlib/commit/8811beb4ad993beb4e99401b5ec8a9f0df8e7569) - **feat:** add `blas/ext/last-index-of` [(#7665)](https://github.com/stdlib-js/stdlib/pull/7665) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
+-   [`dfbc640`](https://github.com/stdlib-js/stdlib/commit/dfbc6406250c55ee702dc31e569fd65e1fcc1111) - **test:** address test failures _(by Athan Reines)_
+-   [`d08aa12`](https://github.com/stdlib-js/stdlib/commit/d08aa12963712cb6cd6f18f4dad3391a38a8d95e) - **test:** add tests for a fromIndex ndarray _(by Athan Reines)_
+-   [`a51a1a2`](https://github.com/stdlib-js/stdlib/commit/a51a1a2d7d06f299e3df58664968191a3738887f) - **test:** add tests for a fromIndex ndarray _(by Athan Reines)_
+-   [`1f2836f`](https://github.com/stdlib-js/stdlib/commit/1f2836ff2dc2a2808f1578555431b54cf5008ef2) - **test:** add tests for 0d input arrays _(by Athan Reines)_
+-   [`1eb5a82`](https://github.com/stdlib-js/stdlib/commit/1eb5a82086b8d5cfde3e34980cebf8e0dacf18ed) - **docs:** document default values _(by Athan Reines)_
+-   [`76883dd`](https://github.com/stdlib-js/stdlib/commit/76883dd26350489a351296785ca002838d9d39d5) - **fix:** update error message _(by Athan Reines)_
+-   [`4ec3a47`](https://github.com/stdlib-js/stdlib/commit/4ec3a471ad594bf710eb4e78a6650136389cb0a7) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`655f6d4`](https://github.com/stdlib-js/stdlib/commit/655f6d4b995f3981f6eec0166721858e36ea98f2) - **fix:** update `fromIndex` handling in `blas/ext/base/ndarray/glast-index-of` [(#8008)](https://github.com/stdlib-js/stdlib/pull/8008) _(by Muhammad Haris)_
+-   [`5c0304c`](https://github.com/stdlib-js/stdlib/commit/5c0304cac2c538d91d09b6b30202f71e9b2b8650) - **fix:** update `fromIndex` handling in `blas/ext/base/ndarray/slast-index-of` [(#8007)](https://github.com/stdlib-js/stdlib/pull/8007) _(by Muhammad Haris)_
+-   [`69832d0`](https://github.com/stdlib-js/stdlib/commit/69832d001442f72da76dbb168d961856ede4a962) - **fix:** update `fromIndex` handling in `blas/ext/base/ndarray/dlast-index-of` [(#7894)](https://github.com/stdlib-js/stdlib/pull/7894) _(by Muhammad Haris, Athan Reines)_
+-   [`fbf2b82`](https://github.com/stdlib-js/stdlib/commit/fbf2b825782a1a55ef98bfbddd031b53707bc522) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
+-   [`b998f9f`](https://github.com/stdlib-js/stdlib/commit/b998f9f74bd8ce4b6719c96bb629441751276f75) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
+-   [`b728a80`](https://github.com/stdlib-js/stdlib/commit/b728a80b99d6c7371ab7759c66c6650e22b89196) - **feat:** fix module tags and add missing namespace exports _(by Philipp Burckhardt)_
+-   [`2376013`](https://github.com/stdlib-js/stdlib/commit/2376013286e9bd260a457adf56be285e77219c1a) - **docs:** fix requires _(by Philipp Burckhardt)_
+-   [`18f13dd`](https://github.com/stdlib-js/stdlib/commit/18f13dd315dd10580469ce4ed00447457b5dd7f4) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`4977993`](https://github.com/stdlib-js/stdlib/commit/4977993a257fde660b0f8c5678ab0c8d6e26538a) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`1acd7fc`](https://github.com/stdlib-js/stdlib/commit/1acd7fc7114fcbef1b80ab506f6f47d3532d6ea8) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`20ae685`](https://github.com/stdlib-js/stdlib/commit/20ae6858f9bea5a07a619b688dad98a0a77dcfb6) - **docs:** correctly call .ndarray in second example _(by Philipp Burckhardt)_
+-   [`1913191`](https://github.com/stdlib-js/stdlib/commit/1913191dea38c0f42f7143747c121db38f1ebc35) - **chore:** fix C lint errors [(#7878)](https://github.com/stdlib-js/stdlib/pull/7878) _(by Geo Daoyu)_
+-   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
+-   [`6cc361e`](https://github.com/stdlib-js/stdlib/commit/6cc361ee03deef0ba27363afe74f61416d5a3c17) - **docs:** fix descriptions _(by Athan Reines)_
+-   [`93810d1`](https://github.com/stdlib-js/stdlib/commit/93810d14406a986ba1347d1440d353836f22af40) - **docs:** update description _(by Athan Reines)_
+-   [`5f1cbd7`](https://github.com/stdlib-js/stdlib/commit/5f1cbd7f87b8f288a483a419b6eee93dd3d1a739) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`c9efaa7`](https://github.com/stdlib-js/stdlib/commit/c9efaa7d339165aa5393e6bb441faab7140064ce) - **feat:** add `findIndex`, `findLastIndex`, and `indexOf` to namespace _(by Athan Reines)_
 -   [`dac237c`](https://github.com/stdlib-js/stdlib/commit/dac237ca75536454a6d2d3062471b766f6404889) - **feat:** add `blas/ext/find-last-index` [(#7827)](https://github.com/stdlib-js/stdlib/pull/7827) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`6ce3f42`](https://github.com/stdlib-js/stdlib/commit/6ce3f4224de787dbba86e55e43bb5ba70df1b14b) - **docs:** remove obsolete comment _(by Athan Reines)_
@@ -408,7 +482,7 @@ A total of 41 issues were closed in this release:
 -   [`4c956ca`](https://github.com/stdlib-js/stdlib/commit/4c956ca79f7be9a1cddcf8376760749913332718) - **docs:** fix JSDoc type _(by Philipp Burckhardt)_
 -   [`cf8cf0a`](https://github.com/stdlib-js/stdlib/commit/cf8cf0ac2b13ca1d2feb416e87154f713a37e507) - **feat:** add `blas/ext/index-of` [(#7565)](https://github.com/stdlib-js/stdlib/pull/7565) _(by Muhammad Haris, Athan Reines)_
 -   [`7ee7d36`](https://github.com/stdlib-js/stdlib/commit/7ee7d3670bc523f7353b5bf2d048a144a2c67e01) - **docs:** fix typo _(by Athan Reines)_
--   [`3192ef5`](https://github.com/stdlib-js/stdlib/commit/3192ef5e908c2ac107edf9ac4a4c92bd2997aa67) - **chore:** fix C lint errors [(#7646)](https://github.com/stdlib-js/stdlib/pull/7646) _(by GeoDaoyu)_
+-   [`3192ef5`](https://github.com/stdlib-js/stdlib/commit/3192ef5e908c2ac107edf9ac4a4c92bd2997aa67) - **chore:** fix C lint errors [(#7646)](https://github.com/stdlib-js/stdlib/pull/7646) _(by Geo Daoyu)_
 -   [`708320e`](https://github.com/stdlib-js/stdlib/commit/708320e43d505cd6f390bf6014d58cb5e092cbaf) - **docs:** update related packages sections [(#7647)](https://github.com/stdlib-js/stdlib/pull/7647) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`b7ebe14`](https://github.com/stdlib-js/stdlib/commit/b7ebe14a38ddc3ccce67834db16835f420431494) - **feat:** add `blas/ext/base/wasm/dnansumkbn2` [(#5735)](https://github.com/stdlib-js/stdlib/pull/5735) _(by Shabareesh Shetty, Athan Reines, JoyBoy, stdlib-bot)_
 -   [`b300eed`](https://github.com/stdlib-js/stdlib/commit/b300eedd44a9e0e1a2a435c056675dc0c84337ba) - **docs:** remove annotations _(by Athan Reines)_
@@ -965,7 +1039,7 @@ A total of 41 issues were closed in this release:
 -   [`fadff3a`](https://github.com/stdlib-js/stdlib/commit/fadff3a44660678d9ccce8bb101f579ca1913a64) - **feat:** add `blas/ext/base/cfill` [(#2901)](https://github.com/stdlib-js/stdlib/pull/2901) _(by Muhammad Haris, Athan Reines)_
 -   [`3e80682`](https://github.com/stdlib-js/stdlib/commit/3e80682320d42a999f428fcf3d30e6711b6b9b89) - **refactor:** update implementation for `blas/ext/base/sdsnansumpw` _(by Yaswanth Kosuru, Philipp Burckhardt)_
 -   [`c6bf7de`](https://github.com/stdlib-js/stdlib/commit/c6bf7de53b6ab8c44263cee7fdf1cdfe2815864d) - **refactor:** update implementation for `blas/ext/base/sapxsumors` _(by Yaswanth Kosuru, Philipp Burckhardt)_
--   [`7cc8bb9`](https://github.com/stdlib-js/stdlib/commit/7cc8bb9a96147bb94fe8cfddc180a6ec535fc368) - **refactor:** update `blas/ext/base/dsnannsumors` _(by HarshaNP, Philipp Burckhardt)_
+-   [`7cc8bb9`](https://github.com/stdlib-js/stdlib/commit/7cc8bb9a96147bb94fe8cfddc180a6ec535fc368) - **refactor:** update `blas/ext/base/dsnannsumors` _(by Gitty Harsha, Philipp Burckhardt)_
 -   [`e9f4e07`](https://github.com/stdlib-js/stdlib/commit/e9f4e0759a14b8da93d4e0837b886d8ed56bc696) - **refactor:** update `blas/ext/base/dsnansumpw` to follow current conventions _(by Yaswanth Kosuru, Philipp Burckhardt)_
 -   [`aabe731`](https://github.com/stdlib-js/stdlib/commit/aabe7310272e138b7ae69a9297832aa7fcb21ef1) - **fix:** update variable name and define `status` type _(by Athan Reines)_
 -   [`1fce730`](https://github.com/stdlib-js/stdlib/commit/1fce730e287d8688956b801feb547ebb6a237756) - **fix:** use correct include path _(by Philipp Burckhardt)_
@@ -1113,11 +1187,11 @@ A total of 45 people contributed to this release. Thank you to the following con
 -   Aleksandr
 -   Athan Reines
 -   Bryan Elee
--   GeoDaoyu
+-   Geo Daoyu
+-   Gitty Harsha
 -   Golden Kumar
 -   Gunj Joshi
 -   Gururaj Gurram
--   HarshaNP
 -   Jaimin Godhani
 -   Justyn Shelby
 -   Krishnendu Das
