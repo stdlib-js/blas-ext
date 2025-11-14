@@ -4,12 +4,27 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-11-14)
 
 <section class="features">
 
 ### Features
 
+-   [`c8d069a`](https://github.com/stdlib-js/stdlib/commit/c8d069a244fed6f3fab921e1b3d2feea7a1cd129) - add `toSortedhp` to namespace
+-   [`f8b1e45`](https://github.com/stdlib-js/stdlib/commit/f8b1e45046d0319eaeaee3d05063785d4711d34f) - add `sorthp` to namespace
+-   [`4ebafda`](https://github.com/stdlib-js/stdlib/commit/4ebafda08154a6d5d9f74646f4dd0329bb04d5bf) - add `lastIndexOf` to namespace
+-   [`6fdf24d`](https://github.com/stdlib-js/stdlib/commit/6fdf24d200357c698de76ae216b49ab08cceda79) - add `glinspace` to namespace
+-   [`bd86c8c`](https://github.com/stdlib-js/stdlib/commit/bd86c8cd632c31006ffde434efdecf1d0ba33ae1) - add `blas/ext/base/ndarray/glinspace`
+-   [`899b839`](https://github.com/stdlib-js/stdlib/commit/899b839b7929d45713c86fa13823d0a2291d8992) - add `slinspace` to namespace
+-   [`b9842dc`](https://github.com/stdlib-js/stdlib/commit/b9842dc2f84922f9f7de4829abad0b0888cff69a) - add `blas/ext/base/ndarray/slinspace`
+-   [`466d960`](https://github.com/stdlib-js/stdlib/commit/466d9605a5025efeb6b51c401828a4a08ac7a3ae) - add `dlinspace` to namespace
+-   [`1719cd8`](https://github.com/stdlib-js/stdlib/commit/1719cd89e8f6e6ac9f333675aebe0cc300adb8cc) - add `blas/ext/base/ndarray/dlinspace`
+-   [`b642a63`](https://github.com/stdlib-js/stdlib/commit/b642a63efa55eb3d91078fbb861e159954e477f2) - add `glinspace` to namespace
+-   [`10ffd72`](https://github.com/stdlib-js/stdlib/commit/10ffd722bf162e9287b35adb167a8d76e1d1f840) - add `blas/ext/base/glinspace`
+-   [`03e2dbf`](https://github.com/stdlib-js/stdlib/commit/03e2dbff8a6f36028a410d5b98c8796880bb3516) - add `slinspace` to namespace
+-   [`30f0d38`](https://github.com/stdlib-js/stdlib/commit/30f0d38377dd9eb72f4cdc452f2b74268c2812d6) - add `blas/ext/base/slinspace`
+-   [`dd86a9a`](https://github.com/stdlib-js/stdlib/commit/dd86a9a4d5b0613903a5a502416d250e6f3cba86) - add `dlinspace` to namespace
+-   [`b187382`](https://github.com/stdlib-js/stdlib/commit/b18738234e698259d919d7ffccc25e5a8ab68c70) - add `blas/ext/base/dlinspace`
 -   [`570bbcf`](https://github.com/stdlib-js/stdlib/commit/570bbcf40d890923d59e0a25ffb2c2a4052b9a59) - add `blas/ext/to-sortedhp` [(#8182)](https://github.com/stdlib-js/stdlib/pull/8182)
 -   [`bff3c1e`](https://github.com/stdlib-js/stdlib/commit/bff3c1ef43c76a9bf1748c53c79ae2b6d6d9cf48) - add `blas/ext/sorthp` [(#8098)](https://github.com/stdlib-js/stdlib/pull/8098)
 -   [`12636b6`](https://github.com/stdlib-js/stdlib/commit/12636b62433a9a59fefdb4a0b548ff26f94f6d3c) - update `blas/ext/base/ndarray` TypeScript declarations
@@ -400,6 +415,37 @@ A total of 42 issues were closed in this release:
 
 <details>
 
+-   [`c8d069a`](https://github.com/stdlib-js/stdlib/commit/c8d069a244fed6f3fab921e1b3d2feea7a1cd129) - **feat:** add `toSortedhp` to namespace _(by Athan Reines)_
+-   [`f8b1e45`](https://github.com/stdlib-js/stdlib/commit/f8b1e45046d0319eaeaee3d05063785d4711d34f) - **feat:** add `sorthp` to namespace _(by Athan Reines)_
+-   [`4ebafda`](https://github.com/stdlib-js/stdlib/commit/4ebafda08154a6d5d9f74646f4dd0329bb04d5bf) - **feat:** add `lastIndexOf` to namespace _(by Athan Reines)_
+-   [`6fdf24d`](https://github.com/stdlib-js/stdlib/commit/6fdf24d200357c698de76ae216b49ab08cceda79) - **feat:** add `glinspace` to namespace _(by Athan Reines)_
+-   [`bd86c8c`](https://github.com/stdlib-js/stdlib/commit/bd86c8cd632c31006ffde434efdecf1d0ba33ae1) - **feat:** add `blas/ext/base/ndarray/glinspace` _(by Athan Reines)_
+-   [`899b839`](https://github.com/stdlib-js/stdlib/commit/899b839b7929d45713c86fa13823d0a2291d8992) - **feat:** add `slinspace` to namespace _(by Athan Reines)_
+-   [`b9842dc`](https://github.com/stdlib-js/stdlib/commit/b9842dc2f84922f9f7de4829abad0b0888cff69a) - **feat:** add `blas/ext/base/ndarray/slinspace` _(by Athan Reines)_
+-   [`466d960`](https://github.com/stdlib-js/stdlib/commit/466d9605a5025efeb6b51c401828a4a08ac7a3ae) - **feat:** add `dlinspace` to namespace _(by Athan Reines)_
+-   [`1719cd8`](https://github.com/stdlib-js/stdlib/commit/1719cd89e8f6e6ac9f333675aebe0cc300adb8cc) - **feat:** add `blas/ext/base/ndarray/dlinspace` _(by Athan Reines)_
+-   [`2bf161a`](https://github.com/stdlib-js/stdlib/commit/2bf161a46f190ef9cef087f5d701c1913d70b819) - **bench:** fix test conditions _(by Athan Reines)_
+-   [`065f726`](https://github.com/stdlib-js/stdlib/commit/065f72668f664257ca11f15fa4939845e1f3eee4) - **bench:** fix test conditions _(by Athan Reines)_
+-   [`a5f1ef8`](https://github.com/stdlib-js/stdlib/commit/a5f1ef80fa394aba09a0141e2adb274033d2310c) - **bench:** fix test conditions _(by Athan Reines)_
+-   [`648d656`](https://github.com/stdlib-js/stdlib/commit/648d656c7c42fb4a88457b04755cd3cad2156226) - **docs:** update namespace table of contents [(#8528)](https://github.com/stdlib-js/stdlib/pull/8528) _(by stdlib-bot)_
+-   [`b642a63`](https://github.com/stdlib-js/stdlib/commit/b642a63efa55eb3d91078fbb861e159954e477f2) - **feat:** add `glinspace` to namespace _(by Athan Reines)_
+-   [`10ffd72`](https://github.com/stdlib-js/stdlib/commit/10ffd722bf162e9287b35adb167a8d76e1d1f840) - **feat:** add `blas/ext/base/glinspace` _(by Athan Reines)_
+-   [`e937de1`](https://github.com/stdlib-js/stdlib/commit/e937de144bb9fb0349aba8235a0b69a6a1b29b4a) - **test:** update descriptions _(by Athan Reines)_
+-   [`55a95d9`](https://github.com/stdlib-js/stdlib/commit/55a95d9901d416bf70348029ae16209965f5bcd5) - **test:** update descriptions _(by Athan Reines)_
+-   [`7e1263e`](https://github.com/stdlib-js/stdlib/commit/7e1263e4afaadb487cb9e17036f77f4c00caa4de) - **docs:** add notes _(by Athan Reines)_
+-   [`9ef2243`](https://github.com/stdlib-js/stdlib/commit/9ef2243e74763fa05f732c476492b18e9d3711c1) - **docs:** add notes _(by Athan Reines)_
+-   [`c84485f`](https://github.com/stdlib-js/stdlib/commit/c84485fea2e4dfabf2d07dcfa9dabe68a854f72f) - **docs:** update notes _(by Athan Reines)_
+-   [`674864d`](https://github.com/stdlib-js/stdlib/commit/674864dd866f52f3d697a8edb29a3a94e1174ef9) - **docs:** add notes _(by Athan Reines)_
+-   [`ff50310`](https://github.com/stdlib-js/stdlib/commit/ff5031015827c1783e8b7b62713361ca6c7bc655) - **chore:** fix lint errors _(by Philipp Burckhardt)_
+-   [`66ebb7c`](https://github.com/stdlib-js/stdlib/commit/66ebb7c0d1caf106e213ee524972175da5170e5b) - **docs:** update namespace table of contents [(#8501)](https://github.com/stdlib-js/stdlib/pull/8501) _(by stdlib-bot)_
+-   [`b3817aa`](https://github.com/stdlib-js/stdlib/commit/b3817aa9b503e211474c485bc381251d47aa308b) - **docs:** fix function signature and remove extrs spaces _(by Philipp Burckhardt)_
+-   [`af7c8c4`](https://github.com/stdlib-js/stdlib/commit/af7c8c4e389209dd4004613c251d449e99ba09f7) - **style:** add missing spaces _(by Philipp Burckhardt)_
+-   [`03e2dbf`](https://github.com/stdlib-js/stdlib/commit/03e2dbff8a6f36028a410d5b98c8796880bb3516) - **feat:** add `slinspace` to namespace _(by Athan Reines)_
+-   [`30f0d38`](https://github.com/stdlib-js/stdlib/commit/30f0d38377dd9eb72f4cdc452f2b74268c2812d6) - **feat:** add `blas/ext/base/slinspace` _(by Athan Reines)_
+-   [`c46348e`](https://github.com/stdlib-js/stdlib/commit/c46348e63572c385a5a10c111a0214c9bb28eeec) - **docs:** update copy _(by Athan Reines)_
+-   [`dd86a9a`](https://github.com/stdlib-js/stdlib/commit/dd86a9a4d5b0613903a5a502416d250e6f3cba86) - **feat:** add `dlinspace` to namespace _(by Athan Reines)_
+-   [`b187382`](https://github.com/stdlib-js/stdlib/commit/b18738234e698259d919d7ffccc25e5a8ab68c70) - **feat:** add `blas/ext/base/dlinspace` _(by Athan Reines)_
+-   [`a9fb57e`](https://github.com/stdlib-js/stdlib/commit/a9fb57ec46973d10d247dfbe68d0b11a24970688) - **docs:** update descriptions _(by Philipp Burckhardt)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`570bbcf`](https://github.com/stdlib-js/stdlib/commit/570bbcf40d890923d59e0a25ffb2c2a4052b9a59) - **feat:** add `blas/ext/to-sortedhp` [(#8182)](https://github.com/stdlib-js/stdlib/pull/8182) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`9402798`](https://github.com/stdlib-js/stdlib/commit/9402798c7ffef6221973cfdfee262f831a0c2f28) - **docs:** remove incorrect comment _(by Athan Reines)_
