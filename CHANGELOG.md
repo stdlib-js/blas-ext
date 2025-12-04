@@ -4,12 +4,18 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-18)
+## Unreleased (2025-12-04)
 
 <section class="features">
 
 ### Features
 
+-   [`2416a32`](https://github.com/stdlib-js/stdlib/commit/2416a3288d2de3fbd126d59dcb6bacd6b8452835) - update `blas/ext` TypeScript declarations
+-   [`e17d59e`](https://github.com/stdlib-js/stdlib/commit/e17d59e1309c01a67a34da99428a6e26a9e79854) - update `blas/ext/base/ndarray` TypeScript declarations
+-   [`0efd288`](https://github.com/stdlib-js/stdlib/commit/0efd2889280e00281c200d16528a636922fb8188) - remove unsupported signature for complex numbers
+-   [`403d421`](https://github.com/stdlib-js/stdlib/commit/403d421f3a683c9885ec061323e740c952abab75) - update TS declarations of `blas/ext/base` namespace
+-   [`974a2c4`](https://github.com/stdlib-js/stdlib/commit/974a2c4641f08c90fab2a884a95cd0930b055900) - add `blas/ext/base/drrss` [(#8556)](https://github.com/stdlib-js/stdlib/pull/8556)
+-   [`cf4140d`](https://github.com/stdlib-js/stdlib/commit/cf4140d45ad394171a01c08307a51c70aa25ece0) - add `stats/strided/wasm/dmeanpw`  [(#7100)](https://github.com/stdlib-js/stdlib/pull/7100)
 -   [`05fa508`](https://github.com/stdlib-js/stdlib/commit/05fa508642bd188a9a2e907ad7510b2b2b8742f3) - add `linspace` to namespace
 -   [`3936ac7`](https://github.com/stdlib-js/stdlib/commit/3936ac7831947ba379cb6120f89a2d477924779e) - add `blas/ext/linspace`
 -   [`c8d069a`](https://github.com/stdlib-js/stdlib/commit/c8d069a244fed6f3fab921e1b3d2feea7a1cd129) - add `toSortedhp` to namespace
@@ -240,6 +246,16 @@
 
 ### Bug Fixes
 
+-   [`3e3a5dd`](https://github.com/stdlib-js/stdlib/commit/3e3a5dd6065bf138f094c6f00aa828a15f00eebe) - ensure correct `this` context when creating a new Module instance
+-   [`442e10e`](https://github.com/stdlib-js/stdlib/commit/442e10eb7ed4edb530525cdbf377064260e12229) - ensure correct `this` context when creating a new Module instance
+-   [`8ec483b`](https://github.com/stdlib-js/stdlib/commit/8ec483b22a52beb45e08a5ab4c09bbe94c8c6448) - ensure correct `this` context when creating a new Module instance
+-   [`2f6263c`](https://github.com/stdlib-js/stdlib/commit/2f6263c88eb4378319e33ba881ad6a5e05429aea) - ensure correct `this` context when creating a new Module instance
+-   [`482c826`](https://github.com/stdlib-js/stdlib/commit/482c826e1a295ac57f1a22fe863c57a3ab56850c) - ensure correct `this` context when creating a new Module instance
+-   [`9c9117c`](https://github.com/stdlib-js/stdlib/commit/9c9117c23cfe53504a7d003cb660c0dd18ecd257) - ensure correct `this` context when creating a new Module instance
+-   [`73ab253`](https://github.com/stdlib-js/stdlib/commit/73ab25369feaf6674b3a21e9c56655e34d5d717f) - ensure correct `this` context when creating a new Module instance
+-   [`a86283f`](https://github.com/stdlib-js/stdlib/commit/a86283f988a980a51500a4d45d60ccd2ba46417c) - ensure correct `this` context when creating a new Module instance
+-   [`08eb445`](https://github.com/stdlib-js/stdlib/commit/08eb4454182eef74c3396ae5df5b6bfdd958a22a) - ensure correct `this` context when creating a new Module instance
+-   [`7782edc`](https://github.com/stdlib-js/stdlib/commit/7782edc3a976a94f6e0b881751b98d0a13bfe71a) - ensure correct `this` context when creating a new Module instance
 -   [`404b4d6`](https://github.com/stdlib-js/stdlib/commit/404b4d6daae129b3889d1ce609285c0ebe8f5715) - remove extra dtype array
 -   [`04668ca`](https://github.com/stdlib-js/stdlib/commit/04668cac4fdc3642a3531261f5a203d71e45e81d) - import correct data type
 -   [`7533913`](https://github.com/stdlib-js/stdlib/commit/75339137b0ab48062cb7e1cd05da5ded33a6cf9c) - update argument juggling
@@ -359,6 +375,7 @@
 
 ### BREAKING CHANGES
 
+-   [`0efd288`](https://github.com/stdlib-js/stdlib/commit/0efd2889280e00281c200d16528a636922fb8188): remove unsupported signature for complex numbers
 -   [`0864071`](https://github.com/stdlib-js/stdlib/commit/086407175aec71e2874727a7d3bad97d26289323): remove `@stdlib/blas-ext/base/dapxsumkbn-wasm`
 
     -   To migrate, users should update their import paths to use
@@ -419,6 +436,37 @@ A total of 42 issues were closed in this release:
 
 <details>
 
+-   [`4d90d1a`](https://github.com/stdlib-js/stdlib/commit/4d90d1a8908b2328735f43fccaca8e9a1daffb35) - **docs:** fix example code in TSDoc declarations _(by Philipp Burckhardt)_
+-   [`2416a32`](https://github.com/stdlib-js/stdlib/commit/2416a3288d2de3fbd126d59dcb6bacd6b8452835) - **feat:** update `blas/ext` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`e17d59e`](https://github.com/stdlib-js/stdlib/commit/e17d59e1309c01a67a34da99428a6e26a9e79854) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`0efd288`](https://github.com/stdlib-js/stdlib/commit/0efd2889280e00281c200d16528a636922fb8188) - **feat:** remove unsupported signature for complex numbers _(by Philipp Burckhardt)_
+-   [`88fe77a`](https://github.com/stdlib-js/stdlib/commit/88fe77a2f059149b803f51d1a787894c7670798b) - **docs:** fix example code in namespace TypeScript declarations _(by Philipp Burckhardt)_
+-   [`d3c2ccc`](https://github.com/stdlib-js/stdlib/commit/d3c2ccca187782867ce02171a4d0da106728a731) - **docs:** resolve typos and documentation inconsistencies _(by Philipp Burckhardt)_
+-   [`e964c37`](https://github.com/stdlib-js/stdlib/commit/e964c37eeba945d054546cf026ce9daf56ad260c) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnancusumkbn` [(#8679)](https://github.com/stdlib-js/stdlib/pull/8679) _(by Sijan Bhandari, Athan Reines)_
+-   [`6f4927c`](https://github.com/stdlib-js/stdlib/commit/6f4927cd89940a77eea0f1eef8fb7a3b5cdb0e2c) - **docs:** improve doctests for complex number instances in `blas/ext/base/zfill` [(#8648)](https://github.com/stdlib-js/stdlib/pull/8648) _(by Divyanshu, Athan Reines)_
+-   [`403d421`](https://github.com/stdlib-js/stdlib/commit/403d421f3a683c9885ec061323e740c952abab75) - **feat:** update TS declarations of `blas/ext/base` namespace _(by Philipp Burckhardt)_
+-   [`7e39b69`](https://github.com/stdlib-js/stdlib/commit/7e39b69431dfad9f542cd3b8028d4bd50718fc24) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
+-   [`7c3d0ed`](https://github.com/stdlib-js/stdlib/commit/7c3d0edd0bdce765b55a68d512a7186e3a1c7ae5) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dapx` [(#8646)](https://github.com/stdlib-js/stdlib/pull/8646) _(by Pratik)_
+-   [`086231d`](https://github.com/stdlib-js/stdlib/commit/086231d0bcfe2d4a9c4c932fc9333f8ac63c4087) - **bench:** refactor to use string interpolation in `blas/ext/base/dfill` _(by Athan Reines)_
+-   [`f0f8a70`](https://github.com/stdlib-js/stdlib/commit/f0f8a70989b6cfdabf6b928650c50b28aab5e224) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dfill` _(by Athan Reines)_
+-   [`f49428b`](https://github.com/stdlib-js/stdlib/commit/f49428bb322ae44614ba5be829cff4b146c1d143) - **docs:** improve doctests for complex number typed arrays _(by Athan Reines)_
+-   [`e8c8651`](https://github.com/stdlib-js/stdlib/commit/e8c8651693bc38d999b5f46cf31ccd370ad6cb8c) - **docs:** improve doctests for complex number instances in `blas/ext/base/cfill` _(by Athan Reines)_
+-   [`c520b5a`](https://github.com/stdlib-js/stdlib/commit/c520b5a0cae0c85e946f8a646e7cc8c01b3b5673) - **docs:** address TSDoc lint errors and add doctest aliases _(by Philipp Burckhardt)_
+-   [`47088cc`](https://github.com/stdlib-js/stdlib/commit/47088cc299d84289a904dd2e7d2cdf0aee9057aa) - **docs:** fix TSDoc comments example code and return annotation values _(by Philipp Burckhardt)_
+-   [`e62f498`](https://github.com/stdlib-js/stdlib/commit/e62f498b2bad582476862a5872115ae22152fe88) - **docs:** fix example code and return annotations in TSDoc examples _(by Philipp Burckhardt)_
+-   [`974a2c4`](https://github.com/stdlib-js/stdlib/commit/974a2c4641f08c90fab2a884a95cd0930b055900) - **feat:** add `blas/ext/base/drrss` [(#8556)](https://github.com/stdlib-js/stdlib/pull/8556) _(by Nakul Krishnakumar, Athan Reines)_
+-   [`3e3a5dd`](https://github.com/stdlib-js/stdlib/commit/3e3a5dd6065bf138f094c6f00aa828a15f00eebe) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`442e10e`](https://github.com/stdlib-js/stdlib/commit/442e10eb7ed4edb530525cdbf377064260e12229) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`8ec483b`](https://github.com/stdlib-js/stdlib/commit/8ec483b22a52beb45e08a5ab4c09bbe94c8c6448) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`2f6263c`](https://github.com/stdlib-js/stdlib/commit/2f6263c88eb4378319e33ba881ad6a5e05429aea) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`482c826`](https://github.com/stdlib-js/stdlib/commit/482c826e1a295ac57f1a22fe863c57a3ab56850c) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`9c9117c`](https://github.com/stdlib-js/stdlib/commit/9c9117c23cfe53504a7d003cb660c0dd18ecd257) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`73ab253`](https://github.com/stdlib-js/stdlib/commit/73ab25369feaf6674b3a21e9c56655e34d5d717f) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`a86283f`](https://github.com/stdlib-js/stdlib/commit/a86283f988a980a51500a4d45d60ccd2ba46417c) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`08eb445`](https://github.com/stdlib-js/stdlib/commit/08eb4454182eef74c3396ae5df5b6bfdd958a22a) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`7782edc`](https://github.com/stdlib-js/stdlib/commit/7782edc3a976a94f6e0b881751b98d0a13bfe71a) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
+-   [`cf4140d`](https://github.com/stdlib-js/stdlib/commit/cf4140d45ad394171a01c08307a51c70aa25ece0) - **feat:** add `stats/strided/wasm/dmeanpw`  [(#7100)](https://github.com/stdlib-js/stdlib/pull/7100) _(by Prashant Kumar Yadav, Athan Reines, stdlib-bot)_
+-   [`f2010cd`](https://github.com/stdlib-js/stdlib/commit/f2010cdee7b9f341028d588da04c7a12be37765d) - **docs:** add missing space _(by Philipp Burckhardt)_
 -   [`f370594`](https://github.com/stdlib-js/stdlib/commit/f37059471f31dd8eccd662262b77b73a6c88c79b) - **docs:** update namespace table of contents [(#8549)](https://github.com/stdlib-js/stdlib/pull/8549) _(by stdlib-bot)_
 -   [`66f9e29`](https://github.com/stdlib-js/stdlib/commit/66f9e29b1c8622840b583123374c65a330712471) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`24e1741`](https://github.com/stdlib-js/stdlib/commit/24e174134cde28a3231f72920d83374ce6e9f402) - **docs:** update copy _(by Athan Reines)_
@@ -1245,13 +1293,14 @@ A total of 42 issues were closed in this release:
 
 ### Contributors
 
-A total of 45 people contributed to this release. Thank you to the following contributors:
+A total of 49 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Ahmed Atwa
 -   Aleksandr
 -   Athan Reines
 -   Bryan Elee
+-   Divyanshu
 -   Geo Daoyu
 -   Gitty Harsha
 -   Golden Kumar
@@ -1263,6 +1312,7 @@ A total of 45 people contributed to this release. Thank you to the following con
 -   Lovelin Dhoni J B
 -   Mohammad Bin Aftab
 -   Muhammad Haris
+-   Nakul Krishnakumar
 -   Naveen Kumar
 -   Neeraj Pathak
 -   Philipp Burckhardt
@@ -1270,6 +1320,7 @@ A total of 45 people contributed to this release. Thank you to the following con
 -   Pranav Goswami
 -   Pranjal Jha
 -   Prashant Kumar Yadav
+-   Pratik
 -   Pratik Singh
 -   Praveen Kumar
 -   Priyansh Prajapati
@@ -1280,6 +1331,7 @@ A total of 45 people contributed to this release. Thank you to the following con
 -   Shabareesh Shetty
 -   Shivam Ahir
 -   Shubh Mehta
+-   Sijan Bhandari
 -   Sivam Das
 -   Snehil Shah
 -   Soumajit Chatterjee
