@@ -2,6 +2,44 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-15)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`ac4c4d6`](https://github.com/stdlib-js/stdlib/commit/ac4c4d68fb8dafc6566eadf8961eb3ad03b482f7) - **docs:** update `blas/ext` TypeScript declarations [(#10286)](https://github.com/stdlib-js/stdlib/pull/10286) _(by stdlib-bot)_
+-   [`3c238a1`](https://github.com/stdlib-js/stdlib/commit/3c238a1427a903ef8c48b45f3bc07483c2c82625) - **docs:** improve doctests for ndarray instances in `blas/ext/cusum` [(#10236)](https://github.com/stdlib-js/stdlib/pull/10236) _(by AyushiJain18270)_
+-   [`e825c5f`](https://github.com/stdlib-js/stdlib/commit/e825c5f034fc6bdfe21abd22ab6f6f82eb31153c) - **bench(dcusum):** use dynamic memory allocation [(#10209)](https://github.com/stdlib-js/stdlib/pull/10209) _(by me0-0, Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   AyushiJain18270
+-   Philipp Burckhardt
+-   me0-0
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.1">
 
 ## 0.3.1 (2026-02-08)
