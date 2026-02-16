@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-15)
+## Unreleased (2026-02-16)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`9df57d4`](https://github.com/stdlib-js/stdlib/commit/9df57d4d7a7383c849ad00e3cc4335888b6f2197) - **docs:** improve doctests for ndarray instances in `ndarray/gcusum` [(#10250)](https://github.com/stdlib-js/stdlib/pull/10250) _(by AyushiJain18270)_
 -   [`ac4c4d6`](https://github.com/stdlib-js/stdlib/commit/ac4c4d68fb8dafc6566eadf8961eb3ad03b482f7) - **docs:** update `blas/ext` TypeScript declarations [(#10286)](https://github.com/stdlib-js/stdlib/pull/10286) _(by stdlib-bot)_
 -   [`3c238a1`](https://github.com/stdlib-js/stdlib/commit/3c238a1427a903ef8c48b45f3bc07483c2c82625) - **docs:** improve doctests for ndarray instances in `blas/ext/cusum` [(#10236)](https://github.com/stdlib-js/stdlib/pull/10236) _(by AyushiJain18270)_
 -   [`e825c5f`](https://github.com/stdlib-js/stdlib/commit/e825c5f034fc6bdfe21abd22ab6f6f82eb31153c) - **bench(dcusum):** use dynamic memory allocation [(#10209)](https://github.com/stdlib-js/stdlib/pull/10209) _(by me0-0, Philipp Burckhardt)_
