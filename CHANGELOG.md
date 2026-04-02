@@ -4,12 +4,89 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-25)
+## Unreleased (2026-04-02)
+
+<section class="features">
+
+### Features
+
+-   [`947396d`](https://github.com/stdlib-js/stdlib/commit/947396d8cb773d48baa65abe550f6c5fa41d3087) - add `join` to namespace
+-   [`e28e722`](https://github.com/stdlib-js/stdlib/commit/e28e7227b7b94ad41c0efde755dabee7ac08478a) - add `circshift` to namespace
+-   [`e032aae`](https://github.com/stdlib-js/stdlib/commit/e032aae332443ea4fb933cdf65ab799739c35dc5) - add `soneTo` to namespace
+-   [`d9e018a`](https://github.com/stdlib-js/stdlib/commit/d9e018a06fcdb391e5ba31186a0e30c6a915b591) - add `zzeroTo` to namespace
+-   [`34f7f92`](https://github.com/stdlib-js/stdlib/commit/34f7f921c1d3138dd155f790d7d036e3e1ed8a0e) - add `szeroTo` to namespace
+-   [`2e70241`](https://github.com/stdlib-js/stdlib/commit/2e70241ab99ecf58e4aed0ebade4983398804782) - add `gzeroTo` to namespace
+-   [`c706e69`](https://github.com/stdlib-js/stdlib/commit/c706e698793d4d06642ba3c09eb81976ba451117) - add `dzeroTo` to namespace
+-   [`f47983a`](https://github.com/stdlib-js/stdlib/commit/f47983ae61191f72eec30550607540f555724ad9) - add `blas/ext/base/ndarray/dzero-to` [(#11260)](https://github.com/stdlib-js/stdlib/pull/11260)
+-   [`d6db92c`](https://github.com/stdlib-js/stdlib/commit/d6db92cf63e0550c2f16386dbc07db987667f273) - add `blas/ext/base/ndarray/szero-to` [(#11259)](https://github.com/stdlib-js/stdlib/pull/11259)
+-   [`ed8d4b1`](https://github.com/stdlib-js/stdlib/commit/ed8d4b1af281aac638132dd10f4d936af14e2f21) - add `blas/ext/base/ndarray/gzero-to` [(#11258)](https://github.com/stdlib-js/stdlib/pull/11258)
+-   [`aec699a`](https://github.com/stdlib-js/stdlib/commit/aec699a23fadd9ac026d51904b1756c1a6e98061) - add `blas/ext/base/sone-to` [(#11265)](https://github.com/stdlib-js/stdlib/pull/11265)
+-   [`5bde225`](https://github.com/stdlib-js/stdlib/commit/5bde225dc771d6d87760e89007cfe0c454c3747b) - add `blas/ext/base/zzero-to` [(#11222)](https://github.com/stdlib-js/stdlib/pull/11222)
+-   [`0cf9821`](https://github.com/stdlib-js/stdlib/commit/0cf9821201fa638279fd4bbb7696c3ebd56253ff) - add `blas/ext/circshift` [(#11189)](https://github.com/stdlib-js/stdlib/pull/11189)
+-   [`e25407e`](https://github.com/stdlib-js/stdlib/commit/e25407edd41c8eb563bb7a452677b1283bd3c3a2) - add `gzeroTo` to namespace
+-   [`20b2de0`](https://github.com/stdlib-js/stdlib/commit/20b2de04ae9d607abca38591e859a5e5f8eab88c) - add `blas/ext/base/gzero-to` [(#11191)](https://github.com/stdlib-js/stdlib/pull/11191)
+-   [`36db74c`](https://github.com/stdlib-js/stdlib/commit/36db74cb5fea70abbc7f05332af94197e520ab2a) - update `blas/ext/base/ndarray` TypeScript declarations [(#11197)](https://github.com/stdlib-js/stdlib/pull/11197)
+-   [`3b257de`](https://github.com/stdlib-js/stdlib/commit/3b257dea9539f4c1357c0461925ec75a5721036d) - add `szeroTo` to namespace
+-   [`e0dd86c`](https://github.com/stdlib-js/stdlib/commit/e0dd86c929140ee807487322e957b2760401c6ea) - add `dindexOfRow` to namespace
+-   [`083aed7`](https://github.com/stdlib-js/stdlib/commit/083aed7c06206cea17f486d8b66ce811d4b72476) - add `czeroTo` to namespace
+-   [`ddb70d6`](https://github.com/stdlib-js/stdlib/commit/ddb70d636f1fa0223cfdbb90d2a3acbbbe631488) - add `blas/ext/base/dindex-of-row` [(#11162)](https://github.com/stdlib-js/stdlib/pull/11162)
+-   [`eec976a`](https://github.com/stdlib-js/stdlib/commit/eec976a8177ebe0904deead69da4ca504463fe57) - add `blas/ext/base/czero-to` [(#11192)](https://github.com/stdlib-js/stdlib/pull/11192)
+-   [`b241a6d`](https://github.com/stdlib-js/stdlib/commit/b241a6dd8bd6f2275c1168919d110d13e795001d) - add `blas/ext/base/szero-to` [(#11190)](https://github.com/stdlib-js/stdlib/pull/11190)
+-   [`80a1fc1`](https://github.com/stdlib-js/stdlib/commit/80a1fc1f478db29c13e4bbbe3a00ad330542ff00) - add `dcircshift` and `scircshift` to namespace
+-   [`1b0b669`](https://github.com/stdlib-js/stdlib/commit/1b0b669c1ce63a75ce46c6a06f0f07a7544d5bfa) - add `blas/ext/base/ndarray/scircshift` [(#11177)](https://github.com/stdlib-js/stdlib/pull/11177)
+-   [`899e976`](https://github.com/stdlib-js/stdlib/commit/899e9768a73c76b8d2239f3939f2e2a3c669a19c) - add `blas/ext/base/ndarray/dcircshift` [(#11176)](https://github.com/stdlib-js/stdlib/pull/11176)
+-   [`ed59264`](https://github.com/stdlib-js/stdlib/commit/ed592647ff3cf67201974cef05dddebdd392ba7c) - add `gcircshift` to namespace
+-   [`fdf402d`](https://github.com/stdlib-js/stdlib/commit/fdf402da400ed2f7423f8aeffddddc765b719648) - add `blas/ext/base/ndarray/gcircshift` [(#11178)](https://github.com/stdlib-js/stdlib/pull/11178)
+-   [`8427c6a`](https://github.com/stdlib-js/stdlib/commit/8427c6a346e575bdc3aba46679763649f91fae97) - add `zsumkbn` to namespace
+-   [`f05fd5e`](https://github.com/stdlib-js/stdlib/commit/f05fd5ec7c534ff7bfcdf0b003844668be74cd37) - add `ssum*` packages to namespace
+-   [`00a150a`](https://github.com/stdlib-js/stdlib/commit/00a150a8f248211a585ff64f6d06377d1c07da1b) - add `snansum*` packages to namespace
+-   [`4fd2a21`](https://github.com/stdlib-js/stdlib/commit/4fd2a219ae6e07280d6cc6a1b5b09a4041372cfc) - add `scusum*` packages to namespace
+-   [`88a1858`](https://github.com/stdlib-js/stdlib/commit/88a185876ae0c29b939971a8c4886c2baf802c85) - add `gsum*` packages to namespace
+-   [`561c7a6`](https://github.com/stdlib-js/stdlib/commit/561c7a6c4a48617c17afb9f27cb542f3a6d21edf) - add `gsort` to namespace
+-   [`825d1ff`](https://github.com/stdlib-js/stdlib/commit/825d1ff16c1ebde30a9a0e42d13c8a454970f600) - add `gnansum*` packages to namespace
+-   [`973f4df`](https://github.com/stdlib-js/stdlib/commit/973f4df4b3ddb831ff8419e4eb2510c7e381b0e4) - add `gcusum*` packages to namespace
+-   [`cf3741e`](https://github.com/stdlib-js/stdlib/commit/cf3741e5a445a8bb8b6a8374ce9f2580895881e7) - add `dsum*` packages to namespace
+-   [`722ad36`](https://github.com/stdlib-js/stdlib/commit/722ad364638938e89ecbf6701814987815372ab6) - add `dsort*` packages to namespace
+-   [`8fe4e5c`](https://github.com/stdlib-js/stdlib/commit/8fe4e5cccb92b68eb3e72f350e983bea6087dec4) - add `dnansum*` packages to namespace
+-   [`aeb4f1b`](https://github.com/stdlib-js/stdlib/commit/aeb4f1bcd4fd85e034b7d3147794df15b979ab8f) - add `dcusumkbn`, `dcusumkbn2`, `dcusumors`, `dcusumpw` to namespace
+-   [`b9a7439`](https://github.com/stdlib-js/stdlib/commit/b9a7439d4f1ca46f88cc855042770f6c67833b01) - add `csumkbn` to namespace
+-   [`85155cb`](https://github.com/stdlib-js/stdlib/commit/85155cb6ae402aec36efd20d55c56b2c77436c0c) - add `gjoinBetween` to namespace
+-   [`0c0ad66`](https://github.com/stdlib-js/stdlib/commit/0c0ad66098389167a139e820fbb7ccf1743affb5) - add `gjoin` to namespace
+-   [`8ea2465`](https://github.com/stdlib-js/stdlib/commit/8ea24652dd16bf22b2bd22ecc6afb8c82cf8ba39) - add `scircshift` to namespace
+-   [`7f3d693`](https://github.com/stdlib-js/stdlib/commit/7f3d693315c21301d959976211e7516a38e2f3ec) - add `gjoinBetween` to namespace
+-   [`b56b110`](https://github.com/stdlib-js/stdlib/commit/b56b1102f42d32f640c2bf762659870a4e76e43c) - add `gconjoin` to namespace
+-   [`72b4e77`](https://github.com/stdlib-js/stdlib/commit/72b4e77f402e62ca63623dd0f9c017a82fc933dd) - add `doneTo` to namespace
+-   [`f704d5b`](https://github.com/stdlib-js/stdlib/commit/f704d5b4e33435036f8a735d095b78b41b17f2cb) - add `dcircshift` to namespace
+-   [`a13b269`](https://github.com/stdlib-js/stdlib/commit/a13b26917f85ed3410e65d3920f2855225a58818) - add `blas/ext/base/ndarray/gjoin-between` [(#11163)](https://github.com/stdlib-js/stdlib/pull/11163)
+-   [`f53f0cf`](https://github.com/stdlib-js/stdlib/commit/f53f0cf595e5591fe9f7320f4f192fe8c5afa7a8) - add `blas/ext/base/done-to` [(#11161)](https://github.com/stdlib-js/stdlib/pull/11161)
+-   [`e146f6e`](https://github.com/stdlib-js/stdlib/commit/e146f6ea7925fef840e262e9894014f5f56fc5bc) - add `blas/ext/base/gconjoin` [(#11142)](https://github.com/stdlib-js/stdlib/pull/11142)
+-   [`34c1828`](https://github.com/stdlib-js/stdlib/commit/34c1828ee03a00a6d136c48e1b9399cd284aaed5) - add `blas/ext/base/gjoin-between` [(#11140)](https://github.com/stdlib-js/stdlib/pull/11140)
+-   [`d36550d`](https://github.com/stdlib-js/stdlib/commit/d36550d382e11c60c6c0ee4bb3ff17c64c97089c) - add `blas/ext/base/scircshift` [(#11006)](https://github.com/stdlib-js/stdlib/pull/11006)
+-   [`231767b`](https://github.com/stdlib-js/stdlib/commit/231767bcab64bda4f716847c7f389d3470af9db9) - add `blas/ext/base/dcircshift` [(#10977)](https://github.com/stdlib-js/stdlib/pull/10977)
+-   [`13cf096`](https://github.com/stdlib-js/stdlib/commit/13cf0961eca66b2645d3733c963ffa492ef447aa) - add `gcircshift` to namespace
+-   [`d8b3767`](https://github.com/stdlib-js/stdlib/commit/d8b37675b6f8aa8b91bf918a2434719eb8433c41) - add `blas/ext/base/gcircshift` [(#11007)](https://github.com/stdlib-js/stdlib/pull/11007)
+-   [`56b1e38`](https://github.com/stdlib-js/stdlib/commit/56b1e387b0bad1bbb8b6dde4a73882775b67a59e) - add `gsort` to namespace
+-   [`00fd0cf`](https://github.com/stdlib-js/stdlib/commit/00fd0cf3e9997b181a4c95355d62eb514d150495) - add `gjoin` to namespace
+-   [`38ff7f6`](https://github.com/stdlib-js/stdlib/commit/38ff7f678b0f46e0b4c1e8c12685db547e3091f6) - add `drss`, `drssbl`, `drsskbn` to namespace
+-   [`560fbcb`](https://github.com/stdlib-js/stdlib/commit/560fbcbacd73996764e4ac55106cd6c6d76ea094) - add `drrss` to namespace
+-   [`c13dc0d`](https://github.com/stdlib-js/stdlib/commit/c13dc0d589036ef489dca53a6d0f4b4758bd8e44) - add `dsort` to namespace
+-   [`5f11e57`](https://github.com/stdlib-js/stdlib/commit/5f11e57b9f6a0b9e680680a39a43efac00d44242) - add `dzeroTo` to namespace
+-   [`9015bd8`](https://github.com/stdlib-js/stdlib/commit/9015bd8546020c055cbd29b093b3a0d43b3c3397) - add `blas/ext/base/dzero-to` [(#11146)](https://github.com/stdlib-js/stdlib/pull/11146)
+-   [`0e62b3f`](https://github.com/stdlib-js/stdlib/commit/0e62b3fbc7f29583bfd0ba72f9e3d900af99e9a4) - add C implementation for `blas/ext/base/ndarray/ssum` [(#10078)](https://github.com/stdlib-js/stdlib/pull/10078)
+-   [`d7c9033`](https://github.com/stdlib-js/stdlib/commit/d7c9033dec5f569d53dd71706ce6f1124e886259) - add C implementation for `blas/ext/base/ndarray/dsum` [(#10065)](https://github.com/stdlib-js/stdlib/pull/10065)
+-   [`de74169`](https://github.com/stdlib-js/stdlib/commit/de7416999fa2bd9a2e912d70b97540b0575d0599) - add `blas/ext/base/ndarray/gsort` [(#9734)](https://github.com/stdlib-js/stdlib/pull/9734)
+
+</section>
+
+<!-- /.features -->
 
 <section class="bug-fixes">
 
 ### Bug Fixes
 
+-   [`51981c7`](https://github.com/stdlib-js/stdlib/commit/51981c7c552f088da5cc1a36c005a9f3d550bfea) - preserve sign of zero in native C implementation of `blas/ext/base/ssumpw`
+-   [`c703f0f`](https://github.com/stdlib-js/stdlib/commit/c703f0f66c85fdd8890b2a0603ebe9934892d1b6) - rename C function to `stdlib_blas_ext_ssum` in `blas/ext/base/ndarray/ssum`
+-   [`60fcd9d`](https://github.com/stdlib-js/stdlib/commit/60fcd9dc51b43ad76b1b14e6d7b4c30a5670114a) - improve type specificity
 -   [`383707f`](https://github.com/stdlib-js/stdlib/commit/383707fb11279899f663267e47dcb303070f63b4) - remove erroneous `browser` field excluding `ndarray` method in `stats/strided/mskminabs` and `blas/ext/base/gnannsumkbn`
 
 </section>
@@ -22,6 +99,208 @@
 
 <details>
 
+-   [`947396d`](https://github.com/stdlib-js/stdlib/commit/947396d8cb773d48baa65abe550f6c5fa41d3087) - **feat:** add `join` to namespace _(by Athan Reines)_
+-   [`e28e722`](https://github.com/stdlib-js/stdlib/commit/e28e7227b7b94ad41c0efde755dabee7ac08478a) - **feat:** add `circshift` to namespace _(by Athan Reines)_
+-   [`e032aae`](https://github.com/stdlib-js/stdlib/commit/e032aae332443ea4fb933cdf65ab799739c35dc5) - **feat:** add `soneTo` to namespace _(by Athan Reines)_
+-   [`d9e018a`](https://github.com/stdlib-js/stdlib/commit/d9e018a06fcdb391e5ba31186a0e30c6a915b591) - **feat:** add `zzeroTo` to namespace _(by Athan Reines)_
+-   [`34f7f92`](https://github.com/stdlib-js/stdlib/commit/34f7f921c1d3138dd155f790d7d036e3e1ed8a0e) - **feat:** add `szeroTo` to namespace _(by Athan Reines)_
+-   [`2e70241`](https://github.com/stdlib-js/stdlib/commit/2e70241ab99ecf58e4aed0ebade4983398804782) - **feat:** add `gzeroTo` to namespace _(by Athan Reines)_
+-   [`c706e69`](https://github.com/stdlib-js/stdlib/commit/c706e698793d4d06642ba3c09eb81976ba451117) - **feat:** add `dzeroTo` to namespace _(by Athan Reines)_
+-   [`f47983a`](https://github.com/stdlib-js/stdlib/commit/f47983ae61191f72eec30550607540f555724ad9) - **feat:** add `blas/ext/base/ndarray/dzero-to` [(#11260)](https://github.com/stdlib-js/stdlib/pull/11260) _(by Muhammad Haris)_
+-   [`d6db92c`](https://github.com/stdlib-js/stdlib/commit/d6db92cf63e0550c2f16386dbc07db987667f273) - **feat:** add `blas/ext/base/ndarray/szero-to` [(#11259)](https://github.com/stdlib-js/stdlib/pull/11259) _(by Muhammad Haris)_
+-   [`ed8d4b1`](https://github.com/stdlib-js/stdlib/commit/ed8d4b1af281aac638132dd10f4d936af14e2f21) - **feat:** add `blas/ext/base/ndarray/gzero-to` [(#11258)](https://github.com/stdlib-js/stdlib/pull/11258) _(by Muhammad Haris)_
+-   [`aec699a`](https://github.com/stdlib-js/stdlib/commit/aec699a23fadd9ac026d51904b1756c1a6e98061) - **feat:** add `blas/ext/base/sone-to` [(#11265)](https://github.com/stdlib-js/stdlib/pull/11265) _(by Muhammad Haris)_
+-   [`5bde225`](https://github.com/stdlib-js/stdlib/commit/5bde225dc771d6d87760e89007cfe0c454c3747b) - **feat:** add `blas/ext/base/zzero-to` [(#11222)](https://github.com/stdlib-js/stdlib/pull/11222) _(by Muhammad Haris, Athan Reines)_
+-   [`0cf9821`](https://github.com/stdlib-js/stdlib/commit/0cf9821201fa638279fd4bbb7696c3ebd56253ff) - **feat:** add `blas/ext/circshift` [(#11189)](https://github.com/stdlib-js/stdlib/pull/11189) _(by Muhammad Haris, Athan Reines)_
+-   [`5e93594`](https://github.com/stdlib-js/stdlib/commit/5e93594dd241e229cc3605b53dfa4290168526fc) - **docs:** update namespace table of contents [(#11214)](https://github.com/stdlib-js/stdlib/pull/11214) _(by stdlib-bot)_
+-   [`e25407e`](https://github.com/stdlib-js/stdlib/commit/e25407edd41c8eb563bb7a452677b1283bd3c3a2) - **feat:** add `gzeroTo` to namespace _(by Athan Reines)_
+-   [`20b2de0`](https://github.com/stdlib-js/stdlib/commit/20b2de04ae9d607abca38591e859a5e5f8eab88c) - **feat:** add `blas/ext/base/gzero-to` [(#11191)](https://github.com/stdlib-js/stdlib/pull/11191) _(by Muhammad Haris, Athan Reines)_
+-   [`ba129b3`](https://github.com/stdlib-js/stdlib/commit/ba129b35eed5099aece6caa686c3794e9a6b08b5) - **docs:** update namespace table of contents [(#11198)](https://github.com/stdlib-js/stdlib/pull/11198) _(by stdlib-bot)_
+-   [`36db74c`](https://github.com/stdlib-js/stdlib/commit/36db74cb5fea70abbc7f05332af94197e520ab2a) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#11197)](https://github.com/stdlib-js/stdlib/pull/11197) _(by stdlib-bot)_
+-   [`a0169bc`](https://github.com/stdlib-js/stdlib/commit/a0169bcfc0d05ac94c206ac5d6d0a898ec304463) - **docs:** remove unused `ndarray2array` requires from README usage examples [(#11194)](https://github.com/stdlib-js/stdlib/pull/11194) _(by Philipp Burckhardt)_
+-   [`3b257de`](https://github.com/stdlib-js/stdlib/commit/3b257dea9539f4c1357c0461925ec75a5721036d) - **feat:** add `szeroTo` to namespace _(by Athan Reines)_
+-   [`e0dd86c`](https://github.com/stdlib-js/stdlib/commit/e0dd86c929140ee807487322e957b2760401c6ea) - **feat:** add `dindexOfRow` to namespace _(by Athan Reines)_
+-   [`083aed7`](https://github.com/stdlib-js/stdlib/commit/083aed7c06206cea17f486d8b66ce811d4b72476) - **feat:** add `czeroTo` to namespace _(by Athan Reines)_
+-   [`ddb70d6`](https://github.com/stdlib-js/stdlib/commit/ddb70d636f1fa0223cfdbb90d2a3acbbbe631488) - **feat:** add `blas/ext/base/dindex-of-row` [(#11162)](https://github.com/stdlib-js/stdlib/pull/11162) _(by Muhammad Haris, Athan Reines)_
+-   [`eec976a`](https://github.com/stdlib-js/stdlib/commit/eec976a8177ebe0904deead69da4ca504463fe57) - **feat:** add `blas/ext/base/czero-to` [(#11192)](https://github.com/stdlib-js/stdlib/pull/11192) _(by Muhammad Haris)_
+-   [`b241a6d`](https://github.com/stdlib-js/stdlib/commit/b241a6dd8bd6f2275c1168919d110d13e795001d) - **feat:** add `blas/ext/base/szero-to` [(#11190)](https://github.com/stdlib-js/stdlib/pull/11190) _(by Muhammad Haris, Athan Reines)_
+-   [`80a1fc1`](https://github.com/stdlib-js/stdlib/commit/80a1fc1f478db29c13e4bbbe3a00ad330542ff00) - **feat:** add `dcircshift` and `scircshift` to namespace _(by Athan Reines)_
+-   [`1b0b669`](https://github.com/stdlib-js/stdlib/commit/1b0b669c1ce63a75ce46c6a06f0f07a7544d5bfa) - **feat:** add `blas/ext/base/ndarray/scircshift` [(#11177)](https://github.com/stdlib-js/stdlib/pull/11177) _(by Muhammad Haris, Athan Reines)_
+-   [`899e976`](https://github.com/stdlib-js/stdlib/commit/899e9768a73c76b8d2239f3939f2e2a3c669a19c) - **feat:** add `blas/ext/base/ndarray/dcircshift` [(#11176)](https://github.com/stdlib-js/stdlib/pull/11176) _(by Muhammad Haris)_
+-   [`ed59264`](https://github.com/stdlib-js/stdlib/commit/ed592647ff3cf67201974cef05dddebdd392ba7c) - **feat:** add `gcircshift` to namespace _(by Athan Reines)_
+-   [`fdf402d`](https://github.com/stdlib-js/stdlib/commit/fdf402da400ed2f7423f8aeffddddc765b719648) - **feat:** add `blas/ext/base/ndarray/gcircshift` [(#11178)](https://github.com/stdlib-js/stdlib/pull/11178) _(by Muhammad Haris, Athan Reines)_
+-   [`8892296`](https://github.com/stdlib-js/stdlib/commit/889229649e046242045e484d4c35097b2fb9ca68) - **docs:** add missing private annotation in `blas/ext/base/ndarray/ssum` [(#11175)](https://github.com/stdlib-js/stdlib/pull/11175) _(by Kaustubh Patange)_
+-   [`3bf34ec`](https://github.com/stdlib-js/stdlib/commit/3bf34ec6df7f894f7cbee125eb3f655ebb2d6a4e) - **chore:** fix typos, grammar, and minor issues across multiple packages [(#11167)](https://github.com/stdlib-js/stdlib/pull/11167) _(by Philipp Burckhardt)_
+-   [`8427c6a`](https://github.com/stdlib-js/stdlib/commit/8427c6a346e575bdc3aba46679763649f91fae97) - **feat:** add `zsumkbn` to namespace _(by Athan Reines)_
+-   [`f05fd5e`](https://github.com/stdlib-js/stdlib/commit/f05fd5ec7c534ff7bfcdf0b003844668be74cd37) - **feat:** add `ssum*` packages to namespace _(by Athan Reines)_
+-   [`00a150a`](https://github.com/stdlib-js/stdlib/commit/00a150a8f248211a585ff64f6d06377d1c07da1b) - **feat:** add `snansum*` packages to namespace _(by Athan Reines)_
+-   [`4fd2a21`](https://github.com/stdlib-js/stdlib/commit/4fd2a219ae6e07280d6cc6a1b5b09a4041372cfc) - **feat:** add `scusum*` packages to namespace _(by Athan Reines)_
+-   [`88a1858`](https://github.com/stdlib-js/stdlib/commit/88a185876ae0c29b939971a8c4886c2baf802c85) - **feat:** add `gsum*` packages to namespace _(by Athan Reines)_
+-   [`561c7a6`](https://github.com/stdlib-js/stdlib/commit/561c7a6c4a48617c17afb9f27cb542f3a6d21edf) - **feat:** add `gsort` to namespace _(by Athan Reines)_
+-   [`825d1ff`](https://github.com/stdlib-js/stdlib/commit/825d1ff16c1ebde30a9a0e42d13c8a454970f600) - **feat:** add `gnansum*` packages to namespace _(by Athan Reines)_
+-   [`973f4df`](https://github.com/stdlib-js/stdlib/commit/973f4df4b3ddb831ff8419e4eb2510c7e381b0e4) - **feat:** add `gcusum*` packages to namespace _(by Athan Reines)_
+-   [`cf3741e`](https://github.com/stdlib-js/stdlib/commit/cf3741e5a445a8bb8b6a8374ce9f2580895881e7) - **feat:** add `dsum*` packages to namespace _(by Athan Reines)_
+-   [`722ad36`](https://github.com/stdlib-js/stdlib/commit/722ad364638938e89ecbf6701814987815372ab6) - **feat:** add `dsort*` packages to namespace _(by Athan Reines)_
+-   [`8fe4e5c`](https://github.com/stdlib-js/stdlib/commit/8fe4e5cccb92b68eb3e72f350e983bea6087dec4) - **feat:** add `dnansum*` packages to namespace _(by Athan Reines)_
+-   [`aeb4f1b`](https://github.com/stdlib-js/stdlib/commit/aeb4f1bcd4fd85e034b7d3147794df15b979ab8f) - **feat:** add `dcusumkbn`, `dcusumkbn2`, `dcusumors`, `dcusumpw` to namespace _(by Athan Reines)_
+-   [`b9a7439`](https://github.com/stdlib-js/stdlib/commit/b9a7439d4f1ca46f88cc855042770f6c67833b01) - **feat:** add `csumkbn` to namespace _(by Athan Reines)_
+-   [`85155cb`](https://github.com/stdlib-js/stdlib/commit/85155cb6ae402aec36efd20d55c56b2c77436c0c) - **feat:** add `gjoinBetween` to namespace _(by Athan Reines)_
+-   [`0c0ad66`](https://github.com/stdlib-js/stdlib/commit/0c0ad66098389167a139e820fbb7ccf1743affb5) - **feat:** add `gjoin` to namespace _(by Athan Reines)_
+-   [`8ea2465`](https://github.com/stdlib-js/stdlib/commit/8ea24652dd16bf22b2bd22ecc6afb8c82cf8ba39) - **feat:** add `scircshift` to namespace _(by Athan Reines)_
+-   [`7f3d693`](https://github.com/stdlib-js/stdlib/commit/7f3d693315c21301d959976211e7516a38e2f3ec) - **feat:** add `gjoinBetween` to namespace _(by Athan Reines)_
+-   [`b56b110`](https://github.com/stdlib-js/stdlib/commit/b56b1102f42d32f640c2bf762659870a4e76e43c) - **feat:** add `gconjoin` to namespace _(by Athan Reines)_
+-   [`72b4e77`](https://github.com/stdlib-js/stdlib/commit/72b4e77f402e62ca63623dd0f9c017a82fc933dd) - **feat:** add `doneTo` to namespace _(by Athan Reines)_
+-   [`f704d5b`](https://github.com/stdlib-js/stdlib/commit/f704d5b4e33435036f8a735d095b78b41b17f2cb) - **feat:** add `dcircshift` to namespace _(by Athan Reines)_
+-   [`bf03c10`](https://github.com/stdlib-js/stdlib/commit/bf03c101fdc1f29ee4838246efe4161ffa673ab8) - **docs:** fix examples _(by Athan Reines)_
+-   [`a13b269`](https://github.com/stdlib-js/stdlib/commit/a13b26917f85ed3410e65d3920f2855225a58818) - **feat:** add `blas/ext/base/ndarray/gjoin-between` [(#11163)](https://github.com/stdlib-js/stdlib/pull/11163) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
+-   [`f53f0cf`](https://github.com/stdlib-js/stdlib/commit/f53f0cf595e5591fe9f7320f4f192fe8c5afa7a8) - **feat:** add `blas/ext/base/done-to` [(#11161)](https://github.com/stdlib-js/stdlib/pull/11161) _(by Muhammad Haris, Athan Reines)_
+-   [`e146f6e`](https://github.com/stdlib-js/stdlib/commit/e146f6ea7925fef840e262e9894014f5f56fc5bc) - **feat:** add `blas/ext/base/gconjoin` [(#11142)](https://github.com/stdlib-js/stdlib/pull/11142) _(by Muhammad Haris, Athan Reines)_
+-   [`34c1828`](https://github.com/stdlib-js/stdlib/commit/34c1828ee03a00a6d136c48e1b9399cd284aaed5) - **feat:** add `blas/ext/base/gjoin-between` [(#11140)](https://github.com/stdlib-js/stdlib/pull/11140) _(by Muhammad Haris, Athan Reines)_
+-   [`d36550d`](https://github.com/stdlib-js/stdlib/commit/d36550d382e11c60c6c0ee4bb3ff17c64c97089c) - **feat:** add `blas/ext/base/scircshift` [(#11006)](https://github.com/stdlib-js/stdlib/pull/11006) _(by Muhammad Haris, Athan Reines)_
+-   [`231767b`](https://github.com/stdlib-js/stdlib/commit/231767bcab64bda4f716847c7f389d3470af9db9) - **feat:** add `blas/ext/base/dcircshift` [(#10977)](https://github.com/stdlib-js/stdlib/pull/10977) _(by Muhammad Haris, Athan Reines)_
+-   [`13cf096`](https://github.com/stdlib-js/stdlib/commit/13cf0961eca66b2645d3733c963ffa492ef447aa) - **feat:** add `gcircshift` to namespace _(by Athan Reines)_
+-   [`d8b3767`](https://github.com/stdlib-js/stdlib/commit/d8b37675b6f8aa8b91bf918a2434719eb8433c41) - **feat:** add `blas/ext/base/gcircshift` [(#11007)](https://github.com/stdlib-js/stdlib/pull/11007) _(by Muhammad Haris, Athan Reines)_
+-   [`f9d1409`](https://github.com/stdlib-js/stdlib/commit/f9d140985e169d34f4e66bd770dc675ea28588a3) - **docs:** add missing JSDoc comment _(by Athan Reines)_
+-   [`56b1e38`](https://github.com/stdlib-js/stdlib/commit/56b1e387b0bad1bbb8b6dde4a73882775b67a59e) - **feat:** add `gsort` to namespace _(by Athan Reines)_
+-   [`00fd0cf`](https://github.com/stdlib-js/stdlib/commit/00fd0cf3e9997b181a4c95355d62eb514d150495) - **feat:** add `gjoin` to namespace _(by Athan Reines)_
+-   [`38ff7f6`](https://github.com/stdlib-js/stdlib/commit/38ff7f678b0f46e0b4c1e8c12685db547e3091f6) - **feat:** add `drss`, `drssbl`, `drsskbn` to namespace _(by Athan Reines)_
+-   [`560fbcb`](https://github.com/stdlib-js/stdlib/commit/560fbcbacd73996764e4ac55106cd6c6d76ea094) - **feat:** add `drrss` to namespace _(by Athan Reines)_
+-   [`c13dc0d`](https://github.com/stdlib-js/stdlib/commit/c13dc0d589036ef489dca53a6d0f4b4758bd8e44) - **feat:** add `dsort` to namespace _(by Athan Reines)_
+-   [`5f11e57`](https://github.com/stdlib-js/stdlib/commit/5f11e57b9f6a0b9e680680a39a43efac00d44242) - **feat:** add `dzeroTo` to namespace _(by Athan Reines)_
+-   [`9015bd8`](https://github.com/stdlib-js/stdlib/commit/9015bd8546020c055cbd29b093b3a0d43b3c3397) - **feat:** add `blas/ext/base/dzero-to` [(#11146)](https://github.com/stdlib-js/stdlib/pull/11146) _(by Muhammad Haris, Athan Reines)_
+-   [`60ced5c`](https://github.com/stdlib-js/stdlib/commit/60ced5c5a401f36223c967c9993d702dc8e2a78e) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/scusumors` [(#11108)](https://github.com/stdlib-js/stdlib/pull/11108) _(by Prajjwal Bajpai)_
+-   [`3be5bc3`](https://github.com/stdlib-js/stdlib/commit/3be5bc3da7fa0f80d8db33ae9201b51144bdb3bd) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/scusumpw` [(#11109)](https://github.com/stdlib-js/stdlib/pull/11109) _(by Prajjwal Bajpai)_
+-   [`f5df047`](https://github.com/stdlib-js/stdlib/commit/f5df047313143bc14a8d24bb6b5f02f3ce04b15c) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/scusum` [(#11096)](https://github.com/stdlib-js/stdlib/pull/11096) _(by Prajjwal Bajpai)_
+-   [`27f6ddb`](https://github.com/stdlib-js/stdlib/commit/27f6ddb2a9366177b0af9617e88cb7e3d4ea7148) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsorthp` [(#11097)](https://github.com/stdlib-js/stdlib/pull/11097) _(by Prajjwal Bajpai)_
+-   [`815ead6`](https://github.com/stdlib-js/stdlib/commit/815ead632da74b38efea5b512189599ebda62f67) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsortins` [(#11098)](https://github.com/stdlib-js/stdlib/pull/11098) _(by Prajjwal Bajpai)_
+-   [`8884d20`](https://github.com/stdlib-js/stdlib/commit/8884d201ffbfa3345c90fffc6dce6a8d0933f8e4) - **bench:** refactor to use string interpolation in `blas/ext/base/ssort2ins` [(#10913)](https://github.com/stdlib-js/stdlib/pull/10913) _(by Partha Das)_
+-   [`352e91a`](https://github.com/stdlib-js/stdlib/commit/352e91a533513a09a2004d9891e55516c4921b7d) - **bench:** refactor to use string interpolation in `blas/ext/base/ssort2sh` [(#10911)](https://github.com/stdlib-js/stdlib/pull/10911) _(by Partha Das)_
+-   [`e031155`](https://github.com/stdlib-js/stdlib/commit/e0311558e49df0b673eab70c11796fc7de62efb4) - **bench:** refactor to use string interpolation in `blas/ext/base/srev` [(#10912)](https://github.com/stdlib-js/stdlib/pull/10912) _(by Partha Das)_
+-   [`8feb27f`](https://github.com/stdlib-js/stdlib/commit/8feb27f9a92fdcf24daba1e31e7d0398a04aeb10) - **bench:** refactor to use string interpolation in `blas/ext/base/ssort2hp` [(#10915)](https://github.com/stdlib-js/stdlib/pull/10915) _(by Partha Das)_
+-   [`7a25b7b`](https://github.com/stdlib-js/stdlib/commit/7a25b7ba3a26a6742ece99abb673440c1adca0ec) - **bench:** refactor to use string interpolation in `blas/ext/base/snansumkbn` [(#10971)](https://github.com/stdlib-js/stdlib/pull/10971) _(by Partha Das)_
+-   [`59184d4`](https://github.com/stdlib-js/stdlib/commit/59184d4483dc012c2f342a356ce9ed7c6643819c) - **bench:** refactor to use string interpolation in `blas/ext/base/snansum` [(#10987)](https://github.com/stdlib-js/stdlib/pull/10987) _(by Partha Das)_
+-   [`df4dee8`](https://github.com/stdlib-js/stdlib/commit/df4dee8ede99d4e66716ecdd3cece77adf994435) - **bench:** refactor to use string interpolation in `blas/ext/base/slinspace` [(#10988)](https://github.com/stdlib-js/stdlib/pull/10988) _(by Partha Das)_
+-   [`5fa6e8c`](https://github.com/stdlib-js/stdlib/commit/5fa6e8cc15bfdc07d39385d8fa2a28006086ec98) - **bench:** refactor to use string interpolation in `blas/ext/base/slast-index-of` [(#10989)](https://github.com/stdlib-js/stdlib/pull/10989) _(by Partha Das)_
+-   [`d33a1c1`](https://github.com/stdlib-js/stdlib/commit/d33a1c1712e2e53ab1cdc41404e82216f3244787) - **bench:** refactor to use string interpolation in `blas/ext/base/snansumors` [(#10969)](https://github.com/stdlib-js/stdlib/pull/10969) _(by Partha Das)_
+-   [`e25b196`](https://github.com/stdlib-js/stdlib/commit/e25b196c5ea81c36b71f50dbacfae298f9f06b2f) - **bench:** refactor to use string interpolation in `blas/ext/base/snansumkbn2` [(#10970)](https://github.com/stdlib-js/stdlib/pull/10970) _(by Partha Das)_
+-   [`51981c7`](https://github.com/stdlib-js/stdlib/commit/51981c7c552f088da5cc1a36c005a9f3d550bfea) - **fix:** preserve sign of zero in native C implementation of `blas/ext/base/ssumpw` _(by Philipp Burckhardt)_
+-   [`41e2b32`](https://github.com/stdlib-js/stdlib/commit/41e2b321ee542ca7774071f7cf0f437a7d814be6) - **bench:** restore benchmark names _(by Philipp Burckhardt)_
+-   [`8510d5a`](https://github.com/stdlib-js/stdlib/commit/8510d5a97f6292d1bb35ca610fee5fac307b62fc) - **bench:** refactor to use string interpolation in `blas/ext/base/ssumpw` [(#10890)](https://github.com/stdlib-js/stdlib/pull/10890) _(by Partha Das)_
+-   [`2d61cd4`](https://github.com/stdlib-js/stdlib/commit/2d61cd4b240dd14d3a8d91d442bcd998e80302f7) - **bench:** refactor to use string interpolation in `blas/ext/base/zsumkbn` [(#10887)](https://github.com/stdlib-js/stdlib/pull/10887) _(by Partha Das)_
+-   [`4c4690c`](https://github.com/stdlib-js/stdlib/commit/4c4690c5030e5fdc36916d5d9ef2e72be8fc5e58) - **bench:** refactor to use string interpolation in `blas/ext/base/zsum` [(#10888)](https://github.com/stdlib-js/stdlib/pull/10888) _(by Partha Das)_
+-   [`7b564a3`](https://github.com/stdlib-js/stdlib/commit/7b564a39babd79ca96b5dba128d963b85ba5d94f) - **bench:** refactor to use string interpolation in `blas/ext/base/zfill` [(#10889)](https://github.com/stdlib-js/stdlib/pull/10889) _(by Partha Das)_
+-   [`8d13323`](https://github.com/stdlib-js/stdlib/commit/8d133232f414bf1c76d68d3b05152c103433c25e) - **bench:** refactor to use string interpolation in `blas/ext/base/ssumors` [(#10891)](https://github.com/stdlib-js/stdlib/pull/10891) _(by Partha Das)_
+-   [`12305c2`](https://github.com/stdlib-js/stdlib/commit/12305c2f852bd54ea9c4b6bce68a01438c0153ed) - **bench:** refactor to use string interpolation in `blas/ext/base/ssumkbn2` [(#10892)](https://github.com/stdlib-js/stdlib/pull/10892) _(by Partha Das)_
+-   [`650dc29`](https://github.com/stdlib-js/stdlib/commit/650dc29842a569f2edf461ba5f1fe8f0d5e69a83) - **bench:** refactor to use string interpolation in `blas/ext/base/ssum` [(#10893)](https://github.com/stdlib-js/stdlib/pull/10893) _(by Partha Das)_
+-   [`0cbc854`](https://github.com/stdlib-js/stdlib/commit/0cbc854085acdfafd0146f41ad1379e04b8cd980) - **bench:** refactor to use string interpolation in `blas/ext/base/ssortsh` [(#10894)](https://github.com/stdlib-js/stdlib/pull/10894) _(by Partha Das)_
+-   [`0fd4f45`](https://github.com/stdlib-js/stdlib/commit/0fd4f455bff03c90b036950a7af767c1943c35e9) - **bench:** refactor to use string interpolation in `blas/ext/base/ssortins` [(#10895)](https://github.com/stdlib-js/stdlib/pull/10895) _(by Partha Das)_
+-   [`3fc0d14`](https://github.com/stdlib-js/stdlib/commit/3fc0d14a4d2c612972f412dc76ceca1f056f0207) - **bench:** refactor to use string interpolation in `blas/ext/base/ssorthp` [(#10896)](https://github.com/stdlib-js/stdlib/pull/10896) _(by Partha Das)_
+-   [`5ee2387`](https://github.com/stdlib-js/stdlib/commit/5ee238783bec8d29308ff494cf1712f267e89acc) - **docs:** update `blas/ext/base/ndarray` TypeScript declarations [(#10803)](https://github.com/stdlib-js/stdlib/pull/10803) _(by stdlib-bot)_
+-   [`0abbc3a`](https://github.com/stdlib-js/stdlib/commit/0abbc3a05ed90414ddd2448afb8320f0f795607b) - **bench:** refactor to use string interpolation in blas/ext/base/dapxsumkbn [(#10814)](https://github.com/stdlib-js/stdlib/pull/10814) _(by Kamal Singh Rautela)_
+-   [`7d63533`](https://github.com/stdlib-js/stdlib/commit/7d63533e0bbced363f0ae9f4e536cd5d7690c226) - **bench:** refactor to use string interpolation in blas/ext/base/snansumpw [(#10820)](https://github.com/stdlib-js/stdlib/pull/10820) _(by Kamal Singh Rautela)_
+-   [`3c79af8`](https://github.com/stdlib-js/stdlib/commit/3c79af8ce70c17b691c222e53e6819b3d788fdfb) - **bench:** refactor to use string interpolation in blas/ext/base/ssumkbn [(#10821)](https://github.com/stdlib-js/stdlib/pull/10821) _(by Kamal Singh Rautela)_
+-   [`5ee28a1`](https://github.com/stdlib-js/stdlib/commit/5ee28a102d197b6c15b43e30c9f94c632a1beb85) - **bench:** refactor to use string interpolation in blas/ext/base/gapxsumkbn2 [(#10815)](https://github.com/stdlib-js/stdlib/pull/10815) _(by Kamal Singh Rautela)_
+-   [`89100b8`](https://github.com/stdlib-js/stdlib/commit/89100b8756289ccfd440069cbbc253d480352102) - **bench:** refactor to use string interpolation in blas/ext/base/gcusum [(#10816)](https://github.com/stdlib-js/stdlib/pull/10816) _(by Kamal Singh Rautela)_
+-   [`041cda0`](https://github.com/stdlib-js/stdlib/commit/041cda0c07550e530ad445b3f5612adea9bcc2d2) - **bench:** refactor to use string interpolation in blas/ext/base/glast-index-of [(#10817)](https://github.com/stdlib-js/stdlib/pull/10817) _(by Kamal Singh Rautela)_
+-   [`0f36255`](https://github.com/stdlib-js/stdlib/commit/0f362554d1999b233a60616232d914ff82eb5bb8) - **bench:** refactor to use string interpolation in blas/ext/base/gsort2ins [(#10818)](https://github.com/stdlib-js/stdlib/pull/10818) _(by Kamal Singh Rautela)_
+-   [`12da06a`](https://github.com/stdlib-js/stdlib/commit/12da06ab695d92688f2df329c3edc95c846e3679) - **bench:** refactor to use string interpolation in blas/ext/base/gsumpw [(#10819)](https://github.com/stdlib-js/stdlib/pull/10819) _(by Kamal Singh Rautela)_
+-   [`5f8e258`](https://github.com/stdlib-js/stdlib/commit/5f8e2586ad6dc5c441a25d60451714f5a99f99ea) - **bench:** refactor to use string interpolation in blas/ext/cusum [(#10822)](https://github.com/stdlib-js/stdlib/pull/10822) _(by Kamal Singh Rautela)_
+-   [`3b175f7`](https://github.com/stdlib-js/stdlib/commit/3b175f7f2b41f3088afa8e722a08cde865911150) - **bench:** refactor to use string interpolation in blas/ext/find-index [(#10823)](https://github.com/stdlib-js/stdlib/pull/10823) _(by Kamal Singh Rautela)_
+-   [`88723aa`](https://github.com/stdlib-js/stdlib/commit/88723aa94033307c7e1dad498c7b18fbd47e9601) - **bench:** refactor to use string interpolation in blas/ext/find-last-index [(#10824)](https://github.com/stdlib-js/stdlib/pull/10824) _(by Kamal Singh Rautela)_
+-   [`9088af9`](https://github.com/stdlib-js/stdlib/commit/9088af9b895e28543b27bfaaa9eb211769ccf65a) - **bench:** refactor to use string interpolation in blas/ext/index-of [(#10825)](https://github.com/stdlib-js/stdlib/pull/10825) _(by Kamal Singh Rautela)_
+-   [`d468a37`](https://github.com/stdlib-js/stdlib/commit/d468a373763a3803cab6cf327684ec2f18208dfa) - **bench:** refactor to use string interpolation in blas/ext/last-index-of [(#10826)](https://github.com/stdlib-js/stdlib/pull/10826) _(by Kamal Singh Rautela)_
+-   [`6009d56`](https://github.com/stdlib-js/stdlib/commit/6009d566bdfc6bf15474c6d7a9c9b5564b1b61b6) - **bench:** refactor to use string interpolation in blas/ext/linspace [(#10827)](https://github.com/stdlib-js/stdlib/pull/10827) _(by Kamal Singh Rautela)_
+-   [`117fa4e`](https://github.com/stdlib-js/stdlib/commit/117fa4e7727d7c1d2a13fa34d2b67fbbb0b8f1b4) - **bench:** refactor to use string interpolation in blas/ext/sorthp [(#10828)](https://github.com/stdlib-js/stdlib/pull/10828) _(by Kamal Singh Rautela)_
+-   [`e5fc67c`](https://github.com/stdlib-js/stdlib/commit/e5fc67cfc9f597d0fa47ae250ce7420341525497) - **bench:** refactor to use string interpolation in blas/ext/sum [(#10829)](https://github.com/stdlib-js/stdlib/pull/10829) _(by Kamal Singh Rautela)_
+-   [`b0892e4`](https://github.com/stdlib-js/stdlib/commit/b0892e4fb1447bdfe78a602136537369dd45fd6f) - **bench:** refactor to use string interpolation in blas/ext/to-sortedhp [(#10830)](https://github.com/stdlib-js/stdlib/pull/10830) _(by Kamal Singh Rautela)_
+-   [`a8f58e8`](https://github.com/stdlib-js/stdlib/commit/a8f58e85d51447565496639ff55fec3fbbfe0212) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/dlinspace` [(#10741)](https://github.com/stdlib-js/stdlib/pull/10741) _(by Aniket Sonawane)_
+-   [`5e4ca5b`](https://github.com/stdlib-js/stdlib/commit/5e4ca5b367081cf17ec0d201e722609598b2c4d9) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnannsumpw` [(#10742)](https://github.com/stdlib-js/stdlib/pull/10742) _(by Prajjwal Bajpai)_
+-   [`8c645eb`](https://github.com/stdlib-js/stdlib/commit/8c645eb0cf64aa26ad02168e41e02587d4bc0d9b) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/drev` [(#10743)](https://github.com/stdlib-js/stdlib/pull/10743) _(by Prajjwal Bajpai)_
+-   [`62b850e`](https://github.com/stdlib-js/stdlib/commit/62b850e08b029b996b68830398f957c50bf3bf17) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsapxsum` [(#10744)](https://github.com/stdlib-js/stdlib/pull/10744) _(by Prajjwal Bajpai)_
+-   [`bba4c52`](https://github.com/stdlib-js/stdlib/commit/bba4c52ff671c987c020b7c7f5bce3525296552b) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsapxsumpw` [(#10745)](https://github.com/stdlib-js/stdlib/pull/10745) _(by Prajjwal Bajpai)_
+-   [`602b75a`](https://github.com/stdlib-js/stdlib/commit/602b75a93f5f348f00ae13ed18ddf6ace8b4e6b1) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsnannsumors` [(#10746)](https://github.com/stdlib-js/stdlib/pull/10746) _(by Prajjwal Bajpai)_
+-   [`c3882ed`](https://github.com/stdlib-js/stdlib/commit/c3882edc2b2857a2996b93a85f38a8f22f324c49) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsnansum` [(#10747)](https://github.com/stdlib-js/stdlib/pull/10747) _(by Prajjwal Bajpai)_
+-   [`8603b4d`](https://github.com/stdlib-js/stdlib/commit/8603b4d195733f8d626ca6b334eeb708b159ba69) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dsnansumpw` [(#10749)](https://github.com/stdlib-js/stdlib/pull/10749) _(by Prajjwal Bajpai)_
+-   [`92ddf0c`](https://github.com/stdlib-js/stdlib/commit/92ddf0ca0aaee22f4b2e533173a4eb6ee67cad44) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dssum` [(#10750)](https://github.com/stdlib-js/stdlib/pull/10750) _(by Prajjwal Bajpai)_
+-   [`ef10b63`](https://github.com/stdlib-js/stdlib/commit/ef10b63ce948b9387c34b80483c2754e21f1f2fd) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dssumors` [(#10751)](https://github.com/stdlib-js/stdlib/pull/10751) _(by Prajjwal Bajpai)_
+-   [`94df030`](https://github.com/stdlib-js/stdlib/commit/94df030c504a016afa29dde0e0e6ad4ba1807638) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dssumpw` [(#10752)](https://github.com/stdlib-js/stdlib/pull/10752) _(by Prajjwal Bajpai)_
+-   [`96335ae`](https://github.com/stdlib-js/stdlib/commit/96335aeda511e1805f9a35053c8cd079eb3949c7) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sapxsum` [(#10753)](https://github.com/stdlib-js/stdlib/pull/10753) _(by Prajjwal Bajpai)_
+-   [`7bfee0d`](https://github.com/stdlib-js/stdlib/commit/7bfee0d98d430fd649f3f5546c30ad5b1a917c2e) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sapxsumkbn` [(#10754)](https://github.com/stdlib-js/stdlib/pull/10754) _(by Prajjwal Bajpai)_
+-   [`431ac4a`](https://github.com/stdlib-js/stdlib/commit/431ac4a6e8f20b45673167ec10928a6fff2eddf6) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sapxsumkbn2` [(#10755)](https://github.com/stdlib-js/stdlib/pull/10755) _(by Prajjwal Bajpai)_
+-   [`8e5595b`](https://github.com/stdlib-js/stdlib/commit/8e5595b3a99038aece965c22cb9965d4830e428e) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sapxsumors` [(#10756)](https://github.com/stdlib-js/stdlib/pull/10756) _(by Prajjwal Bajpai)_
+-   [`e149607`](https://github.com/stdlib-js/stdlib/commit/e1496079a30f0c44bd840ac4585c97ad57e2c4cd) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sapxsumpw` [(#10757)](https://github.com/stdlib-js/stdlib/pull/10757) _(by Prajjwal Bajpai)_
+-   [`bfced81`](https://github.com/stdlib-js/stdlib/commit/bfced813ceaa65fce10f67b427e7ac551317e5d6) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sasumpw` [(#10758)](https://github.com/stdlib-js/stdlib/pull/10758) _(by Prajjwal Bajpai)_
+-   [`24a5f5b`](https://github.com/stdlib-js/stdlib/commit/24a5f5b38a0257c37a3bb81ab6eb846bfdd7dbfe) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdsapxsum` [(#10759)](https://github.com/stdlib-js/stdlib/pull/10759) _(by Prajjwal Bajpai)_
+-   [`cdc7b56`](https://github.com/stdlib-js/stdlib/commit/cdc7b56915af02e725d29f40216be57bacc69bc9) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdsapxsumpw` [(#10760)](https://github.com/stdlib-js/stdlib/pull/10760) _(by Prajjwal Bajpai)_
+-   [`4b0dd5e`](https://github.com/stdlib-js/stdlib/commit/4b0dd5e0e8c65e7f56c923e06c964dd2c187813e) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdsnansum` [(#10761)](https://github.com/stdlib-js/stdlib/pull/10761) _(by Prajjwal Bajpai)_
+-   [`28e23cd`](https://github.com/stdlib-js/stdlib/commit/28e23cdec2c505bfdb97dca8287c1b0f9c9c16e4) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdsnansumpw` [(#10762)](https://github.com/stdlib-js/stdlib/pull/10762) _(by Prajjwal Bajpai)_
+-   [`ef95ace`](https://github.com/stdlib-js/stdlib/commit/ef95ace0e3be3eef2cd063badcf88252a6706734) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdssum` [(#10763)](https://github.com/stdlib-js/stdlib/pull/10763) _(by Prajjwal Bajpai)_
+-   [`ec69441`](https://github.com/stdlib-js/stdlib/commit/ec69441600191d157aadcdfa908b8609d8660c05) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sdssumpw` [(#10764)](https://github.com/stdlib-js/stdlib/pull/10764) _(by Prajjwal Bajpai)_
+-   [`71e6ce1`](https://github.com/stdlib-js/stdlib/commit/71e6ce12aa606b929239587830d6881cad04855d) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sfill` [(#10765)](https://github.com/stdlib-js/stdlib/pull/10765) _(by Prajjwal Bajpai)_
+-   [`5631ee3`](https://github.com/stdlib-js/stdlib/commit/5631ee3a2888adafe52f58704ef0164c44f26f8f) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/sindex-of` [(#10766)](https://github.com/stdlib-js/stdlib/pull/10766) _(by Prajjwal Bajpai)_
+-   [`789b5e2`](https://github.com/stdlib-js/stdlib/commit/789b5e2aa6129b72bd4d7304ad29be9ff37faeaf) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/slast-index-of` [(#10767)](https://github.com/stdlib-js/stdlib/pull/10767) _(by Prajjwal Bajpai)_
+-   [`69589e5`](https://github.com/stdlib-js/stdlib/commit/69589e5f144ccd841a19e4afcc986d2f90cbb900) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/slinspace` [(#10768)](https://github.com/stdlib-js/stdlib/pull/10768) _(by Prajjwal Bajpai)_
+-   [`c8299c8`](https://github.com/stdlib-js/stdlib/commit/c8299c8742aae38d379e1f213135fd8616dc935a) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/snansum` [(#10769)](https://github.com/stdlib-js/stdlib/pull/10769) _(by Prajjwal Bajpai)_
+-   [`4964a4a`](https://github.com/stdlib-js/stdlib/commit/4964a4a50c8a60aa826599089c06e6deb9812e08) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/snansumkbn` [(#10770)](https://github.com/stdlib-js/stdlib/pull/10770) _(by Prajjwal Bajpai)_
+-   [`a2693db`](https://github.com/stdlib-js/stdlib/commit/a2693dbe8cc4423dc5e12c207b0fac9f66440cd2) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/snansumkbn2` [(#10771)](https://github.com/stdlib-js/stdlib/pull/10771) _(by Prajjwal Bajpai)_
+-   [`c70d673`](https://github.com/stdlib-js/stdlib/commit/c70d673d45f8bad3ca3305a582d9323e656758d9) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/srev` [(#10772)](https://github.com/stdlib-js/stdlib/pull/10772) _(by Prajjwal Bajpai)_
+-   [`84a5b0a`](https://github.com/stdlib-js/stdlib/commit/84a5b0adbab8424b0e1e5b96610edf6df31eb98b) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/ssum` [(#10773)](https://github.com/stdlib-js/stdlib/pull/10773) _(by Prajjwal Bajpai)_
+-   [`5059f23`](https://github.com/stdlib-js/stdlib/commit/5059f2330c008e2a97f8d8a3931d23536d38c6a0) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/ssumkbn2` [(#10774)](https://github.com/stdlib-js/stdlib/pull/10774) _(by Prajjwal Bajpai)_
+-   [`8b5ae6f`](https://github.com/stdlib-js/stdlib/commit/8b5ae6ff28fa91a5494328a3a6481a0e855542ab) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/ssumors` [(#10775)](https://github.com/stdlib-js/stdlib/pull/10775) _(by Prajjwal Bajpai)_
+-   [`5ed244e`](https://github.com/stdlib-js/stdlib/commit/5ed244ee6047477f423d968a9b494a81c8864c46) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/ssumpw` [(#10776)](https://github.com/stdlib-js/stdlib/pull/10776) _(by Prajjwal Bajpai)_
+-   [`0e9fa94`](https://github.com/stdlib-js/stdlib/commit/0e9fa94fed73fa94a657f5596a3de997aa9a5473) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dapxsumpw` [(#10607)](https://github.com/stdlib-js/stdlib/pull/10607) _(by Prajjwal Bajpai)_
+-   [`727913e`](https://github.com/stdlib-js/stdlib/commit/727913e9b2237fea29d90d1d6cb39c44ea904de7) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dasumpw` [(#10608)](https://github.com/stdlib-js/stdlib/pull/10608) _(by Prajjwal Bajpai)_
+-   [`cc8c008`](https://github.com/stdlib-js/stdlib/commit/cc8c0087de7e9cfe07db74a221e2e1c69f5489e8) - **bench:** refactor to use string interpolation in blas/ext/base/dapxsum [(#10679)](https://github.com/stdlib-js/stdlib/pull/10679) _(by Kamal Singh Rautela)_
+-   [`25b2be0`](https://github.com/stdlib-js/stdlib/commit/25b2be0b4c022edb83dbf1ad118f6421525246af) - **bench:** refactor to use string interpolation in blas/ext/base/dapxsumors [(#10680)](https://github.com/stdlib-js/stdlib/pull/10680) _(by Kamal Singh Rautela)_
+-   [`e2500d8`](https://github.com/stdlib-js/stdlib/commit/e2500d89064c91840b42ee708a55da88a05b8a7b) - **bench:** refactor to use string interpolation in blas/ext/base/drev [(#10683)](https://github.com/stdlib-js/stdlib/pull/10683) _(by Kamal Singh Rautela)_
+-   [`c8d626b`](https://github.com/stdlib-js/stdlib/commit/c8d626b5b79c93a1d186c11abda9bc914437208d) - **bench:** refactor to use string interpolation in blas/ext/base/dcusumors [(#10684)](https://github.com/stdlib-js/stdlib/pull/10684) _(by Kamal Singh Rautela)_
+-   [`5580cbf`](https://github.com/stdlib-js/stdlib/commit/5580cbfe037815ebde8175b87c07a9b38c172a93) - **bench:** refactor to use string interpolation in blas/ext/base/drrss [(#10685)](https://github.com/stdlib-js/stdlib/pull/10685) _(by Kamal Singh Rautela)_
+-   [`ba0442d`](https://github.com/stdlib-js/stdlib/commit/ba0442d78dfb95a369e6b8009fc98a4f6e950738) - **bench:** refactor to use string interpolation in blas/ext/base/dsumkbn [(#10686)](https://github.com/stdlib-js/stdlib/pull/10686) _(by Kamal Singh Rautela)_
+-   [`3c77fef`](https://github.com/stdlib-js/stdlib/commit/3c77fefb397dfb4eee466d40c2aeedbc2196b06f) - **bench:** refactor to use string interpolation in blas/ext/base/dsumkbn2 [(#10687)](https://github.com/stdlib-js/stdlib/pull/10687) _(by Kamal Singh Rautela)_
+-   [`46a5202`](https://github.com/stdlib-js/stdlib/commit/46a52026e28300a929d47b5f730170f0e1110b6a) - **bench:** refactor to use string interpolation in blas/ext/base/dsumors [(#10688)](https://github.com/stdlib-js/stdlib/pull/10688) _(by Kamal Singh Rautela)_
+-   [`0a04e3a`](https://github.com/stdlib-js/stdlib/commit/0a04e3a7ee2aa25b2f6ae417f0575aa7c07f5781) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnanasumors` [(#10645)](https://github.com/stdlib-js/stdlib/pull/10645) _(by Prajjwal Bajpai)_
+-   [`f6cd485`](https://github.com/stdlib-js/stdlib/commit/f6cd485f63fe0b928849b5b8f78276e1802066b5) - **bench:** refactor to use string interpolation in `blas/ext/base/dlast-index-of` [(#10641)](https://github.com/stdlib-js/stdlib/pull/10641) _(by Prajjwal Bajpai)_
+-   [`dbaa3a7`](https://github.com/stdlib-js/stdlib/commit/dbaa3a787a2c6c9e1277d069e68d326e7fe45a6d) - **bench:** refactor to use string interpolation in `blas/ext/base/dlinspace` [(#10643)](https://github.com/stdlib-js/stdlib/pull/10643) _(by Prajjwal Bajpai)_
+-   [`4310d8b`](https://github.com/stdlib-js/stdlib/commit/4310d8bfe49580a9a170d96a984b33529dfa9ca1) - **bench:** refactor to use string interpolation in `blas/ext/base/dnanasumors` [(#10646)](https://github.com/stdlib-js/stdlib/pull/10646) _(by Prajjwal Bajpai)_
+-   [`d558dd6`](https://github.com/stdlib-js/stdlib/commit/d558dd6beca84f984f4d929da7d64df843304cd4) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dlast-index-of` [(#10640)](https://github.com/stdlib-js/stdlib/pull/10640) _(by Prajjwal Bajpai)_
+-   [`a408eb8`](https://github.com/stdlib-js/stdlib/commit/a408eb86567546c9ff9da1fa330a77814ce0315c) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dlinspace` [(#10642)](https://github.com/stdlib-js/stdlib/pull/10642) _(by Prajjwal Bajpai)_
+-   [`789c1de`](https://github.com/stdlib-js/stdlib/commit/789c1de4fa2989d586937171c1c0051a5aded600) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnannsum` [(#10648)](https://github.com/stdlib-js/stdlib/pull/10648) _(by Prajjwal Bajpai)_
+-   [`e359094`](https://github.com/stdlib-js/stdlib/commit/e359094bf197f640ab3912928f7ab53800d276a4) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnannsumkbn` [(#10652)](https://github.com/stdlib-js/stdlib/pull/10652) _(by Prajjwal Bajpai)_
+-   [`d4d6328`](https://github.com/stdlib-js/stdlib/commit/d4d63285f41a4c1c7d4311366a84aa28ec2c35fc) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnannsumkbn2` [(#10653)](https://github.com/stdlib-js/stdlib/pull/10653) _(by Prajjwal Bajpai)_
+-   [`a8e6f76`](https://github.com/stdlib-js/stdlib/commit/a8e6f760cc0b04517c3765f5bb7daa4df4932564) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dnannsumors` [(#10654)](https://github.com/stdlib-js/stdlib/pull/10654) _(by Prajjwal Bajpai)_
+-   [`d244f4c`](https://github.com/stdlib-js/stdlib/commit/d244f4cc4c04b774c1c5e8372b013832140f2342) - **bench:** refactor to use string interpolation in `blas/ext/base/dasumpw` [(#10610)](https://github.com/stdlib-js/stdlib/pull/10610) _(by Prajjwal Bajpai)_
+-   [`57a3d9d`](https://github.com/stdlib-js/stdlib/commit/57a3d9dd0af3d39cdb470c353d9edca50913ba98) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dcusumkbn2` [(#10611)](https://github.com/stdlib-js/stdlib/pull/10611) _(by Prajjwal Bajpai)_
+-   [`78769c9`](https://github.com/stdlib-js/stdlib/commit/78769c92ed228492a9e865548593f29f02195123) - **bench:** refactor to use string interpolation in `blas/ext/base/dcusumkbn2` [(#10612)](https://github.com/stdlib-js/stdlib/pull/10612) _(by Prajjwal Bajpai)_
+-   [`ad0f0a5`](https://github.com/stdlib-js/stdlib/commit/ad0f0a54f142e137f1522929a5d6dd8bb32280c8) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dindex-of` [(#10613)](https://github.com/stdlib-js/stdlib/pull/10613) _(by Prajjwal Bajpai)_
+-   [`f411fa5`](https://github.com/stdlib-js/stdlib/commit/f411fa53fac2c98be1d464cf9b5b2d6677653606) - **bench:** refactor to use string interpolation in `blas/ext/base/dindex-of` [(#10614)](https://github.com/stdlib-js/stdlib/pull/10614) _(by Prajjwal Bajpai)_
+-   [`85d50a9`](https://github.com/stdlib-js/stdlib/commit/85d50a9a5e8d44eaf8008c64e5db9fbd809cb14b) - **bench:** refactor to use string interpolation in blas/ext/base/dnannsum [(#10535)](https://github.com/stdlib-js/stdlib/pull/10535) _(by Kamal Singh Rautela)_
+-   [`e82033f`](https://github.com/stdlib-js/stdlib/commit/e82033f3e1a0f1ad99a8ea825c12438e2f9b2d26) - **bench:** refactor to use string interpolation in blas/ext/base/dnannsumkbn [(#10536)](https://github.com/stdlib-js/stdlib/pull/10536) _(by Kamal Singh Rautela)_
+-   [`491c1d6`](https://github.com/stdlib-js/stdlib/commit/491c1d665303b698c8220868eb201ac6467d8805) - **bench:** refactor to use string interpolation in blas/ext/base/dnannsumkbn2 [(#10537)](https://github.com/stdlib-js/stdlib/pull/10537) _(by Kamal Singh Rautela)_
+-   [`48ed6ee`](https://github.com/stdlib-js/stdlib/commit/48ed6eec2a17ef740b0d4c8ce607aeb0e0df214e) - **bench:** refactor to use string interpolation in blas/ext/base/dnannsumors [(#10538)](https://github.com/stdlib-js/stdlib/pull/10538) _(by Kamal Singh Rautela)_
+-   [`90ba881`](https://github.com/stdlib-js/stdlib/commit/90ba8818827558e9fb2afd962774a1e03413564d) - **bench:** refactor to use string interpolation in blas/ext/base/dnannsumpw [(#10539)](https://github.com/stdlib-js/stdlib/pull/10539) _(by Kamal Singh Rautela)_
+-   [`6586759`](https://github.com/stdlib-js/stdlib/commit/6586759419d7dd5dc7a4e3d1c9b60f25cd7085b5) - **bench:** refactor to use string interpolation in blas/ext/base/dnansum [(#10540)](https://github.com/stdlib-js/stdlib/pull/10540) _(by Kamal Singh Rautela)_
+-   [`b013d17`](https://github.com/stdlib-js/stdlib/commit/b013d171731846ca7dc7b459c0b159b8b93daeaf) - **bench:** refactor to use string interpolation in blas/ext/base/dnansumkbn [(#10541)](https://github.com/stdlib-js/stdlib/pull/10541) _(by Kamal Singh Rautela)_
+-   [`7a2356c`](https://github.com/stdlib-js/stdlib/commit/7a2356c4af7f40949b15ed14bd439282c2dab91e) - **bench:** refactor to use string interpolation in `blas/ext/base/dapx` [(#10591)](https://github.com/stdlib-js/stdlib/pull/10591) _(by Kamal Singh Rautela)_
+-   [`0c02a19`](https://github.com/stdlib-js/stdlib/commit/0c02a1921261eabdcf81ee99f893f3ae76fb2a35) - **bench:** refactor to use string interpolation in `blas/ext/base/sdsnansum` [(#10592)](https://github.com/stdlib-js/stdlib/pull/10592) _(by Kamal Singh Rautela)_
+-   [`38e7126`](https://github.com/stdlib-js/stdlib/commit/38e71266c65dc6ee56d0aae5e8cddc0eb6388500) - **bench:** refactor to use string interpolation in `blas/ext/base/dcusumpw` [(#10593)](https://github.com/stdlib-js/stdlib/pull/10593) _(by Kamal Singh Rautela)_
+-   [`f992fd9`](https://github.com/stdlib-js/stdlib/commit/f992fd9d5c6d9d1509dd949a0ec8e2347174eaa6) - **bench:** refactor to use string interpolation in `blas/ext/base/dcusumkbn` [(#10594)](https://github.com/stdlib-js/stdlib/pull/10594) _(by Kamal Singh Rautela)_
+-   [`ecc6654`](https://github.com/stdlib-js/stdlib/commit/ecc6654065495c2a63494ce53f2562b63283cbfc) - **bench:** refactor to use string interpolation in `blas/ext/base/dssum` [(#10595)](https://github.com/stdlib-js/stdlib/pull/10595) _(by Kamal Singh Rautela)_
+-   [`5ac94b8`](https://github.com/stdlib-js/stdlib/commit/5ac94b89dc4b92727eab8359e0a9d950c98e40c7) - **bench:** refactor to use string interpolation in `blas/ext/base/gapxsumkbn` [(#10597)](https://github.com/stdlib-js/stdlib/pull/10597) _(by Kamal Singh Rautela)_
+-   [`b0773f9`](https://github.com/stdlib-js/stdlib/commit/b0773f9860652d9260abaca63427be7005566c47) - **bench:** refactor to use string interpolation in `blas/ext/base/gfill` [(#10598)](https://github.com/stdlib-js/stdlib/pull/10598) _(by Kamal Singh Rautela)_
+-   [`05aeb60`](https://github.com/stdlib-js/stdlib/commit/05aeb60441cfa5797b8d55ca9063b3fff3eccdf6) - **bench:** refactor to use string interpolation in `blas/ext/base/gnannsumkbn` [(#10599)](https://github.com/stdlib-js/stdlib/pull/10599) _(by Kamal Singh Rautela)_
+-   [`c703f0f`](https://github.com/stdlib-js/stdlib/commit/c703f0f66c85fdd8890b2a0603ebe9934892d1b6) - **fix:** rename C function to `stdlib_blas_ext_ssum` in `blas/ext/base/ndarray/ssum` _(by Philipp Burckhardt)_
+-   [`95e3a15`](https://github.com/stdlib-js/stdlib/commit/95e3a153b0483dbee7c0d55cb80eee826f0933fb) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`0e62b3f`](https://github.com/stdlib-js/stdlib/commit/0e62b3fbc7f29583bfd0ba72f9e3d900af99e9a4) - **feat:** add C implementation for `blas/ext/base/ndarray/ssum` [(#10078)](https://github.com/stdlib-js/stdlib/pull/10078) _(by Kaustubh Patange, Athan Reines)_
+-   [`5a53af0`](https://github.com/stdlib-js/stdlib/commit/5a53af029ad1dd8b36b11583e3081cf2d61aa06b) - **bench:** refactor to use string interpolation in `blas/ext/base/dapxsumpw` [(#10518)](https://github.com/stdlib-js/stdlib/pull/10518) _(by Kamal Singh Rautela)_
+-   [`2e03fe9`](https://github.com/stdlib-js/stdlib/commit/2e03fe9e548309edda7bf7c5c66c3f671a9e2daf) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base/dapxsumkbn2` [(#10574)](https://github.com/stdlib-js/stdlib/pull/10574) _(by Prajjwal Bajpai)_
+-   [`49a4c22`](https://github.com/stdlib-js/stdlib/commit/49a4c224154a4eb0337818c19353046705c9cea5) - **bench:** refactor to use string interpolation in `blas/ext/base/dapxsumkbn2` [(#10575)](https://github.com/stdlib-js/stdlib/pull/10575) _(by Prajjwal Bajpai)_
+-   [`d7c9033`](https://github.com/stdlib-js/stdlib/commit/d7c9033dec5f569d53dd71706ce6f1124e886259) - **feat:** add C implementation for `blas/ext/base/ndarray/dsum` [(#10065)](https://github.com/stdlib-js/stdlib/pull/10065) _(by Kaustubh Patange, Athan Reines)_
+-   [`de74169`](https://github.com/stdlib-js/stdlib/commit/de7416999fa2bd9a2e912d70b97540b0575d0599) - **feat:** add `blas/ext/base/ndarray/gsort` [(#9734)](https://github.com/stdlib-js/stdlib/pull/9734) _(by Muhammad Haris, Athan Reines)_
+-   [`839986d`](https://github.com/stdlib-js/stdlib/commit/839986d9f41ebee28ff3139ec094ab9c8b98d8df) - **test:** ensure dtype equality _(by Athan Reines)_
+-   [`7620700`](https://github.com/stdlib-js/stdlib/commit/76207003b2d5be09c0bc2b5bf156c691ba224640) - **docs:** fix type _(by Athan Reines)_
+-   [`60fcd9d`](https://github.com/stdlib-js/stdlib/commit/60fcd9dc51b43ad76b1b14e6d7b4c30a5670114a) - **fix:** improve type specificity _(by Athan Reines)_
+-   [`c890b1a`](https://github.com/stdlib-js/stdlib/commit/c890b1ad0c88bdb2ec57a7e423f835a15947bfd5) - **bench:** refactor to use string interpolation in `blas/ext/base/dcusum` [(#10532)](https://github.com/stdlib-js/stdlib/pull/10532) _(by Kamal Singh Rautela)_
+-   [`3422651`](https://github.com/stdlib-js/stdlib/commit/3422651a3ec2e6717f25d82020a62f00dbe2aa78) - **docs:** add missing section closing comments in READMEs _(by Philipp Burckhardt)_
 -   [`6080e64`](https://github.com/stdlib-js/stdlib/commit/6080e640d14b68905c598330ebcb6bb8e415ddd0) - **style:** remove whitespace inside `API_SUFFIX` macro calls _(by Philipp Burckhardt)_
 -   [`383707f`](https://github.com/stdlib-js/stdlib/commit/383707fb11279899f663267e47dcb303070f63b4) - **fix:** remove erroneous `browser` field excluding `ndarray` method in `stats/strided/mskminabs` and `blas/ext/base/gnannsumkbn` _(by Philipp Burckhardt)_
 -   [`c66d383`](https://github.com/stdlib-js/stdlib/commit/c66d383f66a223c0bfc3c099ba59826b8f22c783) - **docs:** add missing semicolons in `blas/ext` TypeScript examples _(by Philipp Burckhardt)_
@@ -49,10 +328,17 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
+-   Aniket Sonawane
+-   Athan Reines
 -   AyushiJain18270
+-   Kamal Singh Rautela
+-   Kaustubh Patange
+-   Muhammad Haris
+-   Partha Das
 -   Philipp Burckhardt
+-   Prajjwal Bajpai
 -   me0-0
 
 </section>
