@@ -35,38 +35,32 @@ limitations under the License.
 
 > Extended basic linear algebra subprograms (BLAS).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-ext
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-extblas = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var extblas = require( 'path/to/vendor/umd/blas-ext/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.extblas;
-})();
-</script>
+var extblas = require( '@stdlib/blas-ext' );
 ```
 
 #### extblas
@@ -111,21 +105,11 @@ The namespace contains the following:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/blas-ext' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -214,25 +198,25 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base/tree/umd
+[@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base
 
-[@stdlib/blas/ext/cusum]: https://github.com/stdlib-js/blas-ext-cusum/tree/umd
+[@stdlib/blas/ext/cusum]: https://github.com/stdlib-js/blas-ext-cusum
 
-[@stdlib/blas/ext/find-index]: https://github.com/stdlib-js/blas-ext-find-index/tree/umd
+[@stdlib/blas/ext/find-index]: https://github.com/stdlib-js/blas-ext-find-index
 
-[@stdlib/blas/ext/find-last-index]: https://github.com/stdlib-js/blas-ext-find-last-index/tree/umd
+[@stdlib/blas/ext/find-last-index]: https://github.com/stdlib-js/blas-ext-find-last-index
 
-[@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/blas-ext-index-of/tree/umd
+[@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/blas-ext-index-of
 
-[@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/blas-ext-last-index-of/tree/umd
+[@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/blas-ext-last-index-of
 
-[@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/blas-ext-linspace/tree/umd
+[@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/blas-ext-linspace
 
-[@stdlib/blas/ext/sorthp]: https://github.com/stdlib-js/blas-ext-sorthp/tree/umd
+[@stdlib/blas/ext/sorthp]: https://github.com/stdlib-js/blas-ext-sorthp
 
-[@stdlib/blas/ext/sum]: https://github.com/stdlib-js/blas-ext-sum/tree/umd
+[@stdlib/blas/ext/sum]: https://github.com/stdlib-js/blas-ext-sum
 
-[@stdlib/blas/ext/to-sortedhp]: https://github.com/stdlib-js/blas-ext-to-sortedhp/tree/umd
+[@stdlib/blas/ext/to-sortedhp]: https://github.com/stdlib-js/blas-ext-to-sortedhp
 
 <!-- </toc-links> -->
 
