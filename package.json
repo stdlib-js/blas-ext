@@ -202,6 +202,7 @@
     "@stdlib/blas-ext-base-gnansumors": "^0.3.1",
     "@stdlib/blas-ext-base-gnansumpw": "^0.3.1",
     "@stdlib/blas-ext-base-gone-to": "github:stdlib-js/blas-ext-base-gone-to#main",
+    "@stdlib/blas-ext-base-greplicate": "github:stdlib-js/blas-ext-base-greplicate#main",
     "@stdlib/blas-ext-base-grev": "^0.2.2",
     "@stdlib/blas-ext-base-gsort": "^0.1.1",
     "@stdlib/blas-ext-base-gsort2hp": "^0.3.1",
