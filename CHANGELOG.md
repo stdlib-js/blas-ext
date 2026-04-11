@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-10)
+## Unreleased (2026-04-11)
 
 <section class="features">
 
 ### Features
 
+-   [`b05fe40`](https://github.com/stdlib-js/stdlib/commit/b05fe40f8bc3caa85cb8734f9e30a487ae2bed74) - add C implementation for `blas/ext/base/ndarray/zsum` [(#10699)](https://github.com/stdlib-js/stdlib/pull/10699)
+-   [`e2cb754`](https://github.com/stdlib-js/stdlib/commit/e2cb754df4df20314ca85ade73ff9d8f06c44159) - add C implementation for `blas/ext/base/ndarray/dnansum` [(#10715)](https://github.com/stdlib-js/stdlib/pull/10715)
+-   [`b78ba63`](https://github.com/stdlib-js/stdlib/commit/b78ba63761c164190dcd0cc02047155d584c1f88) - add C implementation for `blas/ext/base/ndarray/snansum` [(#10777)](https://github.com/stdlib-js/stdlib/pull/10777)
+-   [`0621f73`](https://github.com/stdlib-js/stdlib/commit/0621f73e9460d7c9459b81d9749678721597ca7d) - add `gvander` to namespace
 -   [`75860d1`](https://github.com/stdlib-js/stdlib/commit/75860d17ef63bc5920a2fcf5e9db9910e54d7881) - add `blas/ext/base/gvander` [(#10934)](https://github.com/stdlib-js/stdlib/pull/10934)
 -   [`a737728`](https://github.com/stdlib-js/stdlib/commit/a7377281de9f9c0b4d7654a266ec357d5f663f60) - add `greplicate` to namespace
 -   [`1d20b6d`](https://github.com/stdlib-js/stdlib/commit/1d20b6da25ab99a62f8dee4c7d5cbdee3727b963) - add `blas/ext/base/greplicate` [(#11303)](https://github.com/stdlib-js/stdlib/pull/11303)
@@ -138,6 +142,16 @@
 
 <details>
 
+-   [`b05fe40`](https://github.com/stdlib-js/stdlib/commit/b05fe40f8bc3caa85cb8734f9e30a487ae2bed74) - **feat:** add C implementation for `blas/ext/base/ndarray/zsum` [(#10699)](https://github.com/stdlib-js/stdlib/pull/10699) _(by Kaustubh Patange, Athan Reines)_
+-   [`d939241`](https://github.com/stdlib-js/stdlib/commit/d939241ae1b03e3d0a6912f46ef644afc324ce4d) - **bench:** update failure messages _(by Athan Reines)_
+-   [`e2cb754`](https://github.com/stdlib-js/stdlib/commit/e2cb754df4df20314ca85ade73ff9d8f06c44159) - **feat:** add C implementation for `blas/ext/base/ndarray/dnansum` [(#10715)](https://github.com/stdlib-js/stdlib/pull/10715) _(by Kaustubh Patange, Athan Reines, Gururaj Gurram)_
+-   [`b78ba63`](https://github.com/stdlib-js/stdlib/commit/b78ba63761c164190dcd0cc02047155d584c1f88) - **feat:** add C implementation for `blas/ext/base/ndarray/snansum` [(#10777)](https://github.com/stdlib-js/stdlib/pull/10777) _(by Kaustubh Patange)_
+-   [`e7b800e`](https://github.com/stdlib-js/stdlib/commit/e7b800e54e43b76dc9d3dbd2a1198501bf8df104) - **test:** address failing tests _(by Athan Reines)_
+-   [`0621f73`](https://github.com/stdlib-js/stdlib/commit/0621f73e9460d7c9459b81d9749678721597ca7d) - **feat:** add `gvander` to namespace _(by Athan Reines)_
+-   [`c4d0293`](https://github.com/stdlib-js/stdlib/commit/c4d0293b4ea81eddd7ab8e22fd4b19ea23de5019) - **docs:** update parameter description _(by Athan Reines)_
+-   [`ae704bb`](https://github.com/stdlib-js/stdlib/commit/ae704bb0a957d4dc0074d6123d1cddc25b45399e) - **docs:** improve doctests for ndarray instances in `blas/ext/linspace` [(#10542)](https://github.com/stdlib-js/stdlib/pull/10542) _(by AyushiJain18270, stdlib-bot)_
+-   [`dcdf5e4`](https://github.com/stdlib-js/stdlib/commit/dcdf5e4a20a5168022acae53a5b10cf0bda0b3d9) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/dcusumkbn` [(#10740)](https://github.com/stdlib-js/stdlib/pull/10740) _(by Aniket Sonawane)_
+-   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`6dc0130`](https://github.com/stdlib-js/stdlib/commit/6dc01302b920263a8c8997fc9c30f2962bc2e6c5) - **docs:** update namespace table of contents [(#11350)](https://github.com/stdlib-js/stdlib/pull/11350) _(by stdlib-bot)_
 -   [`75860d1`](https://github.com/stdlib-js/stdlib/commit/75860d17ef63bc5920a2fcf5e9db9910e54d7881) - **feat:** add `blas/ext/base/gvander` [(#10934)](https://github.com/stdlib-js/stdlib/pull/10934) _(by Muhammad Haris, Athan Reines)_
 -   [`45d8ff9`](https://github.com/stdlib-js/stdlib/commit/45d8ff9c4c61258e53e7de4dcf2006c4882ceb2d) - **docs:** update examples _(by Athan Reines)_
@@ -425,17 +439,19 @@
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Aniket Sonawane
 -   Athan Reines
 -   AyushiJain18270
+-   Gururaj Gurram
 -   Kamal Singh Rautela
 -   Kaustubh Patange
 -   Muhammad Haris
 -   Partha Das
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
+-   anee3
 -   me0-0
 
 </section>
