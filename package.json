@@ -45,6 +45,7 @@
     "@stdlib/blas-ext-join": "^0.1.1",
     "@stdlib/blas-ext-last-index-of": "^0.1.1",
     "@stdlib/blas-ext-linspace": "^0.1.1",
+    "@stdlib/blas-ext-one-to": "github:stdlib-js/blas-ext-one-to#main",
     "@stdlib/blas-ext-sort": "github:stdlib-js/blas-ext-sort#main",
     "@stdlib/blas-ext-sorthp": "^0.1.1",
     "@stdlib/blas-ext-sum": "^0.1.1",
