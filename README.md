@@ -87,6 +87,8 @@ The namespace contains the following:
 -   <span class="signature">[`join( x[, options] )`][@stdlib/blas/ext/join]</span><span class="delimiter">: </span><span class="description">return an ndarray created by joining elements using a separator along one or more ndarray dimensions.</span>
 -   <span class="signature">[`lastIndexOf( x, searchElement[, fromIndex][, options] )`][@stdlib/blas/ext/last-index-of]</span><span class="delimiter">: </span><span class="description">return the last index of a specified search element along an ndarray dimension.</span>
 -   <span class="signature">[`linspace( shape, start, stop[, endpoint][, options] )`][@stdlib/blas/ext/linspace]</span><span class="delimiter">: </span><span class="description">return a new ndarray filled with linearly spaced values over a specified interval along one or more ndarray dimensions.</span>
+-   <span class="signature">[`oneTo( shape[, options] )`][@stdlib/blas/ext/one-to]</span><span class="delimiter">: </span><span class="description">return a new ndarray filled with linearly spaced numeric elements which increment by `1` starting from one along one or more ndarray dimensions.</span>
+-   <span class="signature">[`sort( x[, sortOrder][, options] )`][@stdlib/blas/ext/sort]</span><span class="delimiter">: </span><span class="description">sort an input ndarray along one or more ndarray dimensions.</span>
 -   <span class="signature">[`sorthp( x[, sortOrder][, options] )`][@stdlib/blas/ext/sorthp]</span><span class="delimiter">: </span><span class="description">sort an input ndarray along one or more ndarray dimensions using heapsort.</span>
 -   <span class="signature">[`sum( x[, options] )`][@stdlib/blas/ext/sum]</span><span class="delimiter">: </span><span class="description">compute the sum along one or more ndarray dimensions.</span>
 -   <span class="signature">[`toSortedhp( x[, sortOrder][, options] )`][@stdlib/blas/ext/to-sortedhp]</span><span class="delimiter">: </span><span class="description">return a new ndarray containing the elements of an input ndarray sorted along one or more ndarray dimensions using heapsort.</span>
@@ -218,6 +220,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/blas-ext-last-index-of
 
 [@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/blas-ext-linspace
+
+[@stdlib/blas/ext/one-to]: https://github.com/stdlib-js/blas-ext-one-to
+
+[@stdlib/blas/ext/sort]: https://github.com/stdlib-js/blas-ext-sort
 
 [@stdlib/blas/ext/sorthp]: https://github.com/stdlib-js/blas-ext-sorthp
 
