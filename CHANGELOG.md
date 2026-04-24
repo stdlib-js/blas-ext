@@ -4,12 +4,30 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-18)
+## Unreleased (2026-04-24)
 
 <section class="features">
 
 ### Features
 
+-   [`7a39426`](https://github.com/stdlib-js/stdlib/commit/7a3942642216f59766c5e75ea107b1cc40461fc9) - add `toSorted` to namespace
+-   [`31f10bd`](https://github.com/stdlib-js/stdlib/commit/31f10bde362541de6e57fde3d01d9800511325a6) - add `blas/ext/to-sorted` [(#11718)](https://github.com/stdlib-js/stdlib/pull/11718)
+-   [`538ced0`](https://github.com/stdlib-js/stdlib/commit/538ced061007046094f1786c6d3fda9a113130b3) - update `blas/ext/base` TypeScript declarations [(#11737)](https://github.com/stdlib-js/stdlib/pull/11737)
+-   [`5d7de9d`](https://github.com/stdlib-js/stdlib/commit/5d7de9dc58abb2a9b049a17b87f988d9d52ed56e) - add `cunitspace` to namespace
+-   [`ae4bc4f`](https://github.com/stdlib-js/stdlib/commit/ae4bc4f7d737d97ac8e404e86402a41baa851952) - add `zunitspace` to namespace
+-   [`d3bdd8a`](https://github.com/stdlib-js/stdlib/commit/d3bdd8a67196c7dc8c03410bdf39718002b6223f) - add `sdiff` to namespace
+-   [`84f5112`](https://github.com/stdlib-js/stdlib/commit/84f5112f3421879e142a220cd8d6853c2f00fd3d) - add `blas/ext/base/zunitspace` [(#11709)](https://github.com/stdlib-js/stdlib/pull/11709)
+-   [`7c287ff`](https://github.com/stdlib-js/stdlib/commit/7c287ff7a9a2e2b4b3f07afd719a440f8e6bccf2) - add `blas/ext/base/sdiff` [(#10901)](https://github.com/stdlib-js/stdlib/pull/10901)
+-   [`bad4f4c`](https://github.com/stdlib-js/stdlib/commit/bad4f4cfbb59a6d12e985580defb647ff4861b6c) - add `blas/ext/base/cunitspace` [(#11708)](https://github.com/stdlib-js/stdlib/pull/11708)
+-   [`6f2e5f6`](https://github.com/stdlib-js/stdlib/commit/6f2e5f611e255de47b53b93c6c0e58786124be4b) - add `ddiff` to namespace
+-   [`a081627`](https://github.com/stdlib-js/stdlib/commit/a08162791c287674776de93e95a441c2de9e6498) - add `blas/ext/base/ddiff` [(#10376)](https://github.com/stdlib-js/stdlib/pull/10376)
+-   [`521dbb8`](https://github.com/stdlib-js/stdlib/commit/521dbb8b8e93611123c8bcbd21498a0b6d30e6ba) - add `dunitspace` and `sunitspace` to namespace
+-   [`02e7b9c`](https://github.com/stdlib-js/stdlib/commit/02e7b9c7fc5c4011cf3d2c491591a927f25d52d5) - add `blas/ext/base/dunitspace` [(#11682)](https://github.com/stdlib-js/stdlib/pull/11682)
+-   [`47177aa`](https://github.com/stdlib-js/stdlib/commit/47177aab565253e124bcd95faf021ee7e4c20f03) - add `blas/ext/base/sunitspace` [(#11681)](https://github.com/stdlib-js/stdlib/pull/11681)
+-   [`19a6bb7`](https://github.com/stdlib-js/stdlib/commit/19a6bb776dbb08fe1f99c8346fabbd9ecb257786) - add `znancount` to namespace
+-   [`535ec3b`](https://github.com/stdlib-js/stdlib/commit/535ec3ba9e8bbc13d16592246b7f45b19e2d7bfa) - add `blas/ext/base/znancount` [(#11514)](https://github.com/stdlib-js/stdlib/pull/11514)
+-   [`1764738`](https://github.com/stdlib-js/stdlib/commit/17647387e691a8e7429f9248ece23fa6ce182cb5) - add `gunitspace` to namespace
+-   [`e92d656`](https://github.com/stdlib-js/stdlib/commit/e92d6562ce95ea73bd3a6f37ff4f454d0d1b336b) - add `blas/ext/base/gunitspace` [(#11555)](https://github.com/stdlib-js/stdlib/pull/11555)
 -   [`c064029`](https://github.com/stdlib-js/stdlib/commit/c06402992542270511454072f3ff59a3920bbc19) - add `oneTo` to namespace
 -   [`23e187a`](https://github.com/stdlib-js/stdlib/commit/23e187a6553e5dd975edb40d6be307da13818101) - add `blas/ext/one-to` [(#11513)](https://github.com/stdlib-js/stdlib/pull/11513)
 -   [`da1d1ef`](https://github.com/stdlib-js/stdlib/commit/da1d1ef00505a288d455266c61a954b6d3c20a00) - add `dvander` and `svander` to namespace
@@ -169,6 +187,50 @@
 
 <details>
 
+-   [`7a39426`](https://github.com/stdlib-js/stdlib/commit/7a3942642216f59766c5e75ea107b1cc40461fc9) - **feat:** add `toSorted` to namespace _(by Athan Reines)_
+-   [`31f10bd`](https://github.com/stdlib-js/stdlib/commit/31f10bde362541de6e57fde3d01d9800511325a6) - **feat:** add `blas/ext/to-sorted` [(#11718)](https://github.com/stdlib-js/stdlib/pull/11718) _(by Muhammad Haris, Athan Reines)_
+-   [`3bd0331`](https://github.com/stdlib-js/stdlib/commit/3bd03310a8738bf090c10603059d20f069e8703d) - **test:** fix assertions and descriptions _(by Athan Reines)_
+-   [`40db61d`](https://github.com/stdlib-js/stdlib/commit/40db61db7ca352e3a55a699a010d984fc05f6144) - **chore:** follow-up fixes [(#11721)](https://github.com/stdlib-js/stdlib/pull/11721) _(by Philipp Burckhardt)_
+-   [`f1813da`](https://github.com/stdlib-js/stdlib/commit/f1813dabd21da054ff60d0b76c758c5c28ea0dfc) - **chore:** propagate recent fixes to sibling packages [(#11723)](https://github.com/stdlib-js/stdlib/pull/11723) _(by Philipp Burckhardt)_
+-   [`4e221de`](https://github.com/stdlib-js/stdlib/commit/4e221de394e933182e6b487be8a35737a33a4994) - **docs:** remove extra empty lines [(#11735)](https://github.com/stdlib-js/stdlib/pull/11735) _(by stdlib-bot)_
+-   [`973f832`](https://github.com/stdlib-js/stdlib/commit/973f8327ee125d0f34d1d168be7511346216f189) - **docs:** update namespace table of contents [(#11738)](https://github.com/stdlib-js/stdlib/pull/11738) _(by stdlib-bot)_
+-   [`538ced0`](https://github.com/stdlib-js/stdlib/commit/538ced061007046094f1786c6d3fda9a113130b3) - **feat:** update `blas/ext/base` TypeScript declarations [(#11737)](https://github.com/stdlib-js/stdlib/pull/11737) _(by stdlib-bot)_
+-   [`5d7de9d`](https://github.com/stdlib-js/stdlib/commit/5d7de9dc58abb2a9b049a17b87f988d9d52ed56e) - **feat:** add `cunitspace` to namespace _(by Athan Reines)_
+-   [`ae4bc4f`](https://github.com/stdlib-js/stdlib/commit/ae4bc4f7d737d97ac8e404e86402a41baa851952) - **feat:** add `zunitspace` to namespace _(by Athan Reines)_
+-   [`d3bdd8a`](https://github.com/stdlib-js/stdlib/commit/d3bdd8a67196c7dc8c03410bdf39718002b6223f) - **feat:** add `sdiff` to namespace _(by Athan Reines)_
+-   [`84f5112`](https://github.com/stdlib-js/stdlib/commit/84f5112f3421879e142a220cd8d6853c2f00fd3d) - **feat:** add `blas/ext/base/zunitspace` [(#11709)](https://github.com/stdlib-js/stdlib/pull/11709) _(by Muhammad Haris)_
+-   [`7c287ff`](https://github.com/stdlib-js/stdlib/commit/7c287ff7a9a2e2b4b3f07afd719a440f8e6bccf2) - **feat:** add `blas/ext/base/sdiff` [(#10901)](https://github.com/stdlib-js/stdlib/pull/10901) _(by Muhammad Haris)_
+-   [`9e425b0`](https://github.com/stdlib-js/stdlib/commit/9e425b0d518324df48c43e78327c6b01b6483d75) - **docs:** update namespace table of contents [(#11712)](https://github.com/stdlib-js/stdlib/pull/11712) _(by stdlib-bot)_
+-   [`11fe978`](https://github.com/stdlib-js/stdlib/commit/11fe9784619f60b1e31355e2ab06ad55ea90c312) - **chore:** minor clean-up [(#11694)](https://github.com/stdlib-js/stdlib/pull/11694) _(by Philipp Burckhardt, Athan Reines)_
+-   [`bad4f4c`](https://github.com/stdlib-js/stdlib/commit/bad4f4cfbb59a6d12e985580defb647ff4861b6c) - **feat:** add `blas/ext/base/cunitspace` [(#11708)](https://github.com/stdlib-js/stdlib/pull/11708) _(by Muhammad Haris)_
+-   [`c5b700a`](https://github.com/stdlib-js/stdlib/commit/c5b700a07866477389f3cfde0573c303956e8e03) - **bench:** refactor to use dynamic memory allocation in `blas/ext/base` [(#11695)](https://github.com/stdlib-js/stdlib/pull/11695) _(by Uday Kakade)_
+-   [`6f2e5f6`](https://github.com/stdlib-js/stdlib/commit/6f2e5f611e255de47b53b93c6c0e58786124be4b) - **feat:** add `ddiff` to namespace _(by Athan Reines)_
+-   [`a081627`](https://github.com/stdlib-js/stdlib/commit/a08162791c287674776de93e95a441c2de9e6498) - **feat:** add `blas/ext/base/ddiff` [(#10376)](https://github.com/stdlib-js/stdlib/pull/10376) _(by Muhammad Haris, Athan Reines)_
+-   [`0f62461`](https://github.com/stdlib-js/stdlib/commit/0f62461c976de87b8782e28eceaa89b7f42f89e2) - **docs:** update namespace table of contents [(#11688)](https://github.com/stdlib-js/stdlib/pull/11688) _(by stdlib-bot)_
+-   [`521dbb8`](https://github.com/stdlib-js/stdlib/commit/521dbb8b8e93611123c8bcbd21498a0b6d30e6ba) - **feat:** add `dunitspace` and `sunitspace` to namespace _(by Athan Reines)_
+-   [`02e7b9c`](https://github.com/stdlib-js/stdlib/commit/02e7b9c7fc5c4011cf3d2c491591a927f25d52d5) - **feat:** add `blas/ext/base/dunitspace` [(#11682)](https://github.com/stdlib-js/stdlib/pull/11682) _(by Muhammad Haris)_
+-   [`47177aa`](https://github.com/stdlib-js/stdlib/commit/47177aab565253e124bcd95faf021ee7e4c20f03) - **feat:** add `blas/ext/base/sunitspace` [(#11681)](https://github.com/stdlib-js/stdlib/pull/11681) _(by Muhammad Haris)_
+-   [`0f96d30`](https://github.com/stdlib-js/stdlib/commit/0f96d3092e11bed46e6cd83efd770c2d6fa77af1) - **docs:** update namespace table of contents [(#11637)](https://github.com/stdlib-js/stdlib/pull/11637) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`67cdf3c`](https://github.com/stdlib-js/stdlib/commit/67cdf3cc8be241859493c2da00974d595eef73cb) - **chore:** propagate recent doctest and lint fixes to sibling packages [(#11585)](https://github.com/stdlib-js/stdlib/pull/11585) _(by Philipp Burckhardt)_
+-   [`19a6bb7`](https://github.com/stdlib-js/stdlib/commit/19a6bb776dbb08fe1f99c8346fabbd9ecb257786) - **feat:** add `znancount` to namespace _(by Athan Reines)_
+-   [`535ec3b`](https://github.com/stdlib-js/stdlib/commit/535ec3ba9e8bbc13d16592246b7f45b19e2d7bfa) - **feat:** add `blas/ext/base/znancount` [(#11514)](https://github.com/stdlib-js/stdlib/pull/11514) _(by Om-A-osc)_
+-   [`0873811`](https://github.com/stdlib-js/stdlib/commit/0873811a6cdde040bef142386df8f1fe2c64d4df) - **docs:** inline ndarray output in doctests and add missing article [(#11557)](https://github.com/stdlib-js/stdlib/pull/11557) _(by Philipp Burckhardt)_
+-   [`638fdf0`](https://github.com/stdlib-js/stdlib/commit/638fdf0149590cc7e645ac544cb1d36ccc0d867a) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/gcusumkbn2` [(#11576)](https://github.com/stdlib-js/stdlib/pull/11576) _(by Uday Kakade)_
+-   [`3c29f4b`](https://github.com/stdlib-js/stdlib/commit/3c29f4b4fd3bf3bf1f6a132c50bc684444d7674b) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/gcusumkbn` [(#11574)](https://github.com/stdlib-js/stdlib/pull/11574) _(by Uday Kakade)_
+-   [`ea0027d`](https://github.com/stdlib-js/stdlib/commit/ea0027d3192bfccf9851eed2a333af3fee8c4a7c) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/gcusumors` [(#11573)](https://github.com/stdlib-js/stdlib/pull/11573) _(by Uday Kakade)_
+-   [`85636fc`](https://github.com/stdlib-js/stdlib/commit/85636fc4c88f2b13210775178edb2d477d8f57af) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/gcusumpw` [(#11572)](https://github.com/stdlib-js/stdlib/pull/11572) _(by Uday Kakade)_
+-   [`1e24d10`](https://github.com/stdlib-js/stdlib/commit/1e24d102fcb9c24bd27bdb25fc37752f9dd2c2cb) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/scusumkbn2` [(#11570)](https://github.com/stdlib-js/stdlib/pull/11570) _(by Uday Kakade)_
+-   [`0f724a5`](https://github.com/stdlib-js/stdlib/commit/0f724a5ad7074488bad7ccd26090443f7fbbf7b9) - **docs:** improve doctests for ndarray instances in `blas/ext/base/ndarray/scusumkbn` [(#11569)](https://github.com/stdlib-js/stdlib/pull/11569) _(by Uday Kakade)_
+-   [`1764738`](https://github.com/stdlib-js/stdlib/commit/17647387e691a8e7429f9248ece23fa6ce182cb5) - **feat:** add `gunitspace` to namespace _(by Athan Reines)_
+-   [`e92d656`](https://github.com/stdlib-js/stdlib/commit/e92d6562ce95ea73bd3a6f37ff4f454d0d1b336b) - **feat:** add `blas/ext/base/gunitspace` [(#11555)](https://github.com/stdlib-js/stdlib/pull/11555) _(by Muhammad Haris, Athan Reines)_
+-   [`820d48e`](https://github.com/stdlib-js/stdlib/commit/820d48ebe0a35771a7b62c3d571c8ffca43a09c1) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/dsorthsh` [(#11544)](https://github.com/stdlib-js/stdlib/pull/11544) _(by Uday Kakade)_
+-   [`35f443d`](https://github.com/stdlib-js/stdlib/commit/35f443d28ceb141042214386f927176467a85288) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/dsortins` [(#11545)](https://github.com/stdlib-js/stdlib/pull/11545) _(by Uday Kakade)_
+-   [`dd046ff`](https://github.com/stdlib-js/stdlib/commit/dd046ffd9757ec6e1974f4e12d16434d35753596) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/gsorthp` [(#11546)](https://github.com/stdlib-js/stdlib/pull/11546) _(by Uday Kakade)_
+-   [`e0c37cb`](https://github.com/stdlib-js/stdlib/commit/e0c37cb6b44afd455dd85f7b24021c6fe53cd1bf) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/ssorthp` [(#11547)](https://github.com/stdlib-js/stdlib/pull/11547) _(by Uday Kakade)_
+-   [`8f8221b`](https://github.com/stdlib-js/stdlib/commit/8f8221bd4d6927bbe4b44d0f7c6b300c0d806467) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/slinspace` [(#11549)](https://github.com/stdlib-js/stdlib/pull/11549) _(by Uday Kakade)_
+-   [`2367b73`](https://github.com/stdlib-js/stdlib/commit/2367b73618b8d8262820deca4c143b54e9d39f18) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/glinspace` [(#11550)](https://github.com/stdlib-js/stdlib/pull/11550) _(by Uday Kakade)_
+-   [`dcba41a`](https://github.com/stdlib-js/stdlib/commit/dcba41a4e2aba7d6c89489bc24ae7c3eb1202394) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/scusumors` [(#11551)](https://github.com/stdlib-js/stdlib/pull/11551) _(by Uday Kakade)_
+-   [`849495e`](https://github.com/stdlib-js/stdlib/commit/849495ef3b7239b2bd93d2a8bf8716240e12e56f) - **docs:** update example [(#11519)](https://github.com/stdlib-js/stdlib/pull/11519) _(by stdlib-bot)_
 -   [`2505815`](https://github.com/stdlib-js/stdlib/commit/25058156cf7b1138c5c33209a5143100c376b46d) - **docs:** update namespace table of contents [(#11520)](https://github.com/stdlib-js/stdlib/pull/11520) _(by stdlib-bot)_
 -   [`de040ca`](https://github.com/stdlib-js/stdlib/commit/de040ca809d0935470dcbb63dcaa458db1391cc4) - **docs:** update related packages sections [(#11518)](https://github.com/stdlib-js/stdlib/pull/11518) _(by stdlib-bot)_
 -   [`c064029`](https://github.com/stdlib-js/stdlib/commit/c06402992542270511454072f3ff59a3920bbc19) - **feat:** add `oneTo` to namespace _(by Athan Reines)_
@@ -524,7 +586,7 @@
 
 ### Contributors
 
-A total of 15 people contributed to this release. Thank you to the following contributors:
+A total of 16 people contributed to this release. Thank you to the following contributors:
 
 -   Aniket Sonawane
 -   Athan Reines
@@ -534,6 +596,7 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   Karan Anand
 -   Kaustubh Patange
 -   Muhammad Haris
+-   Om-A-osc
 -   Partha Das
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
