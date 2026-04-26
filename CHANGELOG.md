@@ -10,6 +10,18 @@
 
 ### Features
 
+-   [`a3078e1`](https://github.com/stdlib-js/stdlib/commit/a3078e1b3da2f651a15563b092822ade951275af) - add `gdiff` and `dcartesianSquare` to namespace
+-   [`e544184`](https://github.com/stdlib-js/stdlib/commit/e544184ff876854d9936c3fc8d7be94c22eb4b9e) - add `unitspace` to namespace
+-   [`9f702bf`](https://github.com/stdlib-js/stdlib/commit/9f702bfb31cc11eae2b1e6aa122ab38ec190af7c) - add `blas/ext/unitspace` [(#11802)](https://github.com/stdlib-js/stdlib/pull/11802)
+-   [`bd4ba4e`](https://github.com/stdlib-js/stdlib/commit/bd4ba4ebe0b3793118ab3a6313f76422c2b38cd1) - add `blas/ext/base/gdiff` [(#10903)](https://github.com/stdlib-js/stdlib/pull/10903)
+-   [`a023392`](https://github.com/stdlib-js/stdlib/commit/a02339241efe9c852f08fb5b13fced915c02ad4d) - add `blas/ext/base/dcartesian-square` [(#10797)](https://github.com/stdlib-js/stdlib/pull/10797)
+-   [`013a23b`](https://github.com/stdlib-js/stdlib/commit/013a23bc7b0889a4bd171a7f51bce5d1217e45f4) - add `swhere` to namespace
+-   [`28917cf`](https://github.com/stdlib-js/stdlib/commit/28917cf0c4386cb3c16c5bec7fbb3ac7ae9ffe54) - add `blas/ext/base/swhere` [(#11582)](https://github.com/stdlib-js/stdlib/pull/11582)
+-   [`8d3c814`](https://github.com/stdlib-js/stdlib/commit/8d3c814b1afa9c348ffb0180d74bd4da5e3a5eb2) - add `*unitspace` symbols to namespace
+-   [`cfc58ab`](https://github.com/stdlib-js/stdlib/commit/cfc58ab9bb051fe400e496981598c0bbfc0da30e) - add `blas/ext/base/ndarray/zunitspace` [(#11730)](https://github.com/stdlib-js/stdlib/pull/11730)
+-   [`e5f860f`](https://github.com/stdlib-js/stdlib/commit/e5f860f9bb41461d13e1f5b9395d3efd164abc75) - add `blas/ext/base/ndarray/cunitspace` [(#11729)](https://github.com/stdlib-js/stdlib/pull/11729)
+-   [`d77217d`](https://github.com/stdlib-js/stdlib/commit/d77217d6b2c994cfb813116c5a149366cb3a3662) - add `blas/ext/base/ndarray/sunitspace` [(#11728)](https://github.com/stdlib-js/stdlib/pull/11728)
+-   [`58a6c2d`](https://github.com/stdlib-js/stdlib/commit/58a6c2d73e76c26c7ca0f6b50e7f6e2f0e5354e2) - add `blas/ext/base/ndarray/dunitspace` [(#11727)](https://github.com/stdlib-js/stdlib/pull/11727)
 -   [`efefff5`](https://github.com/stdlib-js/stdlib/commit/efefff580c7e737aca6f7ea81fe52e26b1f97464) - add `gunitspace` to namespace
 -   [`7a4cb65`](https://github.com/stdlib-js/stdlib/commit/7a4cb65f70474b106a71956d45e1ebe0c4093225) - add `blas/ext/base/ndarray/gunitspace` [(#11726)](https://github.com/stdlib-js/stdlib/pull/11726)
 -   [`7a39426`](https://github.com/stdlib-js/stdlib/commit/7a3942642216f59766c5e75ea107b1cc40461fc9) - add `toSorted` to namespace
@@ -189,6 +201,20 @@
 
 <details>
 
+-   [`a3078e1`](https://github.com/stdlib-js/stdlib/commit/a3078e1b3da2f651a15563b092822ade951275af) - **feat:** add `gdiff` and `dcartesianSquare` to namespace _(by Athan Reines)_
+-   [`e544184`](https://github.com/stdlib-js/stdlib/commit/e544184ff876854d9936c3fc8d7be94c22eb4b9e) - **feat:** add `unitspace` to namespace _(by Athan Reines)_
+-   [`9f702bf`](https://github.com/stdlib-js/stdlib/commit/9f702bfb31cc11eae2b1e6aa122ab38ec190af7c) - **feat:** add `blas/ext/unitspace` [(#11802)](https://github.com/stdlib-js/stdlib/pull/11802) _(by Muhammad Haris, Athan Reines)_
+-   [`bd4ba4e`](https://github.com/stdlib-js/stdlib/commit/bd4ba4ebe0b3793118ab3a6313f76422c2b38cd1) - **feat:** add `blas/ext/base/gdiff` [(#10903)](https://github.com/stdlib-js/stdlib/pull/10903) _(by Muhammad Haris, Athan Reines)_
+-   [`a023392`](https://github.com/stdlib-js/stdlib/commit/a02339241efe9c852f08fb5b13fced915c02ad4d) - **feat:** add `blas/ext/base/dcartesian-square` [(#10797)](https://github.com/stdlib-js/stdlib/pull/10797) _(by Muhammad Haris, Athan Reines)_
+-   [`32f6869`](https://github.com/stdlib-js/stdlib/commit/32f6869a2e39b376329470a79eedeaa4388e8ac9) - **docs:** fix missing type _(by Athan Reines)_
+-   [`013a23b`](https://github.com/stdlib-js/stdlib/commit/013a23bc7b0889a4bd171a7f51bce5d1217e45f4) - **feat:** add `swhere` to namespace _(by Athan Reines)_
+-   [`0dc62ae`](https://github.com/stdlib-js/stdlib/commit/0dc62ae39a4817ff888e9736c3ea599f6beff4e5) - **build:** replace `eslint-plugin-node` with `eslint-plugin-n` [(#10952)](https://github.com/stdlib-js/stdlib/pull/10952) _(by Philipp Burckhardt, Athan Reines)_
+-   [`28917cf`](https://github.com/stdlib-js/stdlib/commit/28917cf0c4386cb3c16c5bec7fbb3ac7ae9ffe54) - **feat:** add `blas/ext/base/swhere` [(#11582)](https://github.com/stdlib-js/stdlib/pull/11582) _(by Muhammad Haris, Athan Reines)_
+-   [`8d3c814`](https://github.com/stdlib-js/stdlib/commit/8d3c814b1afa9c348ffb0180d74bd4da5e3a5eb2) - **feat:** add `*unitspace` symbols to namespace _(by Athan Reines)_
+-   [`cfc58ab`](https://github.com/stdlib-js/stdlib/commit/cfc58ab9bb051fe400e496981598c0bbfc0da30e) - **feat:** add `blas/ext/base/ndarray/zunitspace` [(#11730)](https://github.com/stdlib-js/stdlib/pull/11730) _(by Muhammad Haris, Athan Reines)_
+-   [`e5f860f`](https://github.com/stdlib-js/stdlib/commit/e5f860f9bb41461d13e1f5b9395d3efd164abc75) - **feat:** add `blas/ext/base/ndarray/cunitspace` [(#11729)](https://github.com/stdlib-js/stdlib/pull/11729) _(by Muhammad Haris, Athan Reines)_
+-   [`d77217d`](https://github.com/stdlib-js/stdlib/commit/d77217d6b2c994cfb813116c5a149366cb3a3662) - **feat:** add `blas/ext/base/ndarray/sunitspace` [(#11728)](https://github.com/stdlib-js/stdlib/pull/11728) _(by Muhammad Haris, Athan Reines)_
+-   [`58a6c2d`](https://github.com/stdlib-js/stdlib/commit/58a6c2d73e76c26c7ca0f6b50e7f6e2f0e5354e2) - **feat:** add `blas/ext/base/ndarray/dunitspace` [(#11727)](https://github.com/stdlib-js/stdlib/pull/11727) _(by Muhammad Haris, Athan Reines)_
 -   [`7442c80`](https://github.com/stdlib-js/stdlib/commit/7442c80a194a19e0784a8093afb743146dd3a668) - **docs:** update namespace table of contents [(#11789)](https://github.com/stdlib-js/stdlib/pull/11789) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`efefff5`](https://github.com/stdlib-js/stdlib/commit/efefff580c7e737aca6f7ea81fe52e26b1f97464) - **feat:** add `gunitspace` to namespace _(by Athan Reines)_
 -   [`7a4cb65`](https://github.com/stdlib-js/stdlib/commit/7a4cb65f70474b106a71956d45e1ebe0c4093225) - **feat:** add `blas/ext/base/ndarray/gunitspace` [(#11726)](https://github.com/stdlib-js/stdlib/pull/11726) _(by Muhammad Haris, Athan Reines)_
