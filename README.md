@@ -93,6 +93,7 @@ The namespace contains the following:
 -   <span class="signature">[`sum( x[, options] )`][@stdlib/blas/ext/sum]</span><span class="delimiter">: </span><span class="description">compute the sum along one or more ndarray dimensions.</span>
 -   <span class="signature">[`toSorted( x[, sortOrder][, options] )`][@stdlib/blas/ext/to-sorted]</span><span class="delimiter">: </span><span class="description">return a new ndarray containing the elements of an input ndarray sorted along one or more ndarray dimensions.</span>
 -   <span class="signature">[`toSortedhp( x[, sortOrder][, options] )`][@stdlib/blas/ext/to-sortedhp]</span><span class="delimiter">: </span><span class="description">return a new ndarray containing the elements of an input ndarray sorted along one or more ndarray dimensions using heapsort.</span>
+-   <span class="signature">[`unitspace( shape, start[, options] )`][@stdlib/blas/ext/unitspace]</span><span class="delimiter">: </span><span class="description">return a new ndarray filled with linearly spaced numeric elements which increment by `1` starting from a specified value along one or more ndarray dimensions.</span>
 -   <span class="signature">[`zeroTo( shape[, options] )`][@stdlib/blas/ext/zero-to]</span><span class="delimiter">: </span><span class="description">return a new ndarray filled with linearly spaced numeric elements which increment by `1` starting from zero along one or more ndarray dimensions.</span>
 
 </div>
@@ -233,6 +234,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/blas/ext/to-sorted]: https://github.com/stdlib-js/blas-ext-to-sorted
 
 [@stdlib/blas/ext/to-sortedhp]: https://github.com/stdlib-js/blas-ext-to-sortedhp
+
+[@stdlib/blas/ext/unitspace]: https://github.com/stdlib-js/blas-ext-unitspace
 
 [@stdlib/blas/ext/zero-to]: https://github.com/stdlib-js/blas-ext-zero-to
 
