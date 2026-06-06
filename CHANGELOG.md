@@ -4,12 +4,84 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-22)
+## Unreleased (2026-06-06)
 
 <section class="features">
 
 ### Features
 
+-   [`72f20d1`](https://github.com/stdlib-js/stdlib/commit/72f20d155341ee6bb9de688ba7b2a1b701ff3a54) - update `blas/ext/base` TypeScript declarations [(#12578)](https://github.com/stdlib-js/stdlib/pull/12578)
+-   [`d61f60f`](https://github.com/stdlib-js/stdlib/commit/d61f60f9d86d485fd6be90594d1226ff29b664da) - update `blas/ext/base/ndarray` TypeScript declarations [(#12577)](https://github.com/stdlib-js/stdlib/pull/12577)
+-   [`fc58e6c`](https://github.com/stdlib-js/stdlib/commit/fc58e6cbed284e4a21421d7e3b73c7504d5bf968) - add various symbols to namespace
+-   [`0176557`](https://github.com/stdlib-js/stdlib/commit/01765576597097cc6bee0458802983e4a51aa2cc) - add `blas/ext/base/scartesian-product` [(#12563)](https://github.com/stdlib-js/stdlib/pull/12563)
+-   [`e4c19a3`](https://github.com/stdlib-js/stdlib/commit/e4c19a3e4864e7c9807cae88b2a37b5d0918edfb) - add `blas/ext/base/daxpby` [(#12573)](https://github.com/stdlib-js/stdlib/pull/12573)
+-   [`ccab031`](https://github.com/stdlib-js/stdlib/commit/ccab031cf9dbf53fb7d865934c310b7ca98f45bc) - add `blas/ext/base/gcartesian-product` [(#12561)](https://github.com/stdlib-js/stdlib/pull/12561)
+-   [`813f930`](https://github.com/stdlib-js/stdlib/commit/813f930eb5499d52a3bf36758d226f39baae8bf5) - add `blas/ext/base/gsome` [(#12555)](https://github.com/stdlib-js/stdlib/pull/12555)
+-   [`6c702e2`](https://github.com/stdlib-js/stdlib/commit/6c702e28867687afcb9570a8936c5341f974c461) - add `gcuany` and `gcusome` to namespace
+-   [`e55fddc`](https://github.com/stdlib-js/stdlib/commit/e55fddcf3ba3596e3d913925dc02f5c2600a0ec7) - add `blas/ext/base/gcusome` [(#12182)](https://github.com/stdlib-js/stdlib/pull/12182)
+-   [`7f321d8`](https://github.com/stdlib-js/stdlib/commit/7f321d8a3fbb4852da1e7f2a53634a10013e5d1b) - add `blas/ext/base/gcuany` [(#12535)](https://github.com/stdlib-js/stdlib/pull/12535)
+-   [`aac3a7c`](https://github.com/stdlib-js/stdlib/commit/aac3a7c1ed319e1270df50675c413235af628f2a) - add `sones` to namespace
+-   [`1d97e1a`](https://github.com/stdlib-js/stdlib/commit/1d97e1a17530208c82ec7ae8c59c1e3e73b0b066) - add `blas/ext/base/sones`
+-   [`e903f79`](https://github.com/stdlib-js/stdlib/commit/e903f792e69612bfa05c36ff659ae56036313c56) - add `dones` to namespace
+-   [`6b340ea`](https://github.com/stdlib-js/stdlib/commit/6b340ea0a794b13c3f9e3eebb0381695a80126cd) - add `blas/ext/base/dones`
+-   [`b5749b6`](https://github.com/stdlib-js/stdlib/commit/b5749b622f585b65628072e223ceb18f3f21f80c) - add `saxpby` to namespace
+-   [`62c39ad`](https://github.com/stdlib-js/stdlib/commit/62c39adef274b54ab0e73ee1e4f9595e33e04796) - add `blas/ext/base/saxpby` [(#12506)](https://github.com/stdlib-js/stdlib/pull/12506)
+-   [`d2f751e`](https://github.com/stdlib-js/stdlib/commit/d2f751e2a9be84e74863b07fef380abbeff2fdd4) - add `szeros` to namespace
+-   [`02527f4`](https://github.com/stdlib-js/stdlib/commit/02527f445e4edeeb4d552159d748b18104ad3c95) - add `blas/ext/base/szeros`
+-   [`d864f6f`](https://github.com/stdlib-js/stdlib/commit/d864f6f8bf80276cb56eca9ed76045f5d310d3d4) - add `dzeros` to namespace
+-   [`a8ae603`](https://github.com/stdlib-js/stdlib/commit/a8ae6038b6a494bb4f9db398c5b0eb94d00d519e) - add `blas/ext/base/dzeros`
+-   [`9d49c60`](https://github.com/stdlib-js/stdlib/commit/9d49c6028806a168ca07b211136dc3134037b36c) - add `cdiff` to namespace
+-   [`6da0095`](https://github.com/stdlib-js/stdlib/commit/6da00954850ddf7230d07fe481f65a2c7a168c15) - add `blas/ext/base/cdiff` [(#11744)](https://github.com/stdlib-js/stdlib/pull/11744)
+-   [`48eafd9`](https://github.com/stdlib-js/stdlib/commit/48eafd99ff26711d802914a9e850f8d11537c1a6) - add `gxsa` to namespace
+-   [`a472680`](https://github.com/stdlib-js/stdlib/commit/a47268016f446a4d26673c0296e32c4b14ca7a9f) - add `gwapx` to namespace
+-   [`c54b9b1`](https://github.com/stdlib-js/stdlib/commit/c54b9b1602d48dd2972c5b0ef34f34047d2680b2) - add `blas/ext/base/gwapx` [(#12413)](https://github.com/stdlib-js/stdlib/pull/12413)
+-   [`3935357`](https://github.com/stdlib-js/stdlib/commit/3935357126f6f4419533562c09d7a54de1e8b70d) - add `blas/ext/base/ndarray/gxsa` [(#12417)](https://github.com/stdlib-js/stdlib/pull/12417)
+-   [`c326829`](https://github.com/stdlib-js/stdlib/commit/c326829c01e1d78bd549079871af19cb0cfb2e0f) - add `gxpy` to namespace
+-   [`537d506`](https://github.com/stdlib-js/stdlib/commit/537d506db8474702d698e335bd64715fe43f4ff9) - add `blas/ext/base/gxpy` [(#12406)](https://github.com/stdlib-js/stdlib/pull/12406)
+-   [`f18c78a`](https://github.com/stdlib-js/stdlib/commit/f18c78abdf6b01a85fbe0922d5569c355e8fc744) - add `zxsa` to namespace
+-   [`45659c7`](https://github.com/stdlib-js/stdlib/commit/45659c7c5a8241137fc41d7dadaeff8c560a53f4) - add `gwxsa` to namespace
+-   [`719fad7`](https://github.com/stdlib-js/stdlib/commit/719fad70e179cac1125336a016a166e2233bfc35) - add `blas/ext/base/gwxsa` [(#12385)](https://github.com/stdlib-js/stdlib/pull/12385)
+-   [`0cefffd`](https://github.com/stdlib-js/stdlib/commit/0cefffd796337779fe11f3bb7f5a1ffd15442abb) - add `blas/ext/base/ndarray/zxsa` [(#12407)](https://github.com/stdlib-js/stdlib/pull/12407)
+-   [`53ba9dc`](https://github.com/stdlib-js/stdlib/commit/53ba9dcb878686fb7d685da7fbadeeb739069204) - add `smskrev` to namespace
+-   [`f3c2d1c`](https://github.com/stdlib-js/stdlib/commit/f3c2d1c11d5f724e60fc1e040bbc3deb0a3e2903) - add `blas/ext/base/smskrev` [(#10924)](https://github.com/stdlib-js/stdlib/pull/10924)
+-   [`65d7735`](https://github.com/stdlib-js/stdlib/commit/65d7735880ff6d36b49a243112bb56f078e53c49) - add `cxsa`, `gaxpb`, and `zaxpb` to namespace
+-   [`c587366`](https://github.com/stdlib-js/stdlib/commit/c587366d17fda33fdc13f8e0443ee93157c5e0e0) - add `dmskrev` and `gaxpby` to namespace
+-   [`4a99de9`](https://github.com/stdlib-js/stdlib/commit/4a99de96ce637b10b7e949fc516f0c2602ac96c2) - update `blas/ext/base/ndarray` TypeScript declarations [(#12387)](https://github.com/stdlib-js/stdlib/pull/12387)
+-   [`b930fc4`](https://github.com/stdlib-js/stdlib/commit/b930fc44d1cafc7ffef58c51e42cebf970969f50) - add `blas/ext/base/ndarray/cxsa` [(#12383)](https://github.com/stdlib-js/stdlib/pull/12383)
+-   [`b5ae032`](https://github.com/stdlib-js/stdlib/commit/b5ae03255e85a51cb2cc0faf7d4c1f5c847e38dc) - add `blas/ext/base/gaxpby` [(#12380)](https://github.com/stdlib-js/stdlib/pull/12380)
+-   [`6ff2ede`](https://github.com/stdlib-js/stdlib/commit/6ff2ede05ab929f0d8d32bf1db831c3bd748c608) - add `blas/ext/base/ndarray/gaxpb` [(#12382)](https://github.com/stdlib-js/stdlib/pull/12382)
+-   [`0f8d445`](https://github.com/stdlib-js/stdlib/commit/0f8d4454279b213a611e2253df5725482fb81762) - add `blas/ext/base/ndarray/zaxpb` [(#12381)](https://github.com/stdlib-js/stdlib/pull/12381)
+-   [`fedd3a9`](https://github.com/stdlib-js/stdlib/commit/fedd3a91e6c0e49542c61c2eccca14fe696d3910) - add `blas/ext/base/dmskrev` [(#10917)](https://github.com/stdlib-js/stdlib/pull/10917)
+-   [`87e0a45`](https://github.com/stdlib-js/stdlib/commit/87e0a4506bf7d9708c1388f6c90da4a0264858a4) - add `caxpb` to namespace
+-   [`991a51c`](https://github.com/stdlib-js/stdlib/commit/991a51cd9a5ba2fd67d7f9ad23b11cb5be994435) - add `sxsa` to namespace
+-   [`f33f281`](https://github.com/stdlib-js/stdlib/commit/f33f28173b5ea380e53dafe4109647fd37499233) - add `gcuevery`, `gcunone`, and `zxsa` to namespace
+-   [`d23b260`](https://github.com/stdlib-js/stdlib/commit/d23b2606cb3d1fb323ad2a8985d2c3f9498b8cdc) - add `blas/ext/base/zxsa` [(#12351)](https://github.com/stdlib-js/stdlib/pull/12351)
+-   [`513268f`](https://github.com/stdlib-js/stdlib/commit/513268fc1c6d70f999af77129cbec0522dd10117) - add `blas/ext/base/ndarray/caxpb` [(#12377)](https://github.com/stdlib-js/stdlib/pull/12377)
+-   [`17cc5aa`](https://github.com/stdlib-js/stdlib/commit/17cc5aa2b49b4182a27b1b1696f56198517caebf) - update `blas/ext/base/ndarray` TypeScript declarations [(#12361)](https://github.com/stdlib-js/stdlib/pull/12361)
+-   [`d3234b6`](https://github.com/stdlib-js/stdlib/commit/d3234b6e0cf324f63d6104cf2acc366ef9ffdb73) - add `blas/ext/base/gcuevery` [(#12355)](https://github.com/stdlib-js/stdlib/pull/12355)
+-   [`267a473`](https://github.com/stdlib-js/stdlib/commit/267a473a6e6e0b50e09eda9cbecb902614ae67fc) - add `blas/ext/base/gcunone` [(#12352)](https://github.com/stdlib-js/stdlib/pull/12352)
+-   [`f9cbc89`](https://github.com/stdlib-js/stdlib/commit/f9cbc8936041fc0767caa30a3bdbc5a91c17c4ca) - add `blas/ext/base/ndarray/sxsa` [(#12350)](https://github.com/stdlib-js/stdlib/pull/12350)
+-   [`a6c328d`](https://github.com/stdlib-js/stdlib/commit/a6c328d343cbb67b8b8357c15e963c7e6a94c7c9) - add various symbols to namespace
+-   [`a35fd9e`](https://github.com/stdlib-js/stdlib/commit/a35fd9ef4c7b5208f174a4167d83cacbd05055c6) - add various symbols to namespace
+-   [`109713a`](https://github.com/stdlib-js/stdlib/commit/109713a8edf5d67b3416abdae0345166e5d4beeb) - add `blas/ext/base/ndarray/dxsa` [(#12347)](https://github.com/stdlib-js/stdlib/pull/12347)
+-   [`2851c96`](https://github.com/stdlib-js/stdlib/commit/2851c9652234828f683b52b66c2e0c03364b600d) - add `blas/ext/base/cxsa` [(#12344)](https://github.com/stdlib-js/stdlib/pull/12344)
+-   [`c3773d9`](https://github.com/stdlib-js/stdlib/commit/c3773d9c8c7631f6d479e04564826a6430fa4186) - add `blas/ext/base/zaxpb` [(#12342)](https://github.com/stdlib-js/stdlib/pull/12342)
+-   [`4610fde`](https://github.com/stdlib-js/stdlib/commit/4610fded43149e5811521aaa432b24c1b53c60dc) - add `blas/ext/base/ndarray/saxpb` [(#12277)](https://github.com/stdlib-js/stdlib/pull/12277)
+-   [`cf7b40a`](https://github.com/stdlib-js/stdlib/commit/cf7b40a2c52a11adc702ba5c40a0e442ada1dbc5) - add `blas/ext/base/gmskrev` [(#10925)](https://github.com/stdlib-js/stdlib/pull/10925)
+-   [`eb60bb4`](https://github.com/stdlib-js/stdlib/commit/eb60bb44085cccb6d90484c453f6bcd2495421ea) - add `blas/ext/base/dcartesian-product` [(#10799)](https://github.com/stdlib-js/stdlib/pull/10799)
+-   [`6123443`](https://github.com/stdlib-js/stdlib/commit/61234433f40b1d599161ef18dee78dd69d38ebed) - update `blas/ext/base/ndarray` TypeScript declarations [(#12328)](https://github.com/stdlib-js/stdlib/pull/12328)
+-   [`58bbb07`](https://github.com/stdlib-js/stdlib/commit/58bbb0763e6ac0b06b9f2b9eaf5ed072fe227c7f) - add `daxpb` to namespace
+-   [`00d6b7b`](https://github.com/stdlib-js/stdlib/commit/00d6b7b1413d67615382602e1dc1192e7b0752ba) - add `caxpb`, `dxsa`, and `sxsa` to namespace
+-   [`1f36fca`](https://github.com/stdlib-js/stdlib/commit/1f36fca74e8419638a5232f553ce012cd15b1533) - add `blas/ext/base/ndarray/daxpb` [(#12276)](https://github.com/stdlib-js/stdlib/pull/12276)
+-   [`a5376c6`](https://github.com/stdlib-js/stdlib/commit/a5376c6ccc03169e27c2d9880e0eb18abf4c2080) - add `blas/ext/base/caxpb` [(#12274)](https://github.com/stdlib-js/stdlib/pull/12274)
+-   [`ec4adc0`](https://github.com/stdlib-js/stdlib/commit/ec4adc08abd89e5a09c5bb6c975bed83562807b7) - add `blas/ext/base/dxsa` [(#12279)](https://github.com/stdlib-js/stdlib/pull/12279)
+-   [`921e1e8`](https://github.com/stdlib-js/stdlib/commit/921e1e88a2c4ef9ab67ae82bec76b4d28d8c30dc) - add `blas/ext/base/sxsa` [(#12291)](https://github.com/stdlib-js/stdlib/pull/12291)
+-   [`86501b1`](https://github.com/stdlib-js/stdlib/commit/86501b1234b243f0c7f31dfa917d607f82249d6b) - add `zapx` and `gxsa` to namespace
+-   [`f8352cd`](https://github.com/stdlib-js/stdlib/commit/f8352cd7cf5ea0e4953d92f9ebc4577b532bdc68) - add `blas/ext/base/gxsa` [(#12278)](https://github.com/stdlib-js/stdlib/pull/12278)
+-   [`314d9a5`](https://github.com/stdlib-js/stdlib/commit/314d9a591ea1a4b933537f87daee280907f9e767) - add `blas/ext/base/zapx` [(#12275)](https://github.com/stdlib-js/stdlib/pull/12275)
+-   [`e1489ee`](https://github.com/stdlib-js/stdlib/commit/e1489ee6c7d1dff5122ccf182b389cb3545c91f2) - add `capx` to namespace
+-   [`ce17493`](https://github.com/stdlib-js/stdlib/commit/ce17493d5f87ef366feced6ec5d4d871c4507033) - add `blas/ext/base/capx` [(#12239)](https://github.com/stdlib-js/stdlib/pull/12239)
+-   [`1003900`](https://github.com/stdlib-js/stdlib/commit/1003900dbae60a66c99d4adbb7f21b6cb98f6f73) - update `blas/ext/base` TypeScript declarations [(#12238)](https://github.com/stdlib-js/stdlib/pull/12238)
 -   [`b2bd6d6`](https://github.com/stdlib-js/stdlib/commit/b2bd6d650e731b983bb4e891fcb1d419c2e8c43b) - add `sediff` to namespace
 -   [`4fe4366`](https://github.com/stdlib-js/stdlib/commit/4fe4366076c122648cf44226f4ffa7f455fe3217) - add `blas/ext/base/sediff` [(#10905)](https://github.com/stdlib-js/stdlib/pull/10905)
 -   [`e46390e`](https://github.com/stdlib-js/stdlib/commit/e46390e267c0a2b1c0d4f5d088b5374873bd10be) - add `blas/ext/base/dediff` [(#10619)](https://github.com/stdlib-js/stdlib/pull/10619)
@@ -241,6 +313,11 @@
 
 ### Bug Fixes
 
+-   [`9dd3f73`](https://github.com/stdlib-js/stdlib/commit/9dd3f73544d43392c6ff8d5f290e0e466ac0c812) - rename header files to align with project conventions
+-   [`608e415`](https://github.com/stdlib-js/stdlib/commit/608e415c415a9d60e843d8a32043f3257195a11d) - rename interface to PascalCase `LastIndexOf` in `blas/ext/last-index-of` [(#12544)](https://github.com/stdlib-js/stdlib/pull/12544)
+-   [`a601344`](https://github.com/stdlib-js/stdlib/commit/a601344e6d755e59e2df59ec4650f2b1e20aa333) - type `order` parameter as `Layout` in `blas/ext/base/scartesian-square` [(#12530)](https://github.com/stdlib-js/stdlib/pull/12530)
+-   [`3bf760c`](https://github.com/stdlib-js/stdlib/commit/3bf760c663458801bfd17ca21ae891b724331fe9) - type `order` parameter as `Layout` in `blas/ext/base/dcartesian-square` [(#12531)](https://github.com/stdlib-js/stdlib/pull/12531)
+-   [`95a8c41`](https://github.com/stdlib-js/stdlib/commit/95a8c41a2a5313aea289e722bed88bc888454233) - use correct argument value in error message and propagate JSDoc fixes to sibling packages [(#12302)](https://github.com/stdlib-js/stdlib/pull/12302)
 -   [`9e3a4ba`](https://github.com/stdlib-js/stdlib/commit/9e3a4baead056e16d5a6a8cf9d91018c6aba20a0) - add missing `API_SUFFIX` and fix types
 -   [`a11c3ee`](https://github.com/stdlib-js/stdlib/commit/a11c3ee5ae67e719b024612187f7c0444bc811f0) - add missing `API_SUFFIX` and fix types
 -   [`dff4820`](https://github.com/stdlib-js/stdlib/commit/dff4820f380b561fb0044e3d6deb894aa4a8f865) - update `blas/ext/base/gapx` TypeScript test type expectations [(#12169)](https://github.com/stdlib-js/stdlib/pull/12169)
@@ -262,6 +339,118 @@
 
 <details>
 
+-   [`1ee8124`](https://github.com/stdlib-js/stdlib/commit/1ee81246ebccb5ee7e80b2c85b7e9b4ef68442af) - **docs:** update `blas/ext` TypeScript declarations [(#12579)](https://github.com/stdlib-js/stdlib/pull/12579) _(by stdlib-bot)_
+-   [`72f20d1`](https://github.com/stdlib-js/stdlib/commit/72f20d155341ee6bb9de688ba7b2a1b701ff3a54) - **feat:** update `blas/ext/base` TypeScript declarations [(#12578)](https://github.com/stdlib-js/stdlib/pull/12578) _(by stdlib-bot)_
+-   [`d61f60f`](https://github.com/stdlib-js/stdlib/commit/d61f60f9d86d485fd6be90594d1226ff29b664da) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#12577)](https://github.com/stdlib-js/stdlib/pull/12577) _(by stdlib-bot)_
+-   [`fc58e6c`](https://github.com/stdlib-js/stdlib/commit/fc58e6cbed284e4a21421d7e3b73c7504d5bf968) - **feat:** add various symbols to namespace _(by Athan Reines)_
+-   [`9dd3f73`](https://github.com/stdlib-js/stdlib/commit/9dd3f73544d43392c6ff8d5f290e0e466ac0c812) - **fix:** rename header files to align with project conventions _(by Athan Reines)_
+-   [`0176557`](https://github.com/stdlib-js/stdlib/commit/01765576597097cc6bee0458802983e4a51aa2cc) - **feat:** add `blas/ext/base/scartesian-product` [(#12563)](https://github.com/stdlib-js/stdlib/pull/12563) _(by Muhammad Haris)_
+-   [`e4c19a3`](https://github.com/stdlib-js/stdlib/commit/e4c19a3e4864e7c9807cae88b2a37b5d0918edfb) - **feat:** add `blas/ext/base/daxpby` [(#12573)](https://github.com/stdlib-js/stdlib/pull/12573) _(by Karan Anand)_
+-   [`ccab031`](https://github.com/stdlib-js/stdlib/commit/ccab031cf9dbf53fb7d865934c310b7ca98f45bc) - **feat:** add `blas/ext/base/gcartesian-product` [(#12561)](https://github.com/stdlib-js/stdlib/pull/12561) _(by Muhammad Haris, Athan Reines)_
+-   [`4f19dd0`](https://github.com/stdlib-js/stdlib/commit/4f19dd0fddd451cd6454758b8701e813876a619f) - **chore:** follow-up corrections for recent commits [(#12557)](https://github.com/stdlib-js/stdlib/pull/12557) _(by Philipp Burckhardt)_
+-   [`813f930`](https://github.com/stdlib-js/stdlib/commit/813f930eb5499d52a3bf36758d226f39baae8bf5) - **feat:** add `blas/ext/base/gsome` [(#12555)](https://github.com/stdlib-js/stdlib/pull/12555) _(by Muhammad Haris, Athan Reines)_
+-   [`4711e24`](https://github.com/stdlib-js/stdlib/commit/4711e24e67adfa46cabbe13f3fc0952530be1f7d) - **docs:** update namespace table of contents [(#12552)](https://github.com/stdlib-js/stdlib/pull/12552) _(by stdlib-bot)_
+-   [`6c702e2`](https://github.com/stdlib-js/stdlib/commit/6c702e28867687afcb9570a8936c5341f974c461) - **feat:** add `gcuany` and `gcusome` to namespace _(by Athan Reines)_
+-   [`e55fddc`](https://github.com/stdlib-js/stdlib/commit/e55fddcf3ba3596e3d913925dc02f5c2600a0ec7) - **feat:** add `blas/ext/base/gcusome` [(#12182)](https://github.com/stdlib-js/stdlib/pull/12182) _(by Muhammad Haris)_
+-   [`7f321d8`](https://github.com/stdlib-js/stdlib/commit/7f321d8a3fbb4852da1e7f2a53634a10013e5d1b) - **feat:** add `blas/ext/base/gcuany` [(#12535)](https://github.com/stdlib-js/stdlib/pull/12535) _(by Muhammad Haris)_
+-   [`15a731b`](https://github.com/stdlib-js/stdlib/commit/15a731b9aa63d384fa1d8d5cd3f9c20004714ad4) - **refactor:** remove redundant generic constraint in `blas/ext/base/ndarray/gsorthp` [(#12546)](https://github.com/stdlib-js/stdlib/pull/12546) _(by Philipp Burckhardt)_
+-   [`c26d8b5`](https://github.com/stdlib-js/stdlib/commit/c26d8b58bd7f8254b6db66b8458128bed8e4beab) - **refactor:** remove redundant generic constraint in `blas/ext/base/ndarray/gsort` [(#12545)](https://github.com/stdlib-js/stdlib/pull/12545) _(by Philipp Burckhardt)_
+-   [`f766a24`](https://github.com/stdlib-js/stdlib/commit/f766a2481ba05b540c57b8c058fe2ce399f52495) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/ssortins` [(#12541)](https://github.com/stdlib-js/stdlib/pull/12541) _(by Philipp Burckhardt)_
+-   [`608e415`](https://github.com/stdlib-js/stdlib/commit/608e415c415a9d60e843d8a32043f3257195a11d) - **fix:** rename interface to PascalCase `LastIndexOf` in `blas/ext/last-index-of` [(#12544)](https://github.com/stdlib-js/stdlib/pull/12544) _(by Philipp Burckhardt)_
+-   [`1a35c42`](https://github.com/stdlib-js/stdlib/commit/1a35c4297cbdd96e126faa9a05aee2fc004119a4) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/gsort` [(#12538)](https://github.com/stdlib-js/stdlib/pull/12538) _(by Philipp Burckhardt)_
+-   [`9f94bda`](https://github.com/stdlib-js/stdlib/commit/9f94bda297163561179901566584481aba80d01c) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/ssortsh` [(#12542)](https://github.com/stdlib-js/stdlib/pull/12542) _(by Philipp Burckhardt)_
+-   [`a18215d`](https://github.com/stdlib-js/stdlib/commit/a18215d30d740a00f67b05ec71d1f1da0d64166b) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/dsortsh` [(#12540)](https://github.com/stdlib-js/stdlib/pull/12540) _(by Philipp Burckhardt)_
+-   [`e74dd95`](https://github.com/stdlib-js/stdlib/commit/e74dd953c73dd0fd149fc24dcee6f1f66847557a) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/gsorthp` [(#12539)](https://github.com/stdlib-js/stdlib/pull/12539) _(by Philipp Burckhardt)_
+-   [`45710f8`](https://github.com/stdlib-js/stdlib/commit/45710f8f1e2c0353af2798441c01f5fff9ad3fb6) - **refactor:** use `strideX`/`offsetX` parameter names in `blas/ext/base/dssumors` [(#12537)](https://github.com/stdlib-js/stdlib/pull/12537) _(by Philipp Burckhardt)_
+-   [`37b53d2`](https://github.com/stdlib-js/stdlib/commit/37b53d20a65b426c7d5a9a4048ac31b10af45df5) - **refactor:** use `strideX` parameter name in `blas/ext/base/dnansum` [(#12536)](https://github.com/stdlib-js/stdlib/pull/12536) _(by Philipp Burckhardt)_
+-   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
+-   [`7587c51`](https://github.com/stdlib-js/stdlib/commit/7587c516c9cf38a7048079bf01c42135061b8d98) - **docs:** propagate TSDoc declaration fixes to sibling packages [(#12524)](https://github.com/stdlib-js/stdlib/pull/12524) _(by Philipp Burckhardt)_
+-   [`a601344`](https://github.com/stdlib-js/stdlib/commit/a601344e6d755e59e2df59ec4650f2b1e20aa333) - **fix:** type `order` parameter as `Layout` in `blas/ext/base/scartesian-square` [(#12530)](https://github.com/stdlib-js/stdlib/pull/12530) _(by Philipp Burckhardt)_
+-   [`3bf760c`](https://github.com/stdlib-js/stdlib/commit/3bf760c663458801bfd17ca21ae891b724331fe9) - **fix:** type `order` parameter as `Layout` in `blas/ext/base/dcartesian-square` [(#12531)](https://github.com/stdlib-js/stdlib/pull/12531) _(by Philipp Burckhardt)_
+-   [`a3a2ba1`](https://github.com/stdlib-js/stdlib/commit/a3a2ba1ab29ccd763a7089ac24da1df0c17f34ff) - **docs:** update namespace table of contents [(#12521)](https://github.com/stdlib-js/stdlib/pull/12521) _(by stdlib-bot)_
+-   [`aac3a7c`](https://github.com/stdlib-js/stdlib/commit/aac3a7c1ed319e1270df50675c413235af628f2a) - **feat:** add `sones` to namespace _(by Athan Reines)_
+-   [`1d97e1a`](https://github.com/stdlib-js/stdlib/commit/1d97e1a17530208c82ec7ae8c59c1e3e73b0b066) - **feat:** add `blas/ext/base/sones` _(by Athan Reines)_
+-   [`e903f79`](https://github.com/stdlib-js/stdlib/commit/e903f792e69612bfa05c36ff659ae56036313c56) - **feat:** add `dones` to namespace _(by Athan Reines)_
+-   [`6b340ea`](https://github.com/stdlib-js/stdlib/commit/6b340ea0a794b13c3f9e3eebb0381695a80126cd) - **feat:** add `blas/ext/base/dones` _(by Athan Reines)_
+-   [`b5749b6`](https://github.com/stdlib-js/stdlib/commit/b5749b622f585b65628072e223ceb18f3f21f80c) - **feat:** add `saxpby` to namespace _(by Athan Reines)_
+-   [`62c39ad`](https://github.com/stdlib-js/stdlib/commit/62c39adef274b54ab0e73ee1e4f9595e33e04796) - **feat:** add `blas/ext/base/saxpby` [(#12506)](https://github.com/stdlib-js/stdlib/pull/12506) _(by Karan Anand)_
+-   [`f7eebc9`](https://github.com/stdlib-js/stdlib/commit/f7eebc9dd0757b872dc22b1a0eb01c12a7221df8) - **docs:** update namespace table of contents [(#12439)](https://github.com/stdlib-js/stdlib/pull/12439) _(by stdlib-bot)_
+-   [`0f2cc7c`](https://github.com/stdlib-js/stdlib/commit/0f2cc7c6e98ae9681285d72aecba3f0b258106e2) - **docs:** update descriptions _(by Athan Reines)_
+-   [`d2f751e`](https://github.com/stdlib-js/stdlib/commit/d2f751e2a9be84e74863b07fef380abbeff2fdd4) - **feat:** add `szeros` to namespace _(by Athan Reines)_
+-   [`02527f4`](https://github.com/stdlib-js/stdlib/commit/02527f445e4edeeb4d552159d748b18104ad3c95) - **feat:** add `blas/ext/base/szeros` _(by Athan Reines)_
+-   [`d864f6f`](https://github.com/stdlib-js/stdlib/commit/d864f6f8bf80276cb56eca9ed76045f5d310d3d4) - **feat:** add `dzeros` to namespace _(by Athan Reines)_
+-   [`a8ae603`](https://github.com/stdlib-js/stdlib/commit/a8ae6038b6a494bb4f9db398c5b0eb94d00d519e) - **feat:** add `blas/ext/base/dzeros` _(by Athan Reines)_
+-   [`9d49c60`](https://github.com/stdlib-js/stdlib/commit/9d49c6028806a168ca07b211136dc3134037b36c) - **feat:** add `cdiff` to namespace _(by Athan Reines)_
+-   [`6da0095`](https://github.com/stdlib-js/stdlib/commit/6da00954850ddf7230d07fe481f65a2c7a168c15) - **feat:** add `blas/ext/base/cdiff` [(#11744)](https://github.com/stdlib-js/stdlib/pull/11744) _(by Muhammad Haris, Athan Reines)_
+-   [`48eafd9`](https://github.com/stdlib-js/stdlib/commit/48eafd99ff26711d802914a9e850f8d11537c1a6) - **feat:** add `gxsa` to namespace _(by Athan Reines)_
+-   [`a472680`](https://github.com/stdlib-js/stdlib/commit/a47268016f446a4d26673c0296e32c4b14ca7a9f) - **feat:** add `gwapx` to namespace _(by Athan Reines)_
+-   [`c54b9b1`](https://github.com/stdlib-js/stdlib/commit/c54b9b1602d48dd2972c5b0ef34f34047d2680b2) - **feat:** add `blas/ext/base/gwapx` [(#12413)](https://github.com/stdlib-js/stdlib/pull/12413) _(by Karan Anand)_
+-   [`3935357`](https://github.com/stdlib-js/stdlib/commit/3935357126f6f4419533562c09d7a54de1e8b70d) - **feat:** add `blas/ext/base/ndarray/gxsa` [(#12417)](https://github.com/stdlib-js/stdlib/pull/12417) _(by Karan Anand)_
+-   [`0533a82`](https://github.com/stdlib-js/stdlib/commit/0533a8265097315ffd643c326f6917392f44cca8) - **refactor:** rename output array parameter from `y` to `w` in `blas/ext/base/gwxsa` [(#12418)](https://github.com/stdlib-js/stdlib/pull/12418) _(by Karan Anand)_
+-   [`9dd3df6`](https://github.com/stdlib-js/stdlib/commit/9dd3df6b9e0735d6ffe28d6475e1181ac645f2de) - **docs:** update namespace table of contents [(#12416)](https://github.com/stdlib-js/stdlib/pull/12416) _(by stdlib-bot)_
+-   [`c326829`](https://github.com/stdlib-js/stdlib/commit/c326829c01e1d78bd549079871af19cb0cfb2e0f) - **feat:** add `gxpy` to namespace _(by Athan Reines)_
+-   [`537d506`](https://github.com/stdlib-js/stdlib/commit/537d506db8474702d698e335bd64715fe43f4ff9) - **feat:** add `blas/ext/base/gxpy` [(#12406)](https://github.com/stdlib-js/stdlib/pull/12406) _(by Karan Anand)_
+-   [`f18c78a`](https://github.com/stdlib-js/stdlib/commit/f18c78abdf6b01a85fbe0922d5569c355e8fc744) - **feat:** add `zxsa` to namespace _(by Athan Reines)_
+-   [`45659c7`](https://github.com/stdlib-js/stdlib/commit/45659c7c5a8241137fc41d7dadaeff8c560a53f4) - **feat:** add `gwxsa` to namespace _(by Athan Reines)_
+-   [`0e3aa56`](https://github.com/stdlib-js/stdlib/commit/0e3aa564804ba57767b8d5859073eadf05fda6d0) - **test:** fix complex array assertions [(#12409)](https://github.com/stdlib-js/stdlib/pull/12409) _(by Karan Anand)_
+-   [`298ccaf`](https://github.com/stdlib-js/stdlib/commit/298ccaf6055bcaa44dadb1e334bc5b4c827dc9dc) - **test:** add element comments and sentinel values to `blas/ext/base/ndarray/zxsa` [(#12408)](https://github.com/stdlib-js/stdlib/pull/12408) _(by Karan Anand)_
+-   [`719fad7`](https://github.com/stdlib-js/stdlib/commit/719fad70e179cac1125336a016a166e2233bfc35) - **feat:** add `blas/ext/base/gwxsa` [(#12385)](https://github.com/stdlib-js/stdlib/pull/12385) _(by Karan Anand)_
+-   [`0cefffd`](https://github.com/stdlib-js/stdlib/commit/0cefffd796337779fe11f3bb7f5a1ffd15442abb) - **feat:** add `blas/ext/base/ndarray/zxsa` [(#12407)](https://github.com/stdlib-js/stdlib/pull/12407) _(by Karan Anand)_
+-   [`53ba9dc`](https://github.com/stdlib-js/stdlib/commit/53ba9dcb878686fb7d685da7fbadeeb739069204) - **feat:** add `smskrev` to namespace _(by Athan Reines)_
+-   [`f3c2d1c`](https://github.com/stdlib-js/stdlib/commit/f3c2d1c11d5f724e60fc1e040bbc3deb0a3e2903) - **feat:** add `blas/ext/base/smskrev` [(#10924)](https://github.com/stdlib-js/stdlib/pull/10924) _(by Muhammad Haris, Athan Reines)_
+-   [`2bab6a4`](https://github.com/stdlib-js/stdlib/commit/2bab6a4b9db733334bdcd9bfc032af183bdd7cf2) - **docs:** fix missing header _(by Athan Reines)_
+-   [`7719ac8`](https://github.com/stdlib-js/stdlib/commit/7719ac8d2f7584c23d167ec3a3b9a7ad1fbba992) - **docs:** fix missing function description _(by Athan Reines)_
+-   [`65d7735`](https://github.com/stdlib-js/stdlib/commit/65d7735880ff6d36b49a243112bb56f078e53c49) - **feat:** add `cxsa`, `gaxpb`, and `zaxpb` to namespace _(by Athan Reines)_
+-   [`c587366`](https://github.com/stdlib-js/stdlib/commit/c587366d17fda33fdc13f8e0443ee93157c5e0e0) - **feat:** add `dmskrev` and `gaxpby` to namespace _(by Athan Reines)_
+-   [`78f0c53`](https://github.com/stdlib-js/stdlib/commit/78f0c534da8ae86ddf72c54884ebd040fa3c0ea4) - **docs:** update namespace table of contents [(#12388)](https://github.com/stdlib-js/stdlib/pull/12388) _(by stdlib-bot)_
+-   [`4a99de9`](https://github.com/stdlib-js/stdlib/commit/4a99de96ce637b10b7e949fc516f0c2602ac96c2) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#12387)](https://github.com/stdlib-js/stdlib/pull/12387) _(by stdlib-bot)_
+-   [`b930fc4`](https://github.com/stdlib-js/stdlib/commit/b930fc44d1cafc7ffef58c51e42cebf970969f50) - **feat:** add `blas/ext/base/ndarray/cxsa` [(#12383)](https://github.com/stdlib-js/stdlib/pull/12383) _(by Karan Anand)_
+-   [`b5ae032`](https://github.com/stdlib-js/stdlib/commit/b5ae03255e85a51cb2cc0faf7d4c1f5c847e38dc) - **feat:** add `blas/ext/base/gaxpby` [(#12380)](https://github.com/stdlib-js/stdlib/pull/12380) _(by Karan Anand, Athan Reines)_
+-   [`6ff2ede`](https://github.com/stdlib-js/stdlib/commit/6ff2ede05ab929f0d8d32bf1db831c3bd748c608) - **feat:** add `blas/ext/base/ndarray/gaxpb` [(#12382)](https://github.com/stdlib-js/stdlib/pull/12382) _(by Karan Anand, Athan Reines)_
+-   [`0f8d445`](https://github.com/stdlib-js/stdlib/commit/0f8d4454279b213a611e2253df5725482fb81762) - **feat:** add `blas/ext/base/ndarray/zaxpb` [(#12381)](https://github.com/stdlib-js/stdlib/pull/12381) _(by Karan Anand)_
+-   [`fedd3a9`](https://github.com/stdlib-js/stdlib/commit/fedd3a91e6c0e49542c61c2eccca14fe696d3910) - **feat:** add `blas/ext/base/dmskrev` [(#10917)](https://github.com/stdlib-js/stdlib/pull/10917) _(by Muhammad Haris)_
+-   [`87e0a45`](https://github.com/stdlib-js/stdlib/commit/87e0a4506bf7d9708c1388f6c90da4a0264858a4) - **feat:** add `caxpb` to namespace _(by Athan Reines)_
+-   [`991a51c`](https://github.com/stdlib-js/stdlib/commit/991a51cd9a5ba2fd67d7f9ad23b11cb5be994435) - **feat:** add `sxsa` to namespace _(by Athan Reines)_
+-   [`f33f281`](https://github.com/stdlib-js/stdlib/commit/f33f28173b5ea380e53dafe4109647fd37499233) - **feat:** add `gcuevery`, `gcunone`, and `zxsa` to namespace _(by Athan Reines)_
+-   [`d23b260`](https://github.com/stdlib-js/stdlib/commit/d23b2606cb3d1fb323ad2a8985d2c3f9498b8cdc) - **feat:** add `blas/ext/base/zxsa` [(#12351)](https://github.com/stdlib-js/stdlib/pull/12351) _(by Karan Anand, Athan Reines)_
+-   [`513268f`](https://github.com/stdlib-js/stdlib/commit/513268fc1c6d70f999af77129cbec0522dd10117) - **feat:** add `blas/ext/base/ndarray/caxpb` [(#12377)](https://github.com/stdlib-js/stdlib/pull/12377) _(by Karan Anand)_
+-   [`32c453d`](https://github.com/stdlib-js/stdlib/commit/32c453d442eb82060b8bad46d39ff64361302b25) - **docs:** update namespace table of contents [(#12362)](https://github.com/stdlib-js/stdlib/pull/12362) _(by stdlib-bot)_
+-   [`17cc5aa`](https://github.com/stdlib-js/stdlib/commit/17cc5aa2b49b4182a27b1b1696f56198517caebf) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#12361)](https://github.com/stdlib-js/stdlib/pull/12361) _(by stdlib-bot)_
+-   [`d3234b6`](https://github.com/stdlib-js/stdlib/commit/d3234b6e0cf324f63d6104cf2acc366ef9ffdb73) - **feat:** add `blas/ext/base/gcuevery` [(#12355)](https://github.com/stdlib-js/stdlib/pull/12355) _(by Muhammad Haris, Athan Reines)_
+-   [`267a473`](https://github.com/stdlib-js/stdlib/commit/267a473a6e6e0b50e09eda9cbecb902614ae67fc) - **feat:** add `blas/ext/base/gcunone` [(#12352)](https://github.com/stdlib-js/stdlib/pull/12352) _(by Muhammad Haris, Athan Reines)_
+-   [`f9cbc89`](https://github.com/stdlib-js/stdlib/commit/f9cbc8936041fc0767caa30a3bdbc5a91c17c4ca) - **feat:** add `blas/ext/base/ndarray/sxsa` [(#12350)](https://github.com/stdlib-js/stdlib/pull/12350) _(by Karan Anand)_
+-   [`a6c328d`](https://github.com/stdlib-js/stdlib/commit/a6c328d343cbb67b8b8357c15e963c7e6a94c7c9) - **feat:** add various symbols to namespace _(by Athan Reines)_
+-   [`a35fd9e`](https://github.com/stdlib-js/stdlib/commit/a35fd9ef4c7b5208f174a4167d83cacbd05055c6) - **feat:** add various symbols to namespace _(by Athan Reines)_
+-   [`109713a`](https://github.com/stdlib-js/stdlib/commit/109713a8edf5d67b3416abdae0345166e5d4beeb) - **feat:** add `blas/ext/base/ndarray/dxsa` [(#12347)](https://github.com/stdlib-js/stdlib/pull/12347) _(by Karan Anand, Athan Reines)_
+-   [`2851c96`](https://github.com/stdlib-js/stdlib/commit/2851c9652234828f683b52b66c2e0c03364b600d) - **feat:** add `blas/ext/base/cxsa` [(#12344)](https://github.com/stdlib-js/stdlib/pull/12344) _(by Karan Anand)_
+-   [`c3773d9`](https://github.com/stdlib-js/stdlib/commit/c3773d9c8c7631f6d479e04564826a6430fa4186) - **feat:** add `blas/ext/base/zaxpb` [(#12342)](https://github.com/stdlib-js/stdlib/pull/12342) _(by Karan Anand)_
+-   [`4610fde`](https://github.com/stdlib-js/stdlib/commit/4610fded43149e5811521aaa432b24c1b53c60dc) - **feat:** add `blas/ext/base/ndarray/saxpb` [(#12277)](https://github.com/stdlib-js/stdlib/pull/12277) _(by Karan Anand)_
+-   [`5d3c84a`](https://github.com/stdlib-js/stdlib/commit/5d3c84a62f9c32af8ae37b52c293f3566b4c107a) - **test:** fix element annotations in ndarray offset tests [(#12345)](https://github.com/stdlib-js/stdlib/pull/12345) _(by Karan Anand)_
+-   [`cf7b40a`](https://github.com/stdlib-js/stdlib/commit/cf7b40a2c52a11adc702ba5c40a0e442ada1dbc5) - **feat:** add `blas/ext/base/gmskrev` [(#10925)](https://github.com/stdlib-js/stdlib/pull/10925) _(by Muhammad Haris, Athan Reines)_
+-   [`eb60bb4`](https://github.com/stdlib-js/stdlib/commit/eb60bb44085cccb6d90484c453f6bcd2495421ea) - **feat:** add `blas/ext/base/dcartesian-product` [(#10799)](https://github.com/stdlib-js/stdlib/pull/10799) _(by Muhammad Haris, Athan Reines)_
+-   [`6123443`](https://github.com/stdlib-js/stdlib/commit/61234433f40b1d599161ef18dee78dd69d38ebed) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#12328)](https://github.com/stdlib-js/stdlib/pull/12328) _(by stdlib-bot)_
+-   [`8ff59d6`](https://github.com/stdlib-js/stdlib/commit/8ff59d63eaa88d252f5404e3b3affdf5c66821d5) - **chore:** propagate `blas/*` JSDoc and `cscal` header fixes to siblings [(#12318)](https://github.com/stdlib-js/stdlib/pull/12318) _(by Philipp Burckhardt)_
+-   [`4ed822d`](https://github.com/stdlib-js/stdlib/commit/4ed822d3426ea2ca9f5858de9a7e75e4e4447780) - **docs:** follow-up fixes for commits merged to `develop` on 2026-05-26 [(#12300)](https://github.com/stdlib-js/stdlib/pull/12300) _(by Philipp Burckhardt)_
+-   [`95a8c41`](https://github.com/stdlib-js/stdlib/commit/95a8c41a2a5313aea289e722bed88bc888454233) - **fix:** use correct argument value in error message and propagate JSDoc fixes to sibling packages [(#12302)](https://github.com/stdlib-js/stdlib/pull/12302) _(by Philipp Burckhardt)_
+-   [`54d3d68`](https://github.com/stdlib-js/stdlib/commit/54d3d688dde9b4e86c9d22e298bcc62597451d55) - **docs:** update Markdown stdlib package URLs [(#12307)](https://github.com/stdlib-js/stdlib/pull/12307) _(by stdlib-bot)_
+-   [`e508f18`](https://github.com/stdlib-js/stdlib/commit/e508f182c694bab37034c080d66bb7905db0c2e7) - **docs:** update namespace table of contents [(#12309)](https://github.com/stdlib-js/stdlib/pull/12309) _(by stdlib-bot)_
+-   [`58bbb07`](https://github.com/stdlib-js/stdlib/commit/58bbb0763e6ac0b06b9f2b9eaf5ed072fe227c7f) - **feat:** add `daxpb` to namespace _(by Athan Reines)_
+-   [`00d6b7b`](https://github.com/stdlib-js/stdlib/commit/00d6b7b1413d67615382602e1dc1192e7b0752ba) - **feat:** add `caxpb`, `dxsa`, and `sxsa` to namespace _(by Athan Reines)_
+-   [`1f36fca`](https://github.com/stdlib-js/stdlib/commit/1f36fca74e8419638a5232f553ce012cd15b1533) - **feat:** add `blas/ext/base/ndarray/daxpb` [(#12276)](https://github.com/stdlib-js/stdlib/pull/12276) _(by Karan Anand, Athan Reines)_
+-   [`a5376c6`](https://github.com/stdlib-js/stdlib/commit/a5376c6ccc03169e27c2d9880e0eb18abf4c2080) - **feat:** add `blas/ext/base/caxpb` [(#12274)](https://github.com/stdlib-js/stdlib/pull/12274) _(by Karan Anand)_
+-   [`ec4adc0`](https://github.com/stdlib-js/stdlib/commit/ec4adc08abd89e5a09c5bb6c975bed83562807b7) - **feat:** add `blas/ext/base/dxsa` [(#12279)](https://github.com/stdlib-js/stdlib/pull/12279) _(by Karan Anand, Athan Reines)_
+-   [`921e1e8`](https://github.com/stdlib-js/stdlib/commit/921e1e88a2c4ef9ab67ae82bec76b4d28d8c30dc) - **feat:** add `blas/ext/base/sxsa` [(#12291)](https://github.com/stdlib-js/stdlib/pull/12291) _(by Karan Anand)_
+-   [`8f8c656`](https://github.com/stdlib-js/stdlib/commit/8f8c656623bdcb456e2389f90deb03b45a0875b5) - **docs:** align `alpha` description in `blas/ext/base/gxsa` [(#12286)](https://github.com/stdlib-js/stdlib/pull/12286) _(by Philipp Burckhardt)_
+-   [`b48d4b6`](https://github.com/stdlib-js/stdlib/commit/b48d4b6cbf0b7a286bc5d2fc10b61ddf85971243) - **docs:** update namespace table of contents [(#12295)](https://github.com/stdlib-js/stdlib/pull/12295) _(by stdlib-bot)_
+-   [`86501b1`](https://github.com/stdlib-js/stdlib/commit/86501b1234b243f0c7f31dfa917d607f82249d6b) - **feat:** add `zapx` and `gxsa` to namespace _(by Athan Reines)_
+-   [`f8352cd`](https://github.com/stdlib-js/stdlib/commit/f8352cd7cf5ea0e4953d92f9ebc4577b532bdc68) - **feat:** add `blas/ext/base/gxsa` [(#12278)](https://github.com/stdlib-js/stdlib/pull/12278) _(by Karan Anand, Athan Reines)_
+-   [`314d9a5`](https://github.com/stdlib-js/stdlib/commit/314d9a591ea1a4b933537f87daee280907f9e767) - **feat:** add `blas/ext/base/zapx` [(#12275)](https://github.com/stdlib-js/stdlib/pull/12275) _(by Karan Anand, Athan Reines)_
+-   [`c1be7ac`](https://github.com/stdlib-js/stdlib/commit/c1be7aca75e7707e553f94375997f04c38b97135) - **docs:** update namespace table of contents [(#12272)](https://github.com/stdlib-js/stdlib/pull/12272) _(by stdlib-bot)_
+-   [`e1489ee`](https://github.com/stdlib-js/stdlib/commit/e1489ee6c7d1dff5122ccf182b389cb3545c91f2) - **feat:** add `capx` to namespace _(by Athan Reines)_
+-   [`ce17493`](https://github.com/stdlib-js/stdlib/commit/ce17493d5f87ef366feced6ec5d4d871c4507033) - **feat:** add `blas/ext/base/capx` [(#12239)](https://github.com/stdlib-js/stdlib/pull/12239) _(by Karan Anand, Athan Reines)_
+-   [`09c01f1`](https://github.com/stdlib-js/stdlib/commit/09c01f1f47916fcb39701c130eb78718e6e524f7) - **docs:** fix `@throws` annotation in `blas/ext/one-to` and `blas/ext/zero-to` [(#12266)](https://github.com/stdlib-js/stdlib/pull/12266) _(by Philipp Burckhardt)_
+-   [`91a6a85`](https://github.com/stdlib-js/stdlib/commit/91a6a85ebfca1036a0123648aa5165900c1cc74a) - **docs:** fix offset parameter wording in multi-offset READMEs [(#12243)](https://github.com/stdlib-js/stdlib/pull/12243) _(by Philipp Burckhardt, Athan Reines)_
+-   [`1003900`](https://github.com/stdlib-js/stdlib/commit/1003900dbae60a66c99d4adbb7f21b6cb98f6f73) - **feat:** update `blas/ext/base` TypeScript declarations [(#12238)](https://github.com/stdlib-js/stdlib/pull/12238) _(by stdlib-bot)_
 -   [`8441545`](https://github.com/stdlib-js/stdlib/commit/8441545518bc1d000fcd81a6ab91548f56eafaa6) - **docs:** fix offset parameter wording in `blas/ext/base/*sort2*` READMEs [(#12229)](https://github.com/stdlib-js/stdlib/pull/12229) _(by Philipp Burckhardt)_
 -   [`6615546`](https://github.com/stdlib-js/stdlib/commit/6615546b345be4962195031e37f9e708885826ca) - **test:** correct typos and errors in `blas/ext/base/dediff` [(#12228)](https://github.com/stdlib-js/stdlib/pull/12228) _(by Philipp Burckhardt)_
 -   [`e1dd43f`](https://github.com/stdlib-js/stdlib/commit/e1dd43fddd1f3e3bbe14af8f0341fc3127595c54) - **docs:** update namespace table of contents [(#12225)](https://github.com/stdlib-js/stdlib/pull/12225) _(by stdlib-bot)_
