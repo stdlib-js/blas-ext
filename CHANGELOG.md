@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-16)
+## Unreleased (2026-08-17)
 
 <section class="features">
 
 ### Features
 
+-   [`36c54ac`](https://github.com/stdlib-js/stdlib/commit/36c54acddca9a5b8c9fd10cf98e693e77d82f81f) - add `blas/ext/base/ndarray/sindex-of-falsy` [(#14328)](https://github.com/stdlib-js/stdlib/pull/14328)
+-   [`1ae14e5`](https://github.com/stdlib-js/stdlib/commit/1ae14e528c7a698bc2e538222caa3dc263f34858) - add `blas/ext/base/ndarray/cindex-of-falsy` [(#14331)](https://github.com/stdlib-js/stdlib/pull/14331)
+-   [`128f0b2`](https://github.com/stdlib-js/stdlib/commit/128f0b2b02139660ad0fd32b0ff3cae4fdc7050e) - add `blas/ext/base/ndarray/zindex-of-falsy` [(#14332)](https://github.com/stdlib-js/stdlib/pull/14332)
 -   [`066149c`](https://github.com/stdlib-js/stdlib/commit/066149c224e845d06691113bd2a381080b77014c) - add various symbols to namespace
 -   [`fa15c00`](https://github.com/stdlib-js/stdlib/commit/fa15c002f937fc7478105ba8f37a038c3aa3fdaa) - add `logspace` to namespace
 -   [`8a85ec2`](https://github.com/stdlib-js/stdlib/commit/8a85ec27a653b9bfcac2c9a84ae8b22ae4d1fa2c) - add `blas/ext/base/ndarray/sdiff` [(#14293)](https://github.com/stdlib-js/stdlib/pull/14293)
@@ -800,6 +803,11 @@ This release closes the following issue:
 
 <details>
 
+-   [`ed4c180`](https://github.com/stdlib-js/stdlib/commit/ed4c180a7f5aaccda01e181f8836c0d81bbe81e8) - **docs:** update namespace table of contents [(#14343)](https://github.com/stdlib-js/stdlib/pull/14343) _(by stdlib-bot)_
+-   [`36c54ac`](https://github.com/stdlib-js/stdlib/commit/36c54acddca9a5b8c9fd10cf98e693e77d82f81f) - **feat:** add `blas/ext/base/ndarray/sindex-of-falsy` [(#14328)](https://github.com/stdlib-js/stdlib/pull/14328) _(by Muhammad Haris, Athan Reines)_
+-   [`1891207`](https://github.com/stdlib-js/stdlib/commit/18912078701a4721bde196f1f54c10974595944f) - **docs:** fix default value documentation [(#14325)](https://github.com/stdlib-js/stdlib/pull/14325) _(by Philipp Burckhardt, Athan Reines)_
+-   [`1ae14e5`](https://github.com/stdlib-js/stdlib/commit/1ae14e528c7a698bc2e538222caa3dc263f34858) - **feat:** add `blas/ext/base/ndarray/cindex-of-falsy` [(#14331)](https://github.com/stdlib-js/stdlib/pull/14331) _(by Muhammad Haris, Athan Reines)_
+-   [`128f0b2`](https://github.com/stdlib-js/stdlib/commit/128f0b2b02139660ad0fd32b0ff3cae4fdc7050e) - **feat:** add `blas/ext/base/ndarray/zindex-of-falsy` [(#14332)](https://github.com/stdlib-js/stdlib/pull/14332) _(by Muhammad Haris, Athan Reines)_
 -   [`066149c`](https://github.com/stdlib-js/stdlib/commit/066149c224e845d06691113bd2a381080b77014c) - **feat:** add various symbols to namespace _(by Athan Reines)_
 -   [`fa15c00`](https://github.com/stdlib-js/stdlib/commit/fa15c002f937fc7478105ba8f37a038c3aa3fdaa) - **feat:** add `logspace` to namespace _(by Athan Reines)_
 -   [`8a85ec2`](https://github.com/stdlib-js/stdlib/commit/8a85ec27a653b9bfcac2c9a84ae8b22ae4d1fa2c) - **feat:** add `blas/ext/base/ndarray/sdiff` [(#14293)](https://github.com/stdlib-js/stdlib/pull/14293) _(by Muhammad Haris)_
