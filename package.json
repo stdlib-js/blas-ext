@@ -86,6 +86,7 @@
     "@stdlib/array-zeros": "^0.2.3",
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-has-wasm-support": "^0.2.3",
+    "@stdlib/assert-is-almost-same-value": "^0.1.1",
     "@stdlib/assert-is-array": "^0.2.3",
     "@stdlib/assert-is-boolean": "^0.2.3",
     "@stdlib/assert-is-booleanarray": "^0.0.3",
