@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-26)
+## Unreleased (2026-09-27)
 
 <section class="features">
 
@@ -1176,6 +1176,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`f67a19a`](https://github.com/stdlib-js/stdlib/commit/f67a19ad507316f14a9e6078c9983732fa46446d) - **docs:** update namespace table of contents [(#15584)](https://github.com/stdlib-js/stdlib/pull/15584) _(by stdlib-bot)_
+-   [`cda4adf`](https://github.com/stdlib-js/stdlib/commit/cda4adf8fd6a9b577c449d4ac1c5adfd8f98a72b) - **chore:** clean-up [(#15565)](https://github.com/stdlib-js/stdlib/pull/15565) _(by Philipp Burckhardt)_
 -   [`29b06dd`](https://github.com/stdlib-js/stdlib/commit/29b06dd1de7b7217ad1710f81d36b32e79e2cdf7) - **feat:** add `fillRange` to namespace _(by Athan Reines)_
 -   [`836f90b`](https://github.com/stdlib-js/stdlib/commit/836f90b94d3bed822e8994b58e01b795ec414480) - **docs:** fix descriptions [(#15560)](https://github.com/stdlib-js/stdlib/pull/15560) _(by Philipp Burckhardt)_
 -   [`71a87cf`](https://github.com/stdlib-js/stdlib/commit/71a87cf23466f2e738f8f2e6336cd48e7b0ef606) - **feat:** add `blas/ext/fill-range` [(#15544)](https://github.com/stdlib-js/stdlib/pull/15544) _(by Muhammad Haris, Athan Reines)_
