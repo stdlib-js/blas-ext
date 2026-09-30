@@ -10,6 +10,19 @@
 
 ### Features
 
+-   [`e8a009b`](https://github.com/stdlib-js/stdlib/commit/e8a009b19368617e45fa06a71e455b47f978f963) - add `findIndexBetween` and `firstIndexLessThan` to namespace
+-   [`669ac18`](https://github.com/stdlib-js/stdlib/commit/669ac185c46ab2f57299089fac1c075860714d9a) - add `indexOfTruthy` to namespace
+-   [`2fc8fd3`](https://github.com/stdlib-js/stdlib/commit/2fc8fd39e58afe793c9719f4cc0c83a8571f7798) - add `sleftPadCircular` and `sleftPadEdge` to namespace
+-   [`a63a27e`](https://github.com/stdlib-js/stdlib/commit/a63a27e7354aa8aaa43a8bf37b57e47deb532a74) - add `gindexOfAlmostEqual` to namespace
+-   [`aefdffc`](https://github.com/stdlib-js/stdlib/commit/aefdffc5524dd43bc0487cbf0684aa7cd5938a9b) - add `blas/ext/base/gindex-of-almost-equal` [(#14420)](https://github.com/stdlib-js/stdlib/pull/14420)
+-   [`124399a`](https://github.com/stdlib-js/stdlib/commit/124399a9816920bb0ededacbdd49d969821a2e8a) - add `blas/ext/index-of-truthy` [(#14324)](https://github.com/stdlib-js/stdlib/pull/14324)
+-   [`bb95991`](https://github.com/stdlib-js/stdlib/commit/bb959917bec1157648ae871ec7d082797ba351af) - add `blas/ext/base/sleft-pad-circular` [(#15041)](https://github.com/stdlib-js/stdlib/pull/15041)
+-   [`144f892`](https://github.com/stdlib-js/stdlib/commit/144f8928308e744d70237d16796d88b80c26cad8) - add `blas/ext/base/sleft-pad-edge` [(#15047)](https://github.com/stdlib-js/stdlib/pull/15047)
+-   [`75292ed`](https://github.com/stdlib-js/stdlib/commit/75292edb3b998ddcd67e812796f7d383b16be9bb) - add C implementation for `blas/ext/base/ndarray/cxsa` [(#15659)](https://github.com/stdlib-js/stdlib/pull/15659)
+-   [`5f54fc0`](https://github.com/stdlib-js/stdlib/commit/5f54fc0d19f6892e1a29e9e0d2805372fb9e515b) - update `blas/ext/base/ndarray` TypeScript declarations [(#15672)](https://github.com/stdlib-js/stdlib/pull/15672)
+-   [`2c73e54`](https://github.com/stdlib-js/stdlib/commit/2c73e543d3bbd65397dd923999da0d2031680acb) - update `blas/ext/base` TypeScript declarations [(#15673)](https://github.com/stdlib-js/stdlib/pull/15673)
+-   [`784936e`](https://github.com/stdlib-js/stdlib/commit/784936e3db09cf79c13e699a2f8fc9e049c88f7c) - add `blas/ext/base/ndarray/dleft-pad-edge` [(#15664)](https://github.com/stdlib-js/stdlib/pull/15664)
+-   [`0768604`](https://github.com/stdlib-js/stdlib/commit/076860445e793bdee0010b2e723bf72a5f09b63a) - add `blas/ext/base/ndarray/glast-index-less-than` [(#15661)](https://github.com/stdlib-js/stdlib/pull/15661)
 -   [`0f9e3ba`](https://github.com/stdlib-js/stdlib/commit/0f9e3bab5405ffc0ca12d871414f2b82a839ac45) - add `blas/ext/find-index-between` [(#15647)](https://github.com/stdlib-js/stdlib/pull/15647)
 -   [`8b2839d`](https://github.com/stdlib-js/stdlib/commit/8b2839d8cf63a3bbfcbf7f9dbdac56540e85784c) - add `gindexOfGreaterThanSorted` to namespace
 -   [`7b3fa2e`](https://github.com/stdlib-js/stdlib/commit/7b3fa2ecaae1d495c5bd4e6949def07be350ca85) - add `gcusome` to namespace
@@ -1211,8 +1224,26 @@ This release closes the following issue:
 
 <details>
 
+-   [`e8a009b`](https://github.com/stdlib-js/stdlib/commit/e8a009b19368617e45fa06a71e455b47f978f963) - **feat:** add `findIndexBetween` and `firstIndexLessThan` to namespace _(by Athan Reines)_
+-   [`669ac18`](https://github.com/stdlib-js/stdlib/commit/669ac185c46ab2f57299089fac1c075860714d9a) - **feat:** add `indexOfTruthy` to namespace _(by Athan Reines)_
+-   [`2fc8fd3`](https://github.com/stdlib-js/stdlib/commit/2fc8fd39e58afe793c9719f4cc0c83a8571f7798) - **feat:** add `sleftPadCircular` and `sleftPadEdge` to namespace _(by Athan Reines)_
+-   [`a63a27e`](https://github.com/stdlib-js/stdlib/commit/a63a27e7354aa8aaa43a8bf37b57e47deb532a74) - **feat:** add `gindexOfAlmostEqual` to namespace _(by Athan Reines)_
+-   [`f468ab7`](https://github.com/stdlib-js/stdlib/commit/f468ab744697136e0224ffd4b274823a99df80e2) - **refactor:** add support for descending order [(#15681)](https://github.com/stdlib-js/stdlib/pull/15681) _(by Sachin Pangal, Athan Reines)_
+-   [`aefdffc`](https://github.com/stdlib-js/stdlib/commit/aefdffc5524dd43bc0487cbf0684aa7cd5938a9b) - **feat:** add `blas/ext/base/gindex-of-almost-equal` [(#14420)](https://github.com/stdlib-js/stdlib/pull/14420) _(by Muhammad Haris, Athan Reines)_
+-   [`124399a`](https://github.com/stdlib-js/stdlib/commit/124399a9816920bb0ededacbdd49d969821a2e8a) - **feat:** add `blas/ext/index-of-truthy` [(#14324)](https://github.com/stdlib-js/stdlib/pull/14324) _(by Muhammad Haris, Athan Reines)_
+-   [`64688d2`](https://github.com/stdlib-js/stdlib/commit/64688d27398860c1ca5dc1a009ebce65d7da5a1e) - **style:** remove empty line _(by Athan Reines)_
+-   [`bb95991`](https://github.com/stdlib-js/stdlib/commit/bb959917bec1157648ae871ec7d082797ba351af) - **feat:** add `blas/ext/base/sleft-pad-circular` [(#15041)](https://github.com/stdlib-js/stdlib/pull/15041) _(by Muhammad Haris)_
+-   [`144f892`](https://github.com/stdlib-js/stdlib/commit/144f8928308e744d70237d16796d88b80c26cad8) - **feat:** add `blas/ext/base/sleft-pad-edge` [(#15047)](https://github.com/stdlib-js/stdlib/pull/15047) _(by Muhammad Haris)_
+-   [`75292ed`](https://github.com/stdlib-js/stdlib/commit/75292edb3b998ddcd67e812796f7d383b16be9bb) - **feat:** add C implementation for `blas/ext/base/ndarray/cxsa` [(#15659)](https://github.com/stdlib-js/stdlib/pull/15659) _(by MJ)_
+-   [`19c183e`](https://github.com/stdlib-js/stdlib/commit/19c183eadbb2dee8366c271d415dd3a082fc2c70) - **docs:** update namespace table of contents [(#15675)](https://github.com/stdlib-js/stdlib/pull/15675) _(by stdlib-bot)_
+-   [`5f54fc0`](https://github.com/stdlib-js/stdlib/commit/5f54fc0d19f6892e1a29e9e0d2805372fb9e515b) - **feat:** update `blas/ext/base/ndarray` TypeScript declarations [(#15672)](https://github.com/stdlib-js/stdlib/pull/15672) _(by stdlib-bot)_
+-   [`2c73e54`](https://github.com/stdlib-js/stdlib/commit/2c73e543d3bbd65397dd923999da0d2031680acb) - **feat:** update `blas/ext/base` TypeScript declarations [(#15673)](https://github.com/stdlib-js/stdlib/pull/15673) _(by stdlib-bot)_
+-   [`784936e`](https://github.com/stdlib-js/stdlib/commit/784936e3db09cf79c13e699a2f8fc9e049c88f7c) - **feat:** add `blas/ext/base/ndarray/dleft-pad-edge` [(#15664)](https://github.com/stdlib-js/stdlib/pull/15664) _(by Muhammad Haris)_
+-   [`f12ba0b`](https://github.com/stdlib-js/stdlib/commit/f12ba0b3d5ab71c3abcd65eba81f3d9ab203c1f4) - **refactor:** delegate to `dfill` and `dcopy` [(#15662)](https://github.com/stdlib-js/stdlib/pull/15662) _(by Muhammad Haris)_
+-   [`0768604`](https://github.com/stdlib-js/stdlib/commit/076860445e793bdee0010b2e723bf72a5f09b63a) - **feat:** add `blas/ext/base/ndarray/glast-index-less-than` [(#15661)](https://github.com/stdlib-js/stdlib/pull/15661) _(by Muhammad Haris)_
 -   [`0ee3933`](https://github.com/stdlib-js/stdlib/commit/0ee3933432578899483151dd85a35fc7f4f0e5f9) - **chore:** clean-up [(#15652)](https://github.com/stdlib-js/stdlib/pull/15652) _(by Philipp Burckhardt)_
 -   [`0f9e3ba`](https://github.com/stdlib-js/stdlib/commit/0f9e3bab5405ffc0ca12d871414f2b82a839ac45) - **feat:** add `blas/ext/find-index-between` [(#15647)](https://github.com/stdlib-js/stdlib/pull/15647) _(by Muhammad Haris, Athan Reines)_
+-   [`d374b24`](https://github.com/stdlib-js/stdlib/commit/d374b2425a483574656798bd734aa7f9c50dacc4) - **test:** update assertions _(by Athan Reines)_
 -   [`67c1633`](https://github.com/stdlib-js/stdlib/commit/67c1633c999488e1807bb2aa77183662c6eb387b) - **chore:** fix inconsistencies across packages in `blas/ext/base*` [(#15146)](https://github.com/stdlib-js/stdlib/pull/15146) _(by Muhammad Haris, Athan Reines)_
 -   [`8b2839d`](https://github.com/stdlib-js/stdlib/commit/8b2839d8cf63a3bbfcbf7f9dbdac56540e85784c) - **feat:** add `gindexOfGreaterThanSorted` to namespace _(by Athan Reines)_
 -   [`7b3fa2e`](https://github.com/stdlib-js/stdlib/commit/7b3fa2ecaae1d495c5bd4e6949def07be350ca85) - **feat:** add `gcusome` to namespace _(by Athan Reines)_
