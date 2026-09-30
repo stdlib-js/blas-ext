@@ -35,20 +35,32 @@ limitations under the License.
 
 > Extended basic linear algebra subprograms (BLAS).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-ext
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import extblas from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { base, circshift, copyWithin, cuany, cuevery, cunone, cusum, fillRange, findIndex, findLastIndex, indexOf, indexOfFalsy, indexOfNotEqual, join, lastIndexOf, lastIndexOfFalsy, lastIndexOfTruthy, linspace, logspace, oneTo, sort, sorthp, sum, toSorted, toSortedhp, unitspace, zeroTo } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@deno/mod.js';
+var extblas = require( '@stdlib/blas-ext' );
 ```
 
 #### extblas
@@ -73,7 +85,7 @@ The namespace contains the following:
 -   <span class="signature">[`cuevery( x[, options] )`][@stdlib/blas/ext/cuevery]</span><span class="delimiter">: </span><span class="description">cumulatively test whether every element along one or more ndarray dimensions is truthy.</span>
 -   <span class="signature">[`cunone( x[, options] )`][@stdlib/blas/ext/cunone]</span><span class="delimiter">: </span><span class="description">cumulatively test whether every element along one or more ndarray dimensions is falsy.</span>
 -   <span class="signature">[`cusum( x[, initial][, options] )`][@stdlib/blas/ext/cusum]</span><span class="delimiter">: </span><span class="description">compute the cumulative sum along one or more ndarray dimensions.</span>
--   <span class="signature">[`fillRange( x, value[, start[, end]][, options] )`][@stdlib/blas/ext/fill-range]</span><span class="delimiter">: </span><span class="description">fill an input ndarray with a specified value along an ndarray dimension.</span>
+-   <span class="signature">[`fillBetween( x, value[, start[, end]][, options] )`][@stdlib/blas/ext/fill-between]</span><span class="delimiter">: </span><span class="description">fill an input ndarray with a specified value along an ndarray dimension.</span>
 -   <span class="signature">[`findIndex( x[, fromIndex][, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-index]</span><span class="delimiter">: </span><span class="description">return the index of the first element along an ndarray dimension which passes a test implemented by a predicate function.</span>
 -   <span class="signature">[`findLastIndex( x[, fromIndex][, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-last-index]</span><span class="delimiter">: </span><span class="description">return the index of the last element along an ndarray dimension which passes a test implemented by a predicate function.</span>
 -   <span class="signature">[`indexOfFalsy( x[, fromIndex][, options] )`][@stdlib/blas/ext/index-of-falsy]</span><span class="delimiter">: </span><span class="description">return the index of the first falsy element along an ndarray dimension.</span>
@@ -111,8 +123,8 @@ The namespace contains the following:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext@deno/mod.js';
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/blas-ext' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -138,7 +150,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -203,59 +215,59 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base/tree/deno
+[@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base
 
-[@stdlib/blas/ext/circshift]: https://github.com/stdlib-js/blas-ext-circshift/tree/deno
+[@stdlib/blas/ext/circshift]: https://github.com/stdlib-js/blas-ext-circshift
 
-[@stdlib/blas/ext/copy-within]: https://github.com/stdlib-js/blas-ext-copy-within/tree/deno
+[@stdlib/blas/ext/copy-within]: https://github.com/stdlib-js/blas-ext-copy-within
 
-[@stdlib/blas/ext/cuany]: https://github.com/stdlib-js/blas-ext-cuany/tree/deno
+[@stdlib/blas/ext/cuany]: https://github.com/stdlib-js/blas-ext-cuany
 
-[@stdlib/blas/ext/cuevery]: https://github.com/stdlib-js/blas-ext-cuevery/tree/deno
+[@stdlib/blas/ext/cuevery]: https://github.com/stdlib-js/blas-ext-cuevery
 
-[@stdlib/blas/ext/cunone]: https://github.com/stdlib-js/blas-ext-cunone/tree/deno
+[@stdlib/blas/ext/cunone]: https://github.com/stdlib-js/blas-ext-cunone
 
-[@stdlib/blas/ext/cusum]: https://github.com/stdlib-js/blas-ext-cusum/tree/deno
+[@stdlib/blas/ext/cusum]: https://github.com/stdlib-js/blas-ext-cusum
 
-[@stdlib/blas/ext/fill-range]: https://github.com/stdlib-js/blas-ext-fill-range/tree/deno
+[@stdlib/blas/ext/fill-between]: https://github.com/stdlib-js/blas-ext-fill-between
 
-[@stdlib/blas/ext/find-index]: https://github.com/stdlib-js/blas-ext-find-index/tree/deno
+[@stdlib/blas/ext/find-index]: https://github.com/stdlib-js/blas-ext-find-index
 
-[@stdlib/blas/ext/find-last-index]: https://github.com/stdlib-js/blas-ext-find-last-index/tree/deno
+[@stdlib/blas/ext/find-last-index]: https://github.com/stdlib-js/blas-ext-find-last-index
 
-[@stdlib/blas/ext/index-of-falsy]: https://github.com/stdlib-js/blas-ext-index-of-falsy/tree/deno
+[@stdlib/blas/ext/index-of-falsy]: https://github.com/stdlib-js/blas-ext-index-of-falsy
 
-[@stdlib/blas/ext/index-of-not-equal]: https://github.com/stdlib-js/blas-ext-index-of-not-equal/tree/deno
+[@stdlib/blas/ext/index-of-not-equal]: https://github.com/stdlib-js/blas-ext-index-of-not-equal
 
-[@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/blas-ext-index-of/tree/deno
+[@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/blas-ext-index-of
 
-[@stdlib/blas/ext/join]: https://github.com/stdlib-js/blas-ext-join/tree/deno
+[@stdlib/blas/ext/join]: https://github.com/stdlib-js/blas-ext-join
 
-[@stdlib/blas/ext/last-index-of-falsy]: https://github.com/stdlib-js/blas-ext-last-index-of-falsy/tree/deno
+[@stdlib/blas/ext/last-index-of-falsy]: https://github.com/stdlib-js/blas-ext-last-index-of-falsy
 
-[@stdlib/blas/ext/last-index-of-truthy]: https://github.com/stdlib-js/blas-ext-last-index-of-truthy/tree/deno
+[@stdlib/blas/ext/last-index-of-truthy]: https://github.com/stdlib-js/blas-ext-last-index-of-truthy
 
-[@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/blas-ext-last-index-of/tree/deno
+[@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/blas-ext-last-index-of
 
-[@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/blas-ext-linspace/tree/deno
+[@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/blas-ext-linspace
 
-[@stdlib/blas/ext/logspace]: https://github.com/stdlib-js/blas-ext-logspace/tree/deno
+[@stdlib/blas/ext/logspace]: https://github.com/stdlib-js/blas-ext-logspace
 
-[@stdlib/blas/ext/one-to]: https://github.com/stdlib-js/blas-ext-one-to/tree/deno
+[@stdlib/blas/ext/one-to]: https://github.com/stdlib-js/blas-ext-one-to
 
-[@stdlib/blas/ext/sort]: https://github.com/stdlib-js/blas-ext-sort/tree/deno
+[@stdlib/blas/ext/sort]: https://github.com/stdlib-js/blas-ext-sort
 
-[@stdlib/blas/ext/sorthp]: https://github.com/stdlib-js/blas-ext-sorthp/tree/deno
+[@stdlib/blas/ext/sorthp]: https://github.com/stdlib-js/blas-ext-sorthp
 
-[@stdlib/blas/ext/sum]: https://github.com/stdlib-js/blas-ext-sum/tree/deno
+[@stdlib/blas/ext/sum]: https://github.com/stdlib-js/blas-ext-sum
 
-[@stdlib/blas/ext/to-sorted]: https://github.com/stdlib-js/blas-ext-to-sorted/tree/deno
+[@stdlib/blas/ext/to-sorted]: https://github.com/stdlib-js/blas-ext-to-sorted
 
-[@stdlib/blas/ext/to-sortedhp]: https://github.com/stdlib-js/blas-ext-to-sortedhp/tree/deno
+[@stdlib/blas/ext/to-sortedhp]: https://github.com/stdlib-js/blas-ext-to-sortedhp
 
-[@stdlib/blas/ext/unitspace]: https://github.com/stdlib-js/blas-ext-unitspace/tree/deno
+[@stdlib/blas/ext/unitspace]: https://github.com/stdlib-js/blas-ext-unitspace
 
-[@stdlib/blas/ext/zero-to]: https://github.com/stdlib-js/blas-ext-zero-to/tree/deno
+[@stdlib/blas/ext/zero-to]: https://github.com/stdlib-js/blas-ext-zero-to
 
 <!-- </toc-links> -->
 
