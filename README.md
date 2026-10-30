@@ -89,6 +89,7 @@ The namespace contains the following:
 -   <span class="signature">[`fillBetween( x, value[, start[, end]][, options] )`][@stdlib/blas/ext/fill-between]</span><span class="delimiter">: </span><span class="description">fill an input ndarray with a specified value along an ndarray dimension.</span>
 -   <span class="signature">[`findIndexBetween( x, fromIndex, toIndex[, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-index-between]</span><span class="delimiter">: </span><span class="description">return the index of the first element along an ndarray dimension which passes a test implemented by a predicate function within a specified range.</span>
 -   <span class="signature">[`findIndex( x[, fromIndex][, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-index]</span><span class="delimiter">: </span><span class="description">return the index of the first element along an ndarray dimension which passes a test implemented by a predicate function.</span>
+-   <span class="signature">[`findLastIndexBetween( x, fromIndex, toIndex[, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-last-index-between]</span><span class="delimiter">: </span><span class="description">return the index of the last element along an ndarray dimension which passes a test implemented by a predicate function within a specified range.</span>
 -   <span class="signature">[`findLastIndex( x[, fromIndex][, options], clbk[, thisArg] )`][@stdlib/blas/ext/find-last-index]</span><span class="delimiter">: </span><span class="description">return the index of the last element along an ndarray dimension which passes a test implemented by a predicate function.</span>
 -   <span class="signature">[`firstIndexLessThan( x, y[, fromIndex][, options] )`][@stdlib/blas/ext/first-index-less-than]</span><span class="delimiter">: </span><span class="description">return the index of the first element in an ndarray which is less than a corresponding element in another ndarray along an ndarray dimension.</span>
 -   <span class="signature">[`indexOfFalsy( x[, fromIndex][, options] )`][@stdlib/blas/ext/index-of-falsy]</span><span class="delimiter">: </span><span class="description">return the index of the first falsy element along an ndarray dimension.</span>
@@ -96,6 +97,7 @@ The namespace contains the following:
 -   <span class="signature">[`indexOfTruthy( x[, fromIndex][, options] )`][@stdlib/blas/ext/index-of-truthy]</span><span class="delimiter">: </span><span class="description">return the index of the first truthy element along an ndarray dimension.</span>
 -   <span class="signature">[`indexOf( x, searchElement[, fromIndex][, options] )`][@stdlib/blas/ext/index-of]</span><span class="delimiter">: </span><span class="description">return the first index of a specified search element along an ndarray dimension.</span>
 -   <span class="signature">[`join( x[, options] )`][@stdlib/blas/ext/join]</span><span class="delimiter">: </span><span class="description">return an ndarray created by joining elements using a separator along one or more ndarray dimensions.</span>
+-   <span class="signature">[`lastIndexEqual( x, y[, fromIndex][, options] )`][@stdlib/blas/ext/last-index-equal]</span><span class="delimiter">: </span><span class="description">return the index of the last element in an ndarray which is equal to a corresponding element in another ndarray along an ndarray dimension.</span>
 -   <span class="signature">[`lastIndexOfFalsy( x[, fromIndex][, options] )`][@stdlib/blas/ext/last-index-of-falsy]</span><span class="delimiter">: </span><span class="description">return the index of the last falsy element along an ndarray dimension.</span>
 -   <span class="signature">[`lastIndexOfTruthy( x[, fromIndex][, options] )`][@stdlib/blas/ext/last-index-of-truthy]</span><span class="delimiter">: </span><span class="description">return the index of the last truthy element along an ndarray dimension.</span>
 -   <span class="signature">[`lastIndexOf( x, searchElement[, fromIndex][, options] )`][@stdlib/blas/ext/last-index-of]</span><span class="delimiter">: </span><span class="description">return the last index of a specified search element along an ndarray dimension.</span>
@@ -164,6 +166,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -210,6 +217,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-readme]: https://github.com/stdlib-js/blas-ext/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/blas-ext/blob/main/branches.md
 
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext/main/LICENSE
+
 <!-- <toc-links> -->
 
 [@stdlib/blas/ext/base]: https://github.com/stdlib-js/blas-ext-base
@@ -234,6 +243,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/blas/ext/find-index]: https://github.com/stdlib-js/blas-ext-find-index
 
+[@stdlib/blas/ext/find-last-index-between]: https://github.com/stdlib-js/blas-ext-find-last-index-between
+
 [@stdlib/blas/ext/find-last-index]: https://github.com/stdlib-js/blas-ext-find-last-index
 
 [@stdlib/blas/ext/first-index-less-than]: https://github.com/stdlib-js/blas-ext-first-index-less-than
@@ -247,6 +258,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/blas-ext-index-of
 
 [@stdlib/blas/ext/join]: https://github.com/stdlib-js/blas-ext-join
+
+[@stdlib/blas/ext/last-index-equal]: https://github.com/stdlib-js/blas-ext-last-index-equal
 
 [@stdlib/blas/ext/last-index-of-falsy]: https://github.com/stdlib-js/blas-ext-last-index-of-falsy
 

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-29)
+## Unreleased (2026-10-30)
 
 <section class="features">
 
@@ -1339,6 +1339,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`83934c0`](https://github.com/stdlib-js/stdlib/commit/83934c0c5f5eb6f8dca695683acba912e59e8e0f) - **docs:** update namespace table of contents [(#16377)](https://github.com/stdlib-js/stdlib/pull/16377) _(by stdlib-bot)_
 -   [`e045faf`](https://github.com/stdlib-js/stdlib/commit/e045faf87a075e71d0126ece925c8165a6be6b1c) - **feat:** add `lastIndexEqual` to namespace _(by Athan Reines)_
 -   [`386cdde`](https://github.com/stdlib-js/stdlib/commit/386cdde946d71c8366d07e91004a742ec68d1590) - **feat:** add `findLastIndexBetween` to namespace _(by Athan Reines)_
 -   [`937acf3`](https://github.com/stdlib-js/stdlib/commit/937acf38f2aa119cb44a35186d88e46d512951cd) - **docs:** update Markdown equation elements _(by stdlib-bot)_
