@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`cb310d2`](https://github.com/stdlib-js/stdlib/commit/cb310d29f23fa0491d8820a526e062229b14c823) - update `blas/ext` TypeScript declarations [(#16374)](https://github.com/stdlib-js/stdlib/pull/16374)
 -   [`e045faf`](https://github.com/stdlib-js/stdlib/commit/e045faf87a075e71d0126ece925c8165a6be6b1c) - add `lastIndexEqual` to namespace
 -   [`386cdde`](https://github.com/stdlib-js/stdlib/commit/386cdde946d71c8366d07e91004a742ec68d1590) - add `findLastIndexBetween` to namespace
 -   [`b0b4bad`](https://github.com/stdlib-js/stdlib/commit/b0b4bad3806887027b296152e7c65868712f8cc8) - add `blas/ext/base/ndarray/sapx` [(#9221)](https://github.com/stdlib-js/stdlib/pull/9221)
@@ -1339,6 +1340,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`cb310d2`](https://github.com/stdlib-js/stdlib/commit/cb310d29f23fa0491d8820a526e062229b14c823) - **feat:** update `blas/ext` TypeScript declarations [(#16374)](https://github.com/stdlib-js/stdlib/pull/16374) _(by stdlib-bot)_
 -   [`83934c0`](https://github.com/stdlib-js/stdlib/commit/83934c0c5f5eb6f8dca695683acba912e59e8e0f) - **docs:** update namespace table of contents [(#16377)](https://github.com/stdlib-js/stdlib/pull/16377) _(by stdlib-bot)_
 -   [`e045faf`](https://github.com/stdlib-js/stdlib/commit/e045faf87a075e71d0126ece925c8165a6be6b1c) - **feat:** add `lastIndexEqual` to namespace _(by Athan Reines)_
 -   [`386cdde`](https://github.com/stdlib-js/stdlib/commit/386cdde946d71c8366d07e91004a742ec68d1590) - **feat:** add `findLastIndexBetween` to namespace _(by Athan Reines)_
